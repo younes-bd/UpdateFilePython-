@@ -1,4 +1,5 @@
-<h1> Update a file through a Python algorithm </h1>
+<p align="center">
+<h1> Update a file through a Python algorithm </h1> 
 
 <h2>Description</h2>
 At my organization, access to restricted content is controlled with an allow list of IP addresses. The "allow_list.txt" file identifies these IP addresses. A separate remove list identifies IP addresses that should no longer have access to this content. I created an algorithm to automate updating the "allow_list.txt" file and remove these IP addresses that should no longer have access. 
@@ -25,33 +26,24 @@ In summary, this code reads the contents of the "allow_list.txt" file into a str
 In order to remove individual IP addresses from the allow list, I needed it to be in list format. Therefore, I next used the .split() method to convert the ip_addresses string into a list:
 <br/>
 <br/>
-<img src="https://i.imgur.com/ELRUin1.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br/>
-<br/>
-The first part of the screenshot is my query, and the second part is a portion of the output. This query returns all login attempts that occurred in countries other than Mexico. First, I started by selecting all data from the log_in_attempts table. Then, I used a WHERE clause with NOT to filter for countries other than Mexico. I used LIKE with MEX% as the pattern to match because the dataset represents Mexico as MEX and MEXICO. The percentage sign (%) represents any number of unspecified characters when used with LIKE. 
+<img src="https://i.imgur.com/NKlvscK.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+The .split() function is called by appending it to a string variable. It works by converting the contents of a string to a list. The purpose of splitting ip_addresses into a list is to make it easier to remove IP addresses from the allow list. By default, the .split() function splits the text by whitespace into list elements. In this algorithm, the .split() function takes the data stored in the variable ip_addresses, which is a string of IP addresses that are each separated by a whitespace, and it converts this string into a list of IP addresses. To store this list, I reassigned it back to the variable ip_addresses. 
 
-<p align="center">
-Retrieve employees in Marketing: <br/>
+<h2> Iterate through the remove list: </h2>
  
-My team wants to update the computers for certain employees in the Marketing department. To do this, I have to get information on which employee machines to update.
+A key part of my algorithm involves iterating through the IP addresses that are elements in the remove_list. To do this, I incorporated a for loop:
 <br/>
-The following code demonstrates how I created a SQL query to filter for employee machines from employees in the Marketing department in the East building.
+ <img src="https://i.imgur.com/Fm96YLP.png" height="20%" width="40%" alt="Disk Sanitization Steps"/>
 <br/>
- <img src="https://i.imgur.com/KDTLkdd.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br/>
-<br/>
-The first part of the screenshot is my query, and the second part is a portion of the output. This query returns all employees in the Marketing department in the East building. First, I started by selecting all data from the employees table. Then, I used a WHERE clause with AND to filter for employees who work in the Marketing department and in the East building. I used LIKE with East% as the pattern to match because the data in the office column represents the East building with the specific office number. The first condition is the department = 'Marketing' portion, which filters for employees in the Marketing department. The second condition is the office LIKE 'East%' portion, which filters for employees in the East building.
+The for loop in Python repeats code for a specified sequence. The overall purpose of the for loop in a Python algorithm like this is to apply specific code statements to all elements in a sequence. The for keyword starts the for loop. It is followed by the loop variable element and the keyword in. The keyword in indicates to iterate through the sequence ip_addresses and assign each value to the loop variable element. 
  
-<p align="center">
-Retrieve employees in Finance or Sales: <br/>
- 
-The machines for employees in the Finance and Sales departments also need to be updated. Since a different security update is needed, I have to get information on employees only from these two departments.<br/>
-The following code demonstrates how I created a SQL query to filter for employee machines from employees in the Finance or Sales departments.
+<h2> Remove IP addresses that are on the remove list: </h2>
+ My algorithm requires removing any IP address from the allow list, ip_addresses, that is also contained in remove_list.  Because there were not any duplicates in ip_addresses, I was able to use the following code to do this:
 <br/>
- <img src="https://i.imgur.com/bOHzPTz.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
- <br/>
- <br/>
-The first part of the screenshot is my query, and the second part is a portion of the output. This query returns all employees in the Finance and Sales departments. First, I started by selecting all data from the employees table. Then, I used a WHERE clause with OR to filter for employees who are in the Finance and Sales departments. I used the OR operator instead of AND because I want all employees who are in either department. The first condition is department = 'Finance', which filters for employees from the Finance department. The second condition is department = 'Sales', which filters for employees from the Sales department.
+ <img src="https://i.imgur.com/dcXfoLY.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
+First, within my for loop, I created a conditional that evaluated whether or not the loop variable element was found in the ip_addresses list. I did this because applying .remove() to elements that were not found in ip_addresses would result in an error.  <br/>
+Then, within that conditional, I applied .remove() to ip_addresses. I passed in the loop variable element as the argument so that each IP address that was in the remove_list would be removed from ip_addresses.
+
 
  <p align="center">
 Retrieve all employees not in IT: <br/>
