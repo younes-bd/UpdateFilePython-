@@ -21,11 +21,8 @@ In my algorithm, the with statement is used with the .open() function in read mo
 When using an .open() function that includes the argument "r" for “read,” I can call the .read() function in the body of the with statement. The .read() method converts the file into a string and allows me to read it. I applied the .read() method to the file variable identified in the with statement. Then, I assigned the string output of this method to the variable ip_addresses. <br/>
 In summary, this code reads the contents of the "allow_list.txt" file into a string format that allows me to later use the string to organize and extract data in my Python program.
 
- <h2> Read the file contents: </h2>
-
- 
-After investigating the organization’s data on login attempts, I believe there is an issue with the login attempts that occurred outside of Mexico. These login attempts should be investigated. <br/>
-The following code demonstrates how I created a SQL query to filter for login attempts that occurred outside of Mexico:
+ <h2> Convert the string into a list </h2>
+In order to remove individual IP addresses from the allow list, I needed it to be in list format. Therefore, I next used the .split() method to convert the ip_addresses string into a list:
 <br/>
 <br/>
 <img src="https://i.imgur.com/ELRUin1.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
