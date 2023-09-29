@@ -13,20 +13,16 @@ Then, I used a with statement to open the file:
  <img src="https://i.imgur.com/87MWrnT.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
 In my algorithm, the with statement is used with the .open() function in read mode to open the allow list file for the purpose of reading it. The purpose of opening the file is to allow me to access the IP addresses stored in the allow list file. The with keyword will help manage the resources by closing the file after exiting the with statement. In the code with open(import_file, "r") as file:, the open() function has two parameters. The first identifies the file to import, and then the second indicates what I want to do with the file. In this case, "r" indicates that I want to read it. The code also uses the as keyword to assign a variable named file; file stores the output of the .open() function while I work within the with statement.
  
-<p align="center">
-Retrieve login attempts on specific dates: <br/>
- 
-A suspicious event occurred on 2022-05-09. Any login activity that happened on 2022-05-09 or on the day before needs to be investigated.
-The following code demonstrates how I created a SQL query to filter for login attempts that occurred on specific dates.
+<h2> Read the file contents: </h2>
+ In order to read the file contents, I used the .read() method to convert it into the string.
 <br/>
 <br/>
-<img src="https://i.imgur.com/UqiPISx.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br/>
-<br/>
-The first part of the screenshot is my query, and the second part is a portion of the output. This query returns all login attempts that occurred on 2022-05-09 or 2022-05-08. First, I started by selecting all data from the log_in_attempts table. Then, I used a WHERE clause with an OR operator to filter my results to output only login attempts that occurred on either 2022-05-09 or 2022-05-08. The first condition is login_date = '2022-05-09', which filters for logins on 2022-05-09. The second condition is login_date = '2022-05-08', which filters for logins on 2022-05-08.
- 
-<p align="center">
-Retrieve login attempts outside of Mexico: <br/>
+<img src="https://i.imgur.com/PWtsHT0.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+When using an .open() function that includes the argument "r" for “read,” I can call the .read() function in the body of the with statement. The .read() method converts the file into a string and allows me to read it. I applied the .read() method to the file variable identified in the with statement. Then, I assigned the string output of this method to the variable ip_addresses. <br/>
+In summary, this code reads the contents of the "allow_list.txt" file into a string format that allows me to later use the string to organize and extract data in my Python program.
+
+ <h2> Read the file contents: </h2>
+
  
 After investigating the organization’s data on login attempts, I believe there is an issue with the login attempts that occurred outside of Mexico. These login attempts should be investigated. <br/>
 The following code demonstrates how I created a SQL query to filter for login attempts that occurred outside of Mexico:
