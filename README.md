@@ -34,8 +34,7 @@ The .split() function is called by appending it to a string variable. It works b
 <h2> Iterate through the remove list: </h2>
  A key part of my algorithm involves iterating through the IP addresses that are elements in the remove_list. To do this, I incorporated a for loop:
 <br/><br/>
- <img src="https://i.imgur.com/Fm96YLP.png" height="20%" width="40%" alt="Disk Sanitization Steps"/>
-<br/>
+<img src="https://i.imgur.com/Fm96YLP.png" height="20%" width="40%" alt="Disk Sanitization Steps"/> <br/>
 The for loop in Python repeats code for a specified sequence. The overall purpose of the for loop in a Python algorithm like this is to apply specific code statements to all elements in a sequence. The for keyword starts the for loop. It is followed by the loop variable element and the keyword in. The keyword in indicates to iterate through the sequence ip_addresses and assign each value to the loop variable element. 
  
 <h2> Remove IP addresses that are on the remove list: </h2>
