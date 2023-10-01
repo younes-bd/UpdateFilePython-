@@ -30,8 +30,7 @@ In order to remove individual IP addresses from the allow list, I needed it to b
 The .split() function is called by appending it to a string variable. It works by converting the contents of a string to a list. The purpose of splitting ip_addresses into a list is to make it easier to remove IP addresses from the allow list. By default, the .split() function splits the text by whitespace into list elements. In this algorithm, the .split() function takes the data stored in the variable ip_addresses, which is a string of IP addresses that are each separated by a whitespace, and it converts this string into a list of IP addresses. To store this list, I reassigned it back to the variable ip_addresses. 
 
 <h2> Iterate through the remove list: </h2>
- 
-A key part of my algorithm involves iterating through the IP addresses that are elements in the remove_list. To do this, I incorporated a for loop:
+ A key part of my algorithm involves iterating through the IP addresses that are elements in the remove_list. To do this, I incorporated a for loop:
 <br/>
  <img src="https://i.imgur.com/Fm96YLP.png" height="20%" width="40%" alt="Disk Sanitization Steps"/>
 <br/>
@@ -44,17 +43,11 @@ The for loop in Python repeats code for a specified sequence. The overall purpos
 First, within my for loop, I created a conditional that evaluated whether or not the loop variable element was found in the ip_addresses list. I did this because applying .remove() to elements that were not found in ip_addresses would result in an error.  <br/>
 Then, within that conditional, I applied .remove() to ip_addresses. I passed in the loop variable element as the argument so that each IP address that was in the remove_list would be removed from ip_addresses.
 
-
- <p align="center">
-Retrieve all employees not in IT: <br/>
- 
-My team needs to make one more security update on employees who are not in the Information Technology department. To make the update, I first have to get information on these employees.<br/>
-The following demonstrates how I created a SQL query to filter for employee machines from employees not in the  Information Technology department.
+<h2> Remove IP addresses that are on the remove list: </h2>
+As a final step in my algorithm, I needed to update the allow list file with the revised list of IP addresses. To do so, I first needed to convert the list back into a string. I used the .join() method for this: <br/>
 <br/>
- <img src="https://i.imgur.com/02gOC9n.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br/>
-<br/>
-The first part of the screenshot is my query, and the second part is a portion of the output. The query returns all employees not in the Information Technology department. First, I started by selecting all data from the employees table. Then, I used a WHERE clause with NOT to filter for employees not in this department.
+ <img src="https://i.imgur.com/sYKdskQ.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
+The .join() method combines all items in an iterable into a string. The .join() method is applied to a string containing characters that will separate the elements in the iterable once joined into a string. In this algorithm, I used the .join() method to create a string from the list ip_addresses so that I could pass it in as an argument to the .write() method when writing to the file "allow_list.txt". I used the string ("\n") as the separator to instruct Python to place each element on a new line. 
 
 <p align="center">
 Summary: <br/>
