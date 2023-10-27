@@ -60,12 +60,12 @@ In this case I wanted to write the updated allow list as a string to the file "a
 
 Certainly, here are more examples of automation Python scripts for system administrators:
 
-1. Automate Log Cleanup
+<h1> 1. Automate Log Cleanup </h1>
 
-Description: Automate log file cleanup by removing log files older than a specified number of days.
+<h2> Description: </h2>
+Automate log file cleanup by removing log files older than a specified number of days.
 
-python
-Copy code
+```
 import os
 import datetime
 
@@ -82,14 +82,16 @@ for filename in os.listdir(log_dir):
         creation_time = datetime.datetime.fromtimestamp(os.path.getctime(file_path))
         if (now - creation_time).days > max_age_days:
             os.remove(file_path)
-Summary: This Python script automatically removes log files older than a specified number of days from the log directory.
+```
+<h2> Summary: </h2>
+This Python script automatically removes log files older than a specified number of days from the log directory.
 
-2. Monitor Disk Space
+<h1> 2. Monitor Disk Space </h1>
 
-Description: Automate disk space monitoring and alerting when free disk space falls below a threshold.
+<h2> Description: </h2>
+Automate disk space monitoring and alerting when free disk space falls below a threshold.
 
-python
-Copy code
+```
 import psutil
 
 # Disk space monitoring script
@@ -102,14 +104,16 @@ free_space_gb = disk.free / (2**30)
 
 if free_space_gb < threshold:
     print(f"Warning: Low disk space on {partition}. Free space is {free_space_gb:.2f} GB.")
-Summary: This Python script automatically monitors disk space and alerts when free space falls below a specified threshold.
+```
+<h2> Summary: </h2>
+This Python script automatically monitors disk space and alerts when free space falls below a specified threshold.
 
-3. Backup Script
+<h1> 3. Backup Script </h1>
 
-Description: Automate system backups with date-based directories.
+<h2> Description:</h2> 
+ Automate system backups with date-based directories.
 
-python
-Copy code
+```
 import shutil
 import datetime
 
@@ -122,28 +126,33 @@ current_date = datetime.datetime.now().strftime("%Y%m%d")
 backup_directory = os.path.join(backup_destination, current_date)
 
 shutil.make_archive(backup_directory, 'zip', backup_source)
-Summary: This Python script automates backups of a specified source directory, creating backups with date-based directories.
+```
+<h2> Summary: </h2> 
+This Python script automates backups of a specified source directory, creating backups with date-based directories.
 
-4. Automate Firewall Rule Updates
+<h1> 4. Automate Firewall Rule Updates </h1>
 
-Description: Automate the addition of firewall rules to enhance network security.
+<h2> Description: </h2>
+Automate the addition of firewall rules to enhance network security.
 
-python
-Copy code
+```
 import subprocess
 
 # Firewall rule automation script
 
 new_rule = "iptables -A INPUT -p tcp --dport 80 -j ACCEPT"
 subprocess.run(new_rule, shell=True)
-Summary: This Python script automates the addition of a new firewall rule to allow incoming traffic on port 80.
+```
+<h2> Summary: </h2>
+This Python script automates the addition of a new firewall rule to allow incoming traffic on port 80.
 
-5. Automate Server Reboot
 
-Description: Automate server reboots on a schedule.
+<h1> 5. Automate Server Reboot </h1>
 
-python
-Copy code
+<h2> Description: </h2>
+ Automate server reboots on a schedule.
+
+```
 import subprocess
 import time
 
@@ -156,24 +165,20 @@ while True:
     if current_time == reboot_time:
         subprocess.run(["reboot"])
     time.sleep(60)
-Summary: This Python script continuously checks the current time and reboots the server at a specified time.
+```
+<h2> Summary: </h2>
+This Python script continuously checks the current time and reboots the server at a specified time.
 
 These Python scripts provide system administrators with tools to automate various tasks, including log cleanup, disk space monitoring, backups, firewall rule updates, and scheduled server reboots, enhancing system management and efficiency.
 
-
-
-
-User
-give me examples
-ChatGPT
 Certainly, here are more examples of Python scripts for automating routine tasks as a system administrator:
 
-6. Automate User Account Management
+<h1> 6. Automate User Account Management </h1>
 
-Description: Automate user account creation and deletion on a Linux system.
+<h2> Description: </h2>
+Automate user account creation and deletion on a Linux system.
 
-python
-Copy code
+```
 import subprocess
 
 # User account automation script
@@ -189,7 +194,9 @@ subprocess.run(["echo", f"{new_user}:{user_password}" "|", "chpasswd"])
 
 # Delete a user
 # subprocess.run(["userdel", new_user])
-Summary: This Python script automates user account management tasks, including user creation and password setting.
+```
+<h2> Summary: </h2>
+This Python script automates user account management tasks, including user creation and password setting.
 
 7. Automate Software Updates
 
