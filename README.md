@@ -306,14 +306,16 @@ backup_folder = os.path.join(backup_destination, f"backup_{timestamp}")
 
 # Copy the files to the backup folder
 shutil.copytree(backup_source, backup_folder)
-Summary: This script automates the process of creating a timestamped backup of system files, making it easy to recover configuration files if needed.
+```
+<h2> Summary: </h2>
+This script automates the process of creating a timestamped backup of system files, making it easy to recover configuration files if needed.
 
-12. Log Rotation Script
+<h1> 12. Log Rotation Script </h1>
 
-Description: Automate log file rotation and compression to manage log file sizes.
+<h2> Description: </h2>
+Automate log file rotation and compression to manage log file sizes.
 
-python
-Copy code
+```
 import subprocess
 
 # Log rotation and compression script
