@@ -609,7 +609,7 @@ monitor_disk_space(threshold)
 <h2> Summary: </h2>
 This script automates the monitoring of disk space and sends alerts when it falls below a specified threshold.
 
-<h2> 25. Active Directory User Management Script </h2>
+<h1> 25. Active Directory User Management Script </h1>
 
 <h2> Description:</h2>
 Automate user management tasks in Active Directory, like adding, disabling, or enabling user accounts.
