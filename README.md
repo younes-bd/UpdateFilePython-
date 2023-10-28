@@ -198,12 +198,12 @@ subprocess.run(["echo", f"{new_user}:{user_password}" "|", "chpasswd"])
 <h2> Summary: </h2>
 This Python script automates user account management tasks, including user creation and password setting.
 
-7. Automate Software Updates
+<h1> 7. Automate Software Updates </h1>
 
-Description: Automate the process of checking for and applying software updates.
+<h2> Description: </h2>
+Automate the process of checking for and applying software updates.
 
-python
-Copy code
+```
 import subprocess
 
 # Software update automation script
@@ -213,14 +213,16 @@ subprocess.run(["apt", "update"])
 
 # Upgrade installed packages
 subprocess.run(["apt", "upgrade", "-y"])
-Summary: This Python script automates the process of checking for and applying software updates on a Debian-based Linux system.
+```
+<h2> Summary: </h2>
+This Python script automates the process of checking for and applying software updates on a Debian-based Linux system.
 
-8. Automate Log File Analysis
+<h1> 8. Automate Log File Analysis </h1>
 
-Description: Automate log file analysis to identify and report specific patterns or issues.
+<h2> Description: </h2>
+Automate log file analysis to identify and report specific patterns or issues.
 
-python
-Copy code
+```
 import re
 
 # Log file analysis script
@@ -232,14 +234,16 @@ with open(log_file, "r") as file:
     for line in file:
         if re.search(pattern, line, re.I):
             print(line.strip())
-Summary: This Python script automates log file analysis to identify and report log entries containing specific patterns like "error."
+```
+<h2> Summary: </h2>
+This Python script automates log file analysis to identify and report log entries containing specific patterns like "error."
 
-9. Monitor Service Status
+<h1> 9. Monitor Service Status </h1>
 
-Description: Automate service status monitoring and restart services if they are down.
+<h2> Description: </h2>
+Automate service status monitoring and restart services if they are down.
 
-python
-Copy code
+``` 
 import subprocess
 
 # Service monitoring and automation script
@@ -252,14 +256,16 @@ status = subprocess.run(["systemctl", "is-active", service_name])
 # Restart the service if it's inactive
 if status.returncode != 0:
     subprocess.run(["systemctl", "restart", service_name])
-Summary: This Python script automates the monitoring and restart of a specific service if it's inactive.
+```
+<h2> Summary: </h2>
+This Python script automates the monitoring and restart of a specific service if it's inactive.
 
-10. Automate System Health Checks
+<h1> 10. Automate System Health Checks </h1>
 
-Description: Automate system health checks, such as checking CPU and memory usage.
+<h2> Description: </h2>
+Automate system health checks, such as checking CPU and memory usage.
 
-python
-Copy code
+```
 import psutil
 
 # System health check automation script
@@ -271,24 +277,20 @@ print(f"CPU Usage: {cpu_percent}%")
 # Check available memory
 memory = psutil.virtual_memory()
 print(f"Available Memory: {memory.available / (1024 ** 3):.2f} GB")
-Summary: This Python script automates system health checks, providing information about CPU and memory usage.
+```
+<h2> Summary: </h2>
+This Python script automates system health checks, providing information about CPU and memory usage.
 
 These Python scripts assist system administrators in automating common tasks, such as user account management, software updates, log analysis, service monitoring, and system health checks, thereby improving efficiency and system management.
-
-
-
-
-User
-give me examples
-ChatGPT
 Certainly, here are more examples of Python scripts for automating routine tasks as a system administrator:
 
-11. Automated Backup Script
 
-Description: Automate the process of backing up critical system files to a specified location.
+<h1> 11. Automated Backup Script </h1>
 
-python
-Copy code
+<h2> Description: </h2>
+Automate the process of backing up critical system files to a specified location.
+
+```
 import shutil
 import os
 import time
@@ -322,14 +324,16 @@ compressed_log_file = f"{log_file}.gz"
 # Rotate and compress log files
 subprocess.run(["logrotate", "-f", "/etc/logrotate.conf"])
 subprocess.run(["gzip", log_file])
-Summary: This script automates log rotation and compression to keep log files from consuming excessive disk space.
+```
+<h2> Summary: </h2>
+This script automates log rotation and compression to keep log files from consuming excessive disk space.
 
-13. Automated Filesystem Checks
+<h1> 13. Automated Filesystem Checks </h1>
 
-Description: Automate filesystem checks to ensure the integrity of filesystems and repair issues if necessary.
+<h2> Description: </h2>
+Automate filesystem checks to ensure the integrity of filesystems and repair issues if necessary.
 
-python
-Copy code
+```
 import subprocess
 
 # Automated filesystem check script
@@ -338,14 +342,16 @@ filesystem = "/dev/sda1"
 
 # Check and repair the filesystem
 subprocess.run(["fsck", "-p", filesystem])
-Summary: This script automates the filesystem check process to maintain the integrity of filesystems.
+```
+<h2> Summary: </h2>
+This script automates the filesystem check process to maintain the integrity of filesystems.
 
-14. Automated Email Notifications
+<h1> 14. Automated Email Notifications </h1>
 
-Description: Automate email notifications for system events or alerts.
+<h2> Description: </h2>
+Automate email notifications for system events or alerts.
 
-python
-Copy code
+```
 import smtplib
 from email.mime.text import MIMEText
 
@@ -368,14 +374,16 @@ def send_email(subject, message, to_email):
 
 # Usage
 send_email("System Alert", "High CPU usage detected.", "admin@example.com")
-Summary: This script automates the process of sending email notifications for system events or alerts.
+```
+<h2> Summary: </h2>
+This script automates the process of sending email notifications for system events or alerts.
 
-15. System Cleanup Script
+<h1> 15. System Cleanup Script </h1>
 
-Description: Automate system cleanup tasks, such as removing temporary files and logs.
+<h2> Description: </h2>
+Automate system cleanup tasks, such as removing temporary files and logs.
 
-python
-Copy code
+```
 import subprocess
 
 # System cleanup script
@@ -385,24 +393,19 @@ subprocess.run(["rm", "-rf", "/tmp/*"])
 
 # Clear log files
 subprocess.run(["rm", "/var/log/*.log"])
-Summary: This script automates routine system cleanup tasks to free up disk space and maintain system performance.
+```
+<h2>vSummary: </h2>
+This script automates routine system cleanup tasks to free up disk space and maintain system performance.
 
 These Python scripts are valuable tools for system administrators, helping to streamline various tasks, including backups, log management, filesystem checks, email notifications, and system cleanup.
-
-
-
-
-User
-give me examples
-ChatGPT
 Certainly, here are more examples of Python scripts for automating tasks as a system administrator:
 
-16. User Account Management Script
+<h1> 16. User Account Management Script </h1>
 
-Description: Automate the creation and management of user accounts on a Linux system.
+<h2> Description: </h2>
+Automate the creation and management of user accounts on a Linux system.
 
-python
-Copy code
+```
 import subprocess
 
 # User account management script
@@ -413,14 +416,16 @@ def create_user(username, password):
 
 # Usage
 create_user("newuser", "securepassword")
-Summary: This script simplifies the process of creating user accounts on a Linux system.
+```
+<h2> Summary: </h2>
+This script simplifies the process of creating user accounts on a Linux system.
 
-17. Firewall Rule Management Script
+<h1> 17. Firewall Rule Management Script </h1>
 
-Description: Automate the management of firewall rules to control network traffic.
+<h2> Description: </h2>
+Automate the management of firewall rules to control network traffic.
 
-python
-Copy code
+```
 import subprocess
 
 # Firewall rule management script
@@ -431,14 +436,16 @@ def allow_port(port):
 
 # Usage
 allow_port("80")
-Summary: This script automates the process of adding and removing firewall rules, enhancing network security.
+```
+<h2> Summary: </h2>
+This script automates the process of adding and removing firewall rules, enhancing network security.
 
-18. Log File Monitoring Script
+<h2> 18. Log File Monitoring Script </h2>
 
-Description: Automate log file monitoring for specific events or errors.
+<h2> Description: </h2>
+Automate log file monitoring for specific events or errors.
 
-python
-Copy code
+```
 import subprocess
 
 # Log file monitoring script
@@ -450,14 +457,16 @@ def monitor_log_file():
 
 # Usage
 monitor_log_file()
-Summary: This script simplifies log file monitoring for system administrators, making it easy to track important events.
+```
+<h2> Summary: </h2>
+This script simplifies log file monitoring for system administrators, making it easy to track important events.
 
-19. System Health Check Script
+<h1> 19. System Health Check Script </h1>
 
-Description: Automate system health checks, including checking CPU, memory, and disk usage.
+<h2> Description: </h2>
+Automate system health checks, including checking CPU, memory, and disk usage.
 
-python
-Copy code
+```
 import psutil
 
 # System health check script
@@ -472,14 +481,16 @@ def check_system_health():
 # Usage
 health_status = check_system_health()
 print(health_status)
-Summary: This script automates system health checks, providing real-time information on CPU, memory, and disk usage.
+```
+<h2> Summary: </h2>
+This script automates system health checks, providing real-time information on CPU, memory, and disk usage.
 
-20. Automated Patch Management Script
+<h1> 20. Automated Patch Management Script </h1>
 
-Description: Automate the process of checking for and applying system updates.
+<h2> Description: </h2>
+Automate the process of checking for and applying system updates.
 
-python
-Copy code
+```
 import subprocess
 
 # Automated patch management script
@@ -489,24 +500,20 @@ def apply_system_updates():
 
 # Usage
 apply_system_updates()
-Summary: This script automates the application of system updates, enhancing system security and stability.
+```
+<h2> Summary: </h2>
+This script automates the application of system updates, enhancing system security and stability.
 
 These Python scripts are useful for system administrators to automate various tasks, such as user account management, firewall rule management, log file monitoring, system health checks, and automated patch management.
-
-
-
-
-User
-give me examples
-ChatGPT
 Certainly, here are more examples of Python scripts for automating tasks as a system administrator:
 
-21. Backup Script
 
-Description: Automate regular backups of important files and directories.
+<h1> 21. Backup Script </h1>
 
-python
-Copy code
+<h2> Description: </h2>
+Automate regular backups of important files and directories.
+
+```
 import shutil
 import time
 
@@ -521,14 +528,16 @@ def create_backup(source, destination):
 source_directory = "/path/to/source"
 backup_location = "/path/to/backup"
 create_backup(source_directory, backup_location)
-Summary: This script automates the backup of specified files or directories, creating a timestamped backup copy.
+```
+<h2> Summary: </h2>
+This script automates the backup of specified files or directories, creating a timestamped backup copy.
 
-22. Log Rotation Script
+<h2> 22. Log Rotation Script </h2>
 
-Description: Automate log file rotation to prevent log files from consuming excessive disk space.
+<h2> Description: </h2>
+Automate log file rotation to prevent log files from consuming excessive disk space.
 
-python
-Copy code
+```
 import logging.handlers
 
 # Log rotation script
@@ -545,14 +554,16 @@ def rotate_log_file():
 
 # Usage
 rotate_log_file()
-Summary: This script automates log file rotation to manage log files efficiently.
+```
+<h2> Summary: </h2>
+This script automates log file rotation to manage log files efficiently.
 
-23. Service Monitoring Script
+<h1> 23. Service Monitoring Script </h1>
 
-Description: Automate the monitoring of services and restart them if they go down.
+<h2> Description: </h2>
+Automate the monitoring of services and restart them if they go down.
 
-python
-Copy code
+```
 import subprocess
 
 # Service monitoring script
@@ -567,14 +578,16 @@ def monitor_service(service_name):
 # Usage
 service_name = "httpd"
 monitor_service(service_name)
-Summary: This script automates the monitoring of services and restarts them if they are not running.
+```
+<h2> Summary: </h2>
+This script automates the monitoring of services and restarts them if they are not running.
 
-24. Disk Space Monitoring Script
+<h1> 24. Disk Space Monitoring Script </h1>
 
-Description: Automate disk space monitoring and send alerts if free space falls below a certain threshold.
+<h2> Description: </h2>
+Automate disk space monitoring and send alerts if free space falls below a certain threshold.
 
-python
-Copy code
+```
 import psutil
 import smtplib
 
@@ -592,14 +605,16 @@ def send_alert_email(message):
 # Usage
 threshold = 90
 monitor_disk_space(threshold)
-Summary: This script automates the monitoring of disk space and sends alerts when it falls below a specified threshold.
+```
+<h2> Summary: </h2>
+This script automates the monitoring of disk space and sends alerts when it falls below a specified threshold.
 
-25. Active Directory User Management Script
+<h2> 25. Active Directory User Management Script </h2>
 
-Description: Automate user management tasks in Active Directory, like adding, disabling, or enabling user accounts.
+<h2> Description:</h2>
+Automate user management tasks in Active Directory, like adding, disabling, or enabling user accounts.
 
-python
-Copy code
+```
 import pyad.adquery
 from pyad import *
 
@@ -613,24 +628,19 @@ def add_user(username, password):
 
 # Usage
 add_user("newuser", "securepassword")
-Summary: This script automates user management tasks in an Active Directory environment.
+```
+<h2> Summary: </h2>
+This script automates user management tasks in an Active Directory environment.
 
 These Python scripts provide further examples of automation for system administrators, including backup, log rotation, service monitoring, disk space monitoring, and Active Directory user management.
-
-
-
-
-User
-give me examples
-ChatGPT
 Of course, here are more examples of Python scripts for automating tasks as a system administrator:
 
-26. Network Port Scanner Script
+<h1> 26. Network Port Scanner Script </h1>
 
-Description: Automate the scanning of network ports on a target machine.
+<h2> Description: </h2>
+Automate the scanning of network ports on a target machine.
 
-python
-Copy code
+```
 import socket
 
 # Network Port Scanner Script
@@ -651,14 +661,16 @@ target_host = "example.com"
 port_range_to_scan = (1, 1024)
 open_ports = scan_ports(target_host, port_range_to_scan)
 print(f"Open ports: {open_ports}")
-Summary: This script automates network port scanning to identify open ports on a target machine.
+```
+<h2> Summary: </h2>
+This script automates network port scanning to identify open ports on a target machine.
 
-27. File System Cleanup Script
+<h1> 27. File System Cleanup Script </h1>
 
-Description: Automate the cleanup of files or directories based on certain criteria like age or size.
+<h2> Description: </h2>
+Automate the cleanup of files or directories based on certain criteria like age or size.
 
-python
-Copy code
+```
 import os
 import time
 
@@ -676,9 +688,11 @@ def cleanup_directory(directory, max_age_in_seconds):
 directory_to_clean = "/path/to/cleanup"
 max_age_seconds = 30 * 24 * 60 * 60  # 30 days
 cleanup_directory(directory_to_clean, max_age_seconds)
-Summary: This script automates the cleanup of files or directories older than a specified age.
+```
+<h2> Summary: </h2>
+This script automates the cleanup of files or directories older than a specified age.
 
-28. SSL Certificate Expiry Checker Script
+<h1> 28. SSL Certificate Expiry Checker Script </h1>
 
 Description: Automate the checking of SSL certificate expiry dates.
 
