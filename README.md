@@ -694,10 +694,10 @@ This script automates the cleanup of files or directories older than a specified
 
 <h1> 28. SSL Certificate Expiry Checker Script </h1>
 
-Description: Automate the checking of SSL certificate expiry dates.
+<h2> Description: </h2> 
+ Automate the checking of SSL certificate expiry dates.
 
-python
-Copy code
+```
 import ssl
 import socket
 import datetime
@@ -717,14 +717,16 @@ domain_to_check = "example.com"
 port_to_check = 443
 remaining_days = check_ssl_expiry(domain_to_check, port_to_check)
 print(f"Days until SSL certificate expires: {remaining_days}")
-Summary: This script automates the checking of SSL certificate expiry dates for a specified domain.
+```
+<h2> Summary: </h2>
+This script automates the checking of SSL certificate expiry dates for a specified domain.
 
-29. Security Patch Checker Script
+<h1> 29. Security Patch Checker Script </h1>
 
-Description: Automate the checking of available security patches for the system.
+<h2> Description: </h2>
+Automate the checking of available security patches for the system.
 
-python
-Copy code
+```
 import os
 import subprocess
 
@@ -740,14 +742,16 @@ def check_security_patches():
 available_security_patches = check_security_patches()
 print("Available security patches:")
 print(available_security_patches)
-Summary: This script automates the checking of available security patches for the system.
+```
+<h2> Summary: </h2>
+This script automates the checking of available security patches for the system.
 
-30. Centralized Log Aggregator Script
+<h1> 30. Centralized Log Aggregator Script </h1>
 
-Description: Automate the aggregation of logs from multiple servers to a central location.
+<h2> Description: </h2>
+Automate the aggregation of logs from multiple servers to a central location.
 
-python
-Copy code
+```
 import socketserver
 import logging
 
@@ -767,24 +771,19 @@ if __name__ == '__main__':
 
 # Usage
 # Forward logs from other servers to this script (usually via syslog)
-Summary: This script automates the aggregation of logs from multiple servers to a central log file.
+```
+<h2> Summary: </h2>
+This script automates the aggregation of logs from multiple servers to a central log file.
 
 These Python scripts extend the automation capabilities for system administrators and cover tasks such as network port scanning, file system cleanup, SSL certificate expiry checks, security patch checks, and centralized log aggregation.
-
-
-
-
-User
-give me examples
-ChatGPT
 Here are more examples of Python scripts for automating tasks as a system administrator:
 
-31. User Account Management Script
+<h1> 31. User Account Management Script </h1>
 
-Description: Automate user account management tasks, such as creating, updating, and deleting user accounts on a Linux system.
+<h2> Description: </h2>
+Automate user account management tasks, such as creating, updating, and deleting user accounts on a Linux system.
 
-python
-Copy code
+```
 import subprocess
 
 # User Account Management Script
@@ -801,14 +800,16 @@ new_user = 'john_doe'
 new_password = 'secure_password'
 create_user(new_user, new_password)
 delete_user(new_user)
-Summary: This script automates the creation and deletion of user accounts on a Linux system.
+```
+<h2> Summary: </h2>
+This script automates the creation and deletion of user accounts on a Linux system.
 
-32. Remote System Information Retrieval Script
+<h1> 32. Remote System Information Retrieval Script </h1>
 
-Description: Automate the retrieval of system information from remote servers, such as OS version, available RAM, and disk space.
+<h2> Description: </h2>
+Automate the retrieval of system information from remote servers, such as OS version, available RAM, and disk space.
 
-python
-Copy code
+```
 import paramiko
 
 # Remote System Information Retrieval Script
@@ -842,14 +843,16 @@ os_info, ram_info, disk_info = get_system_info(remote_host, remote_username, pri
 print("Operating System Info:", os_info)
 print("RAM Info:", ram_info)
 print("Disk Info:", disk_info)
-Summary: This script automates the retrieval of system information from a remote server.
+```
+<h2> Summary: </h2>
+This script automates the retrieval of system information from a remote server.
 
-33. Automated Backup Script
+<h1> 33. Automated Backup Script </h1>
 
-Description: Automate the process of creating backups for specific directories.
+<h2> Description: </h2>
+ Automate the process of creating backups for specific directories.
 
-python
-Copy code
+```
 import shutil
 import tarfile
 import datetime
@@ -871,14 +874,16 @@ source_dir = '/path/to/source_directory'
 backup_dir = '/path/to/backup_directory'
 backup_file = create_backup(source_dir, backup_dir)
 print("Backup created:", backup_file)
-Summary: This script automates the creation of backups for a specified directory.
+```
+<h2> Summary: </h2>
+This script automates the creation of backups for a specified directory.
 
-34. Configuration File Management Script
+<h1> 34. Configuration File Management Script </h1>
 
-Description: Automate the management of configuration files, such as editing, backup, and restoration.
+<h2> Description: </h2>
+Automate the management of configuration files, such as editing, backup, and restoration.
 
-python
-Copy code
+```
 import shutil
 
 # Configuration File Management Script
@@ -931,24 +936,19 @@ private_key_path = '/path/to/your/private/key'
 service_name_to_check = 'apache2'  # Change to the desired service name
 service_status = check_service_status(remote_host, remote_username, private_key_path, service_name_to_check)
 print(f"Service {service_name_to_check} is {service_status}")
-Summary: This script automates checking the status of a service on a remote server.
+```
+<h2> Summary: </h2>
+This script automates checking the status of a service on a remote server.
 
 These Python scripts can help system administrators streamline various tasks, from user account management and remote system information retrieval to automated backups, configuration file management, and service status checks.
-
-
-
-
-User
-give me examples
-ChatGPT
 Certainly, here are more examples of Python scripts for automating tasks as a system administrator:
 
-36. Log File Analysis Script
+<h1> 36. Log File Analysis Script </h1>
 
-Description: Automate the analysis of log files, such as identifying critical events, errors, or unusual patterns in the log data.
+<h2> Description: </h2>
+ Automate the analysis of log files, such as identifying critical events, errors, or unusual patterns in the log data.
 
-python
-Copy code
+```
 # Log File Analysis Script
 
 def analyze_log_file(log_file_path):
@@ -966,14 +966,16 @@ log_path = '/var/log/system.log'
 critical_events = analyze_log_file(log_path)
 for event in critical_events:
     print("Critical Event:", event)
-Summary: This script automates the analysis of log files to identify critical events or errors.
+```
+<h2> Summary: </h2>
+This script automates the analysis of log files to identify critical events or errors.
 
-37. Package Update Script
+<h1> 37. Package Update Script </h1>
 
-Description: Automate the process of checking for and updating installed packages or software.
+<h2> Description: </h2>
+Automate the process of checking for and updating installed packages or software.
 
-python
-Copy code
+```
 import subprocess
 
 # Package Update Script
@@ -1008,14 +1010,16 @@ disk_path = '/'
 threshold_percentage = 90  # Adjust as needed
 result = check_disk_space(disk_path, threshold_percentage)
 print(result)
-Summary: This script automates disk space monitoring and alerts when usage exceeds a specified threshold.
+```
+<h2> Summary: </h2>
+This script automates disk space monitoring and alerts when usage exceeds a specified threshold.
 
-39. Scheduled Backup Script
+<h1> 39. Scheduled Backup Script </h1>
 
-Description: Automate the creation of scheduled backups for specific directories and databases.
+<h2> Description: </h2>
+Automate the creation of scheduled backups for specific directories and databases.
 
-python
-Copy code
+```
 import subprocess
 import datetime
 
@@ -1036,14 +1040,16 @@ source_dir = '/path/to/source_directory'
 backup_dir = '/path/to/backup_directory'
 backup_file = create_backup(source_dir, backup_dir)
 print("Scheduled backup created:", backup_file)
-Summary: This script automates the creation of scheduled backups for a specified directory.
+```
+<h2> Summary: </h2>
+This script automates the creation of scheduled backups for a specified directory.
 
-40. SSH Key Rotation Script
+<h1> 40. SSH Key Rotation Script </h1>
 
-Description: Automate the rotation of SSH keys for user accounts, providing enhanced security.
+<h2> Description:</h2> 
+Automate the rotation of SSH keys for user accounts, providing enhanced security.
 
-python
-Copy code
+```
 import os
 import paramiko
 
@@ -1073,14 +1079,16 @@ user_to_rotate = 'your_username'
 private_key_path = '/path/to/your/private/key'
 new_public_key_path = '/path/to/your/new/public/key'
 rotate_ssh_key(user_to_rotate, private_key_path, new_public_key_path)
-Summary: This script automates the rotation of SSH keys for enhanced security.
+```
+<h2> Summary: </h2>
+This script automates the rotation of SSH keys for enhanced security.
 
-41. Resource Cleanup Script
+<h1> 41. Resource Cleanup Script </h1>
 
-Description: Automate the cleanup of temporary files, log files, and other resources to free up disk space.
+<h2> Description: </h2>
+Automate the cleanup of temporary files, log files, and other resources to free up disk space.
 
-python
-Copy code
+```
 import os
 
 # Resource Cleanup Script
@@ -1100,24 +1108,19 @@ cleanup_directory = '/path/to/cleanup'
 file_extension_to_delete = '.log'
 days_to_keep = 7  # Adjust as needed
 cleanup_resources(cleanup_directory, file_extension_to_delete, days_to_keep)
-Summary: This script automates the cleanup of specific file types that are older than a certain number of days.
+```
+<h2> Summary: </h2> 
+This script automates the cleanup of specific file types that are older than a certain number of days.
 
 These Python scripts cover various automation tasks commonly performed by system administrators, such as log analysis, package updates, disk space monitoring, scheduled backups, SSH key rotation, and resource cleanup.
-
-
-
-
-User
-give me examples
-ChatGPT
 Certainly, here are more examples of Python scripts for automating tasks as a system administrator:
 
-42. User Account Management Script
+<h1> 42. User Account Management Script </h1>
 
-Description: Automate the creation, modification, or deletion of user accounts on a Linux system.
+<h2> Description: </h2>
+Automate the creation, modification, or deletion of user accounts on a Linux system.
 
-python
-Copy code
+```
 import subprocess
 
 # User Account Management Script
@@ -1161,14 +1164,16 @@ def renew_ssl_certificate(domain, cert_path, key_path, output_path):
 
 # Usage
 renew_ssl_certificate('example.com', '/etc/ssl/certs/cert.pem', '/etc/ssl/private/key.pem', '/etc/ssl/fullchain.pem')
-Summary: This script automates the renewal of SSL certificates when they are close to expiration.
+```
+<h2> Summary: </h2>
+This script automates the renewal of SSL certificates when they are close to expiration.
 
-44. Firewall Rule Management Script
+<h1> 44. Firewall Rule Management Script </h1>
 
-Description: Automate the management of firewall rules, including adding, modifying, or deleting rules.
+<h2> Description: </h2>
+Automate the management of firewall rules, including adding, modifying, or deleting rules.
 
-python
-Copy code
+```
 import subprocess
 
 # Firewall Rule Management Script
@@ -1182,14 +1187,16 @@ def delete_firewall_rule(protocol, port):
 # Usage
 add_firewall_rule('tcp', 80)
 delete_firewall_rule('tcp', 8080)
-Summary: This script automates firewall rule management tasks, including adding and deleting rules.
+```
+<h2> Summary: </h2>
+This script automates firewall rule management tasks, including adding and deleting rules.
 
-45. Automated Server Monitoring Script
+<h1> 45. Automated Server Monitoring Script </h1>
 
-Description: Automate server monitoring and receive alerts when predefined conditions are met.
+<h2> Description: </h2>
+Automate server monitoring and receive alerts when predefined conditions are met.
 
-python
-Copy code
+```
 import subprocess
 import smtplib
 from email.mime.text import MIMEText
@@ -1223,14 +1230,16 @@ def send_alert_email():
 
 # Usage
 monitor_server()
-Summary: This script automates server monitoring and sends alert emails when predefined conditions are met.
+```
+<h2> Summary: </h2>
+This script automates server monitoring and sends alert emails when predefined conditions are met.
 
-46. Automated Backup Verification Script
+<h1> 46. Automated Backup Verification Script </h1>
 
-Description: Automate the verification of backups to ensure data integrity.
+<h2> Description: </h2>
+Automate the verification of backups to ensure data integrity.
 
-python
-Copy code
+```
 import subprocess
 
 # Automated Backup Verification Script
@@ -1242,24 +1251,19 @@ def verify_backup(backup_file, original_file):
 backup_path = '/path/to/backup/file'
 original_path = '/path/to/original/file'
 verify_backup(backup_path, original_path)
-Summary: This script automates the verification of backup files against their original counterparts.
+```
+<h2> Summary: </h2>
+This script automates the verification of backup files against their original counterparts.
 
 These Python scripts cover a wide range of automation tasks relevant to system administrators, including user account management, SSL certificate renewal, firewall rule management, server monitoring, and backup verification.
-
-
-
-
-User
-give me examples
-ChatGPT
 Certainly, here are more examples of Python scripts for automating tasks as a system administrator:
 
-47. System Information Script
+<h1> 47. System Information Script </h1>
 
-Description: Gather and display essential system information, such as OS version, CPU, RAM, and disk space.
+<h2> Description: </h2>
+Gather and display essential system information, such as OS version, CPU, RAM, and disk space.
 
-python
-Copy code
+```
 import platform
 import os
 
@@ -1282,14 +1286,16 @@ def display_system_info(info):
 # Usage
 system_info = get_system_info()
 display_system_info(system_info)
-Summary: This script gathers and displays essential system information, making it useful for system administrators.
+```
+<h2> Summary: </h2>
+This script gathers and displays essential system information, making it useful for system administrators.
 
-48. Log Rotation Script
+<h1> 48. Log Rotation Script </h1>
 
-Description: Automate log rotation to manage log files efficiently.
+<h2> Description: </h2>
+Automate log rotation to manage log files efficiently.
 
-python
-Copy code
+```
 import subprocess
 
 # Log Rotation Script
@@ -1306,14 +1312,16 @@ def cleanup_old_logs(log_directory, max_log_count):
 
 # Usage
 rotate_logs('/var/log/myapp/', 5)
-Summary: This script automates log rotation and cleanup, ensuring that log files do not consume excessive disk space.
+```
+<h2> Summary:</h2> 
+This script automates log rotation and cleanup, ensuring that log files do not consume excessive disk space.
 
-49. Disk Space Monitoring Script
+<h1> 49. Disk Space Monitoring Script </h1>
 
-Description: Continuously monitor disk space usage and receive alerts when it reaches a critical level.
+<h2> Description: </h2>
+Continuously monitor disk space usage and receive alerts when it reaches a critical level.
 
-python
-Copy code
+```
 import subprocess
 import smtplib
 from email.mime.text import MIMEText
@@ -1346,14 +1354,16 @@ def send_alert_email():
 
 # Usage
 monitor_disk_space()
-Summary: This script continuously monitors disk space usage and sends alert emails when it reaches a critical level.
+```
+<h2> Summary: </h2>
+This script continuously monitors disk space usage and sends alert emails when it reaches a critical level.
 
-50. SSH Key Deployment Script
+<h1> 50. SSH Key Deployment Script </h1>
 
-Description: Automate the deployment of SSH keys to multiple servers.
+<h2> Description: </h2>
+ Automate the deployment of SSH keys to multiple servers.
 
-python
-Copy code
+```
 import subprocess
 
 # SSH Key Deployment Script
@@ -1363,14 +1373,16 @@ def deploy_ssh_key(username, server, ssh_key_path):
 
 # Usage
 deploy_ssh_key('user', 'server.example.com', '/path/to/ssh/key')
-Summary: This script automates the deployment of SSH keys to multiple servers, simplifying the process of SSH key management.
+```
+<h2> Summary: </h2>
+This script automates the deployment of SSH keys to multiple servers, simplifying the process of SSH key management.
 
-51. Network Service Monitoring Script
+<h1> 51. Network Service Monitoring Script </h1>
 
-Description: Continuously monitor network services (e.g., HTTP, SSH) and send alerts if they become unavailable.
+<h2> Description: </h2>
+Continuously monitor network services (e.g., HTTP, SSH) and send alerts if they become unavailable.
 
-python
-Copy code
+```
 import socket
 import smtplib
 from email.mime.text import MIMEText
@@ -1405,7 +1417,9 @@ def send_alert_email(service, host, port):
 
 # Usage
 monitor_service('SSH', 'server.example.com', 22)
-Summary: This script continuously monitors network services and sends alert emails if they become unavailable.
+```
+<h2> Summary: </h2>
+This script continuously monitors network services and sends alert emails if they become unavailable.
 
 These Python scripts cover a wide range of automation tasks relevant to system administrators, including system information retrieval, log rotation, disk space monitoring, SSH key deployment, and network service monitoring.
 
