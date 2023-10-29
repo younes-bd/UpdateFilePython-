@@ -2420,8 +2420,7 @@ This script uses the nmap library to scan a target for vulnerabilities and lists
 <h2> Description: </h2>
 Create a script to validate system configurations against predefined security policies.
 
-python
-Copy code
+```
 import subprocess
 
 # Security Policy Checker Script
@@ -2438,24 +2437,19 @@ def check_security_policy_compliance(policy_file):
 # Usage
 security_policy = "policy.rules"
 check_security_policy_compliance(security_policy)
-Summary: This script checks the system's configuration against a predefined security policy and generates a compliance report.
+```
+<h2> Summary:</h2> 
+This script checks the system's configuration against a predefined security policy and generates a compliance report.
 
 These Python scripts can assist cybersecurity analysts in automating tasks related to network scanning, log analysis, vulnerability scanning, and security policy compliance checks.
-
-
-
-
-User
-give me examples
-ChatGPT
 Certainly, here are more examples of Python scripts for automating tasks as a cybersecurity analyst:
 
-85. Incident Response Automation Script
+<h1> 85. Incident Response Automation Script </h1>
 
-Description: Create a script to automate incident response tasks, such as isolating a compromised host from the network and collecting forensic data.
+<h2> Description: </h2>
+Create a script to automate incident response tasks, such as isolating a compromised host from the network and collecting forensic data.
 
-python
-Copy code
+```
 import subprocess
 
 # Incident Response Automation Script
@@ -2478,14 +2472,17 @@ def collect_forensic_data(host_ip):
 compromised_host = "192.168.1.10"
 isolate_host(compromised_host)
 collect_forensic_data(compromised_host)
-Summary: This script automates incident response actions by isolating a compromised host from the network and capturing forensic data.
+```
+<h2> Summary: </h2>
+This script automates incident response actions by isolating a compromised host from the network and capturing forensic data.
 
-86. File Integrity Monitoring Script
 
-Description: Create a script to monitor file integrity by calculating and comparing hashes of critical files.
+<h1> 86. File Integrity Monitoring Script </h1>
 
-python
-Copy code
+<h2> Description: </h2>
+Create a script to monitor file integrity by calculating and comparing hashes of critical files.
+
+```
 import hashlib
 
 # File Integrity Monitoring Script
@@ -2511,14 +2508,16 @@ def check_file_integrity(file_path, expected_hash):
 critical_file = "important.doc"
 expected_hash = "2a81071d6a00d2b505ee111a7a243db2cd91f42c26a1705b063db6a1d34310232"
 check_file_integrity(critical_file, expected_hash)
-Summary: This script calculates the hash of a critical file and compares it to an expected hash to monitor file integrity.
+```
+<h2> Summary: </h2>
+This script calculates the hash of a critical file and compares it to an expected hash to monitor file integrity.
 
-87. Threat Intelligence Feed Script
+<h1> 87. Threat Intelligence Feed Script </h1>
 
-Description: Create a script to fetch and process threat intelligence feeds for IP addresses and domains.
+<h2> Description: </h2>
+Create a script to fetch and process threat intelligence feeds for IP addresses and domains.
 
-python
-Copy code
+```
 import requests
 
 # Threat Intelligence Feed Script
@@ -2550,24 +2549,20 @@ def analyze_threat(ip_or_domain):
 threat_feed_url = "https://example.com/threat_feed.txt"
 threat_data = fetch_threat_feed(threat_feed_url)
 process_threat_feed(threat_data)
-Summary: This script fetches threat intelligence feeds, processes the data, and analyzes potential threats based on IP addresses and domains.
+```
+<h2> Summary: </h2>
+This script fetches threat intelligence feeds, processes the data, and analyzes potential threats based on IP addresses and domains.
 
 These Python scripts can help automate tasks related to incident response, file integrity monitoring, and threat intelligence feed processing, making the work of a cybersecurity analyst more efficient.
 
-
-
-
-User
-give me examples
-ChatGPT
 Of course, here are more examples of Python scripts for a cybersecurity analyst:
 
-88. Vulnerability Scanner Script
+<h1> 88. Vulnerability Scanner Script </h1>
 
-Description: Create a script to automate vulnerability scanning of a target system using a tool like Nessus.
+<h2> Description: </h2>
+Create a script to automate vulnerability scanning of a target system using a tool like Nessus.
 
-python
-Copy code
+```
 import os
 
 # Vulnerability Scanner Script
@@ -2584,14 +2579,17 @@ def run_vulnerability_scan(target_ip, output_file):
 target_system = "192.168.1.100"
 output_report = "vulnerability_report.pdf"
 run_vulnerability_scan(target_system, output_report)
-Summary: This script automates the execution of a vulnerability scan on a target system using Nessus.
+```
+<h2> Summary: </h2>
+This script automates the execution of a vulnerability scan on a target system using Nessus.
 
-89. Log Analysis Script
 
-Description: Create a script to parse and analyze log files for suspicious activities.
+<h1> 89. Log Analysis Script </h1>
 
-python
-Copy code
+<h2> Description: </h2> 
+Create a script to parse and analyze log files for suspicious activities.
+
+```
 # Log Analysis Script
 
 def analyze_logs(log_file):
@@ -2607,14 +2605,16 @@ def analyze_logs(log_file):
 # Usage
 log_file_path = "/var/log/app.log"
 analyze_logs(log_file_path)
-Summary: This script parses log files and identifies errors or other suspicious activities.
+```
+<h2> Summary: </h2>
+This script parses log files and identifies errors or other suspicious activities.
 
-90. Password Policy Checker Script
+<h1> 90. Password Policy Checker Script </h1>
 
-Description: Create a script to check the compliance of user passwords with security policies.
+<h2> Description: </h2>
+Create a script to check the compliance of user passwords with security policies.
 
-python
-Copy code
+```
 # Password Policy Checker Script
 
 def check_password_policy(password):
@@ -2633,14 +2633,17 @@ def check_password_policy(password):
 user_password = "SecureP@ssw0rd"
 policy_result = check_password_policy(user_password)
 print(policy_result)
-Summary: This script checks if a user's password complies with security policy requirements.
+```
+<h2> Summary: </h2>
+This script checks if a user's password complies with security policy requirements.
 
-91. Certificate Expiry Checker Script
 
-Description: Create a script to check the expiration dates of SSL certificates.
+<h1> 91. Certificate Expiry Checker Script </h1>
 
-python
-Copy code
+<h2> Description: </h2>
+Create a script to check the expiration dates of SSL certificates.
+
+```
 import ssl
 import datetime
 
@@ -2667,24 +2670,20 @@ port = 443
 expiry_date = check_certificate_expiry(target_host, port)
 if expiry_date:
     print(f"The SSL certificate expires on: {expiry_date}")
-Summary: This script checks the expiration date of an SSL certificate for a given hostname and port.
+```
+<h2> Summary: </h2>
+This script checks the expiration date of an SSL certificate for a given hostname and port.
 
 These Python scripts can assist cybersecurity analysts in automating tasks such as vulnerability scanning, log analysis, password policy checking, and certificate expiry checks, streamlining their work.
 
-
-
-
-User
-give me examples
-ChatGPT
 Certainly, here are more examples of Python scripts for a cybersecurity analyst:
 
-92. Network Port Scanner Script
+<h1> 92. Network Port Scanner Script </h1>
 
-Description: Create a script to scan open ports on a target system using the socket library.
+<h2> Description: </h2>
+Create a script to scan open ports on a target system using the socket library.
 
-python
-Copy code
+```
 import socket
 
 # Network Port Scanner Script
@@ -2705,14 +2704,16 @@ target_system = "192.168.1.100"
 common_ports = [20, 21, 22, 80, 443, 8080]
 open_ports = scan_ports(target_system, common_ports)
 print(f"Open ports on {target_system}: {open_ports}")
-Summary: This script scans a range of ports on a target system to identify open ports.
+```
+<h2> Summary: </h2>
+This script scans a range of ports on a target system to identify open ports.
 
-93. Threat Feed Integration Script
+<h1> 93. Threat Feed Integration Script </h1>
 
-Description: Create a script that integrates with threat intelligence feeds to check if a given IP address or domain is associated with known threats.
+<h2> Description: </h2> 
+Create a script that integrates with threat intelligence feeds to check if a given IP address or domain is associated with known threats.
 
-python
-Copy code
+```
 import requests
 
 # Threat Feed Integration Script
@@ -2735,9 +2736,11 @@ def check_threat_feed(ip_or_domain):
 target_ip_or_domain = "example.com"
 threat_status = check_threat_feed(target_ip_or_domain)
 print(threat_status)
-Summary: This script queries a threat feed API to check if a given IP address or domain is associated with known threats.
+```
+<h2> Summary: </h2>
+This script queries a threat feed API to check if a given IP address or domain is associated with known threats.
 
-94. Network Traffic Capture Script
+<h1> 94. Network Traffic Capture Script </h1>
 
 Description: Create a script to capture network traffic using a tool like tcpdump and analyze it.
 
