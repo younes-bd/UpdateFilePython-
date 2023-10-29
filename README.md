@@ -396,7 +396,7 @@ subprocess.run(["rm", "-rf", "/tmp/*"])
 # Clear log files
 subprocess.run(["rm", "/var/log/*.log"])
 ```
-<h2>vSummary: </h2>
+<h2> Summary: </h2>
 This script automates routine system cleanup tasks to free up disk space and maintain system performance.
 
 These Python scripts are valuable tools for system administrators, helping to streamline various tasks, including backups, log management, filesystem checks, email notifications, and system cleanup.
@@ -442,7 +442,7 @@ allow_port("80")
 <h2> Summary: </h2>
 This script automates the process of adding and removing firewall rules, enhancing network security.
 
-<h2> 18. Log File Monitoring Script </h2>
+<h1> 18. Log File Monitoring Script </h1>
 
 <h2> Description: </h2>
 Automate log file monitoring for specific events or errors.
@@ -1425,20 +1425,14 @@ This script continuously monitors network services and sends alert emails if the
 
 These Python scripts cover a wide range of automation tasks relevant to system administrators, including system information retrieval, log rotation, disk space monitoring, SSH key deployment, and network service monitoring.
 
-
-
-
-User
-give me examples
-ChatGPT
 Certainly, here are more examples of Python scripts for automation tasks relevant to system administrators:
 
-52. Scheduled Backup Script
+<h1> 52. Scheduled Backup Script </h1>
 
-Description: Create a script to automate scheduled backups of critical files and directories.
+<h2> Description: </h2>
+Create a script to automate scheduled backups of critical files and directories.
 
-python
-Copy code
+```
 import shutil
 import datetime
 
@@ -1457,14 +1451,16 @@ def backup_files(source_dir, backup_dir):
 
 # Usage
 backup_files('/path/to/source', '/path/to/backup')
-Summary: This script automates the backup of files and directories to a specified backup location, creating a new backup folder for each backup.
+```
+<h2> Summary: </h2>
+This script automates the backup of files and directories to a specified backup location, creating a new backup folder for each backup.
 
-53. User Account Management Script
+<h1> 53. User Account Management Script </h1>
 
-Description: Automate user account management tasks, such as creating, modifying, or deleting user accounts.
+<h2> Description: </h2>
+Automate user account management tasks, such as creating, modifying, or deleting user accounts.
 
-python
-Copy code
+```
 import subprocess
 
 # User Account Management Script
@@ -1485,14 +1481,16 @@ def delete_user(username):
 create_user('newuser')
 change_password('existinguser', 'newpassword')
 delete_user('olduser')
-Summary: This script simplifies user account management tasks, such as user creation, password changes, and user deletion.
+```
+<h2> Summary: </h2>
+This script simplifies user account management tasks, such as user creation, password changes, and user deletion.
 
-54. Monitoring Script with Alerts
+<h1> 54. Monitoring Script with Alerts </h1>
 
-Description: Create a script to monitor server health and send alerts if critical conditions are met.
+<h2> Description: </h2>
+Create a script to monitor server health and send alerts if critical conditions are met.
 
-python
-Copy code
+```
 import psutil
 import smtplib
 from email.mime.text import MIMEText
@@ -1525,14 +1523,16 @@ def send_alert(cpu_usage, memory_usage):
 
 # Usage
 monitor_server()
-Summary: This script monitors server health, specifically CPU and memory usage, and sends an alert email if usage exceeds a certain threshold.
+```
+<h2> Summary: </h2>
+This script monitors server health, specifically CPU and memory usage, and sends an alert email if usage exceeds a certain threshold.
 
-55. Configuration Management Script
+<h1> 55. Configuration Management Script </h1>
 
-Description: Automate configuration management tasks, such as deploying and maintaining configuration files across multiple servers.
+<h2> Description: </h2>
+Automate configuration management tasks, such as deploying and maintaining configuration files across multiple servers.
 
-python
-Copy code
+```
 import paramiko
 
 # Configuration Management Script
@@ -1553,14 +1553,16 @@ def deploy_config(server, username, password, local_file, remote_file):
 
 # Usage
 deploy_config('server.example.com', 'user', 'password', 'local.conf', 'remote.conf')
-Summary: This script uses SSH to deploy a local configuration file to a remote server, simplifying configuration management tasks.
+```
+<h2> Summary: </h2>
+This script uses SSH to deploy a local configuration file to a remote server, simplifying configuration management tasks.
 
-56. Centralized Log Collection Script
+<h1> 56. Centralized Log Collection Script </h1>
 
-Description: Create a script to collect and centralize logs from multiple servers to a central log server.
+<h2> Description: </h2>
+Create a script to collect and centralize logs from multiple servers to a central log server.
 
-python
-Copy code
+```
 import socket
 import syslog
 
@@ -1581,24 +1583,19 @@ log_servers = ['logserver1.example.com', 'logserver2.example.com']
 log_port = 514
 log_sources = ['appserver1.example.com', 'appserver2.example.com']
 collect_and_forward_logs(log_servers[0], log_port, log_sources)
-Summary: This script collects and forwards logs from various sources to a central log server, simplifying centralized log collection.
+```
+<h2> Summary: </h2>
+This script collects and forwards logs from various sources to a central log server, simplifying centralized log collection.
 
 These Python scripts address a variety of automation needs for system administrators, including scheduled backups, user account management, server monitoring with alerts, configuration management, and centralized log collection.
-
-
-
-
-User
-give me examples
-ChatGPT
 Of course, here are more examples of Python scripts for automating common system administrator tasks:
 
-57. Disk Space Monitoring and Alerting Script
+<h1> 57. Disk Space Monitoring and Alerting Script </h1>
 
-Description: Create a script to monitor disk space usage and send alerts when it exceeds a specified threshold.
+<h2> Description: </h2>
+Create a script to monitor disk space usage and send alerts when it exceeds a specified threshold.
 
-python
-Copy code
+```
 import psutil
 import smtplib
 from email.mime.text import MIMEText
@@ -1631,14 +1628,16 @@ def send_alert(path, free_gb, threshold_gb):
 
 # Usage
 monitor_disk_space('/', 5)  # Monitor the root directory and send an alert if free space is less than 5 GB
-Summary: This script monitors the free disk space of a specified directory and sends an email alert if it falls below a given threshold.
+```
+<h2> Summary: </h2>
+This script monitors the free disk space of a specified directory and sends an email alert if it falls below a given threshold.
 
-58. Network Configuration Backup Script
+<h1> 58. Network Configuration Backup Script </h1>
 
-Description: Automate the backup of network device configurations using the Paramiko library.
+<h2> Description: </h2>
+Automate the backup of network device configurations using the Paramiko library.
 
-python
-Copy code
+```
 import paramiko
 import os
 
@@ -1670,14 +1669,16 @@ def save_backup(output, save_path):
 
 # Usage
 backup_network_device_config('192.168.1.1', 'admin', 'admin_password', 'enable_password', 'router_backup.txt')
-Summary: This script connects to a network device via SSH, retrieves its configuration, and saves it to a specified file.
+```
+<h2> Summary: </h2>
+This script connects to a network device via SSH, retrieves its configuration, and saves it to a specified file.
 
-59. Remote Server Reboot Script
+<h1> 59. Remote Server Reboot Script </h1>
 
-Description: Create a script to reboot a remote server using SSH.
+<h2> Description: </h2>
+Create a script to reboot a remote server using SSH.
 
-python
-Copy code
+```
 import paramiko
 
 # Remote Server Reboot Script
@@ -1694,14 +1695,16 @@ def reboot_remote_server(host, username, password):
 
 # Usage
 reboot_remote_server('remote_server.example.com', 'admin', 'password')
-Summary: This script uses SSH to connect to a remote server and initiates a reboot.
+```
+<h2> Summary: </h2>
+This script uses SSH to connect to a remote server and initiates a reboot.
 
-60. Log Analysis Script
+<h1> 60. Log Analysis Script </h1>
 
-Description: Create a script to parse and analyze log files for specific patterns or issues.
+<h2> Description: </h2>
+Create a script to parse and analyze log files for specific patterns or issues.
 
-python
-Copy code
+```
 # Log Analysis Script
 
 def analyze_log_file(log_file, keyword):
@@ -1715,24 +1718,20 @@ def analyze_log_file(log_file, keyword):
 
 # Usage
 analyze_log_file('/var/log/syslog', 'error')
-Summary: This script reads a log file and searches for a specific keyword, helping identify potential issues.
+```
+<h2> Summary: </h2>
+This script reads a log file and searches for a specific keyword, helping identify potential issues.
 
 These Python scripts demonstrate automating tasks such as disk space monitoring and alerting, network configuration backups, remote server reboots, and log analysis.
 
-
-
-
-User
-give me examples
-ChatGPT
 Certainly, here are more examples of Python scripts for automating various system administrator tasks:
 
-61. Service Status Monitoring Script
+<h1> 61. Service Status Monitoring Script </h1>
 
-Description: Create a script to check the status of a service (e.g., a web server) and restart it if it's not running.
+<h2> Description: </h2>
+Create a script to check the status of a service (e.g., a web server) and restart it if it's not running.
 
-python
-Copy code
+```
 import subprocess
 
 # Service Status Monitoring Script
@@ -1748,14 +1747,16 @@ def monitor_and_restart_service(service_name):
 
 # Usage
 monitor_and_restart_service('apache2')  # Monitor and restart Apache web server if not active
-Summary: This script checks the status of a service and restarts it if it's not active.
+```
+<h2> Summary: </h2>
+This script checks the status of a service and restarts it if it's not active.
 
-62. User Account Management Script
+<h1> 62. User Account Management Script </h1>
 
-Description: Create a script to automate user account management tasks, such as creating or deleting user accounts.
+<h2> Description: </h2>
+Create a script to automate user account management tasks, such as creating or deleting user accounts.
 
-python
-Copy code
+```
 import subprocess
 
 # User Account Management Script
@@ -1778,14 +1779,16 @@ def delete_user(username):
 # Usage
 create_user('newuser', 'password123')  # Create a new user
 delete_user('olduser')  # Delete an existing user
-Summary: This script allows for creating or deleting user accounts.
+```
+<h2> Summary: </h2>
+This script allows for creating or deleting user accounts.
 
-63. Firewall Rule Management Script
+<h1> 63. Firewall Rule Management Script </h1>
 
-Description: Create a script to manage firewall rules, such as adding or removing rules.
+<h2> Description: </h2>
+Create a script to manage firewall rules, such as adding or removing rules.
 
-python
-Copy code
+```
 import subprocess
 
 # Firewall Rule Management Script
@@ -1807,7 +1810,9 @@ def remove_firewall_rule(port):
 # Usage
 add_firewall_rule(8080)  # Add a firewall rule to allow traffic on port 8080
 remove_firewall_rule(22)  # Remove the rule allowing SSH traffic on port 22
-Summary: This script can add or remove firewall rules to control incoming and outgoing network traffic.
+```
+<h2> Summary: </h2>
+This script can add or remove firewall rules to control incoming and outgoing network traffic.
 
 64. System Updates and Patch Management Script
 
