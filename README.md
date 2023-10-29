@@ -2288,10 +2288,10 @@ This script checks the expiration date of an SSL certificate for a specified web
 
 <h1> 79. Security Policy Compliance Checker Script </h1>
 
-Description: Create a script to verify system configurations against security policies.
+<h2> Description: </h2>
+Create a script to verify system configurations against security policies.
 
-python
-Copy code
+```
 import subprocess
 
 # Security Policy Compliance Checker Script
@@ -2329,24 +2329,19 @@ def apply_security_patches():
 
 # Usage
 apply_security_patches()
-Summary: This script updates the package lists and applies security patches to the system using the apt package manager.
+```
+<h2> Summary: </h2>
+This script updates the package lists and applies security patches to the system using the apt package manager.
 
 These Python scripts can assist cybersecurity analysts in automating tasks related to intrusion detection, SSL certificate monitoring, security policy compliance checks, and patch management.
-
-
-
-
-User
-give me examples
-ChatGPT
 Certainly, here are more examples of Python scripts for automating tasks as a cybersecurity analyst:
 
-81. Network Scanning Script
+<h1> 81. Network Scanning Script </h1>
 
-Description: Create a script to perform network scanning using the Python nmap library.
+<h2> Description: </h2>
+Create a script to perform network scanning using the Python nmap library.
 
-python
-Copy code
+```
 import nmap
 
 # Network Scanning Script
@@ -2363,14 +2358,16 @@ def scan_target(target):
 # Usage
 target_ip = "192.168.1.1"
 scan_target(target_ip)
-Summary: This script performs a fast network scan on a specified target IP address using the nmap library in Python.
+```
+<h2> Summary: </h2>
+This script performs a fast network scan on a specified target IP address using the nmap library in Python.
 
-82. Log Analysis Script
+<h1> 82. Log Analysis Script </h1>
 
-Description: Create a script to analyze log files for unusual patterns or security events.
+<h2> Description: </h2>
+Create a script to analyze log files for unusual patterns or security events.
 
-python
-Copy code
+```
 # Log Analysis Script
 
 def analyze_logs(log_file):
@@ -2387,14 +2384,16 @@ def alert_security(event):
 # Usage
 log_file_to_analyze = "security.log"
 analyze_logs(log_file_to_analyze)
-Summary: This script reads log files, checks for unusual patterns, and triggers security alerts.
+```
+<h2> Summary: </h2>
+This script reads log files, checks for unusual patterns, and triggers security alerts.
 
-83. Vulnerability Scanning Script
+<h1> 83. Vulnerability Scanning Script </h1>
 
-Description: Create a script to scan a server for vulnerabilities using the nmap library.
+<h2> Description: </h2>
+Create a script to scan a server for vulnerabilities using the nmap library.
 
-python
-Copy code
+```
 import nmap
 
 # Vulnerability Scanning Script
@@ -2412,11 +2411,14 @@ def scan_vulnerabilities(target):
 # Usage
 target_ip = "192.168.1.1"
 scan_vulnerabilities(target_ip)
-Summary: This script uses the nmap library to scan a target for vulnerabilities and lists the scripts and their outputs.
+```
+<h2> Summary: </h2>
+This script uses the nmap library to scan a target for vulnerabilities and lists the scripts and their outputs.
 
-84. Security Policy Checker Script
+<h1> 84. Security Policy Checker Script </h1>
 
-Description: Create a script to validate system configurations against predefined security policies.
+<h2> Description: </h2>
+Create a script to validate system configurations against predefined security policies.
 
 python
 Copy code
