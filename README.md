@@ -1814,12 +1814,12 @@ remove_firewall_rule(22)  # Remove the rule allowing SSH traffic on port 22
 <h2> Summary: </h2>
 This script can add or remove firewall rules to control incoming and outgoing network traffic.
 
-64. System Updates and Patch Management Script
+<h1> 64. System Updates and Patch Management Script </h1>
 
-Description: Create a script to automate system updates and patch management.
+<h2> Description: </h2>
+Create a script to automate system updates and patch management.
 
-python
-Copy code
+```
 import subprocess
 
 # System Updates and Patch Management Script
@@ -1834,24 +1834,20 @@ def update_system():
 
 # Usage
 update_system()  # Update and patch the system
-Summary: This script updates the system and applies patches.
+```
+<h2> Summary: </h2>
+This script updates the system and applies patches.
 
 These Python scripts cover a range of system administration tasks, including service monitoring, user account management, firewall rule management, and system updates.
-
-
-
-
-User
-give me examples
-ChatGPT
 Of course, here are more examples of Python scripts for automating various system administrator tasks:
 
-65. Backup Script
 
-Description: Create a script to automatically backup specified files or directories to a backup location.
+<h1> 65. Backup Script </h1>
 
-python
-Copy code
+<h2> Description: </h2>
+Create a script to automatically backup specified files or directories to a backup location.
+
+```
 import shutil
 import time
 
@@ -1868,14 +1864,16 @@ def backup_files(source, destination):
 
 # Usage
 backup_files('/var/www/html', '/backup')  # Backup the web server files to a specified location
-Summary: This script creates backups of files or directories, including a timestamp in the backup folder name.
+```
+<h2> Summary: </h2>
+This script creates backups of files or directories, including a timestamp in the backup folder name.
 
-66. Log Rotation Script
+<h1> 66. Log Rotation Script </h1>
 
-Description: Create a script for log file management that compresses and archives log files when they reach a certain size.
+<h2> Description: </h2>
+Create a script for log file management that compresses and archives log files when they reach a certain size.
 
-python
-Copy code
+```
 import os
 import gzip
 
@@ -1894,14 +1892,16 @@ def rotate_log(log_file, max_size):
 
 # Usage
 rotate_log('/var/log/myapp.log', 1048576)  # Rotate log file if it exceeds 1 MB
-Summary: This script rotates log files by compressing and archiving them when they reach a specified size.
+```
+<h2> Summary: </h2>
+This script rotates log files by compressing and archiving them when they reach a specified size.
 
-67. Directory Cleanup Script
+<h1> 67. Directory Cleanup Script </h1>
 
-Description: Create a script to clean up a directory by removing files that are older than a specified number of days.
+<h2> Description: </h2>
+Create a script to clean up a directory by removing files that are older than a specified number of days.
 
-python
-Copy code
+```
 import os
 import time
 
@@ -1922,14 +1922,16 @@ def cleanup_directory(directory, days_to_keep):
 
 # Usage
 cleanup_directory('/var/log', 7)  # Remove log files older than 7 days
-Summary: This script cleans up a directory by removing files older than a specified number of days.
+```
+<h2> Summary: </h2>
+This script cleans up a directory by removing files older than a specified number of days.
 
-68. Server Monitoring Script
+<h1> 68. Server Monitoring Script </h1>
 
-Description: Create a script that monitors server resource usage (CPU, memory, disk space) and sends alerts if certain thresholds are exceeded.
+<h2> Description: </h2>
+Create a script that monitors server resource usage (CPU, memory, disk space) and sends alerts if certain thresholds are exceeded.
 
-python
-Copy code
+```
 import psutil
 import smtplib
 
@@ -1965,24 +1967,20 @@ def send_alert_email():
 
 # Usage
 monitor_server_resources()  # Monitor server resources and send alerts if thresholds are exceeded
-Summary: This script monitors server resource usage and sends email alerts if CPU, memory, or disk usage exceeds a specified threshold.
+```
+<h2> Summary: </h2>
+This script monitors server resource usage and sends email alerts if CPU, memory, or disk usage exceeds a specified threshold.
 
 These Python scripts cover a range of system administration tasks, including backups, log rotation, directory cleanup, and server resource monitoring.
-
-
-
-
-User
-give me examples
-ChatGPT
 Certainly, here are more examples of Python scripts for automating tasks as a system administrator:
 
-69. User Account Management Script
 
-Description: Create a script to manage user accounts, including adding, deleting, and listing user accounts.
+<h1> 69. User Account Management Script </h1>
 
-python
-Copy code
+<h2> Description:</h2>
+Create a script to manage user accounts, including adding, deleting, and listing user accounts.
+
+```
 import subprocess
 
 # User Account Management Script
@@ -2013,14 +2011,16 @@ def list_users():
 add_user("newuser", "password123")  # Add a new user
 delete_user("olduser")  # Delete an existing user
 list_users()  # List all user accounts
-Summary: This script allows you to add, delete, and list user accounts on a Linux system.
+```
+<h2> Summary: </h2>
+This script allows you to add, delete, and list user accounts on a Linux system.
 
-70. Software Package Updates Script
+<h1> 70. Software Package Updates Script </h1>
 
-Description: Create a script to automate software package updates on a Linux system.
+<h2> Description: </h2>
+Create a script to automate software package updates on a Linux system.
 
-python
-Copy code
+```
 import subprocess
 
 # Software Package Updates Script
@@ -2035,14 +2035,16 @@ def update_packages():
 
 # Usage
 update_packages()  # Update software packages
-Summary: This script automates the process of updating software packages on a Debian-based Linux system using the apt package manager.
+```
+<h2> Summary: </h2>
+This script automates the process of updating software packages on a Debian-based Linux system using the apt package manager.
 
-71. Server Backup Script
+<h1> 71. Server Backup Script </h1>
 
-Description: Create a script to automate the backup of critical server configuration files.
+<h2> Description: </h2>
+Create a script to automate the backup of critical server configuration files.
 
-python
-Copy code
+```
 import shutil
 import time
 
@@ -2061,14 +2063,16 @@ def backup_server_config():
 
 # Usage
 backup_server_config()  # Backup server configuration files
-Summary: This script automates the backup of critical server configuration files, such as web server and SSH configuration files.
+```
+<h2> Summary: </h2>
+This script automates the backup of critical server configuration files, such as web server and SSH configuration files.
 
-72. Automated Monitoring Alerts Script
+<h1> 72. Automated Monitoring Alerts Script </h1>
 
-Description: Create a script to monitor server logs for specific events and send alerts when those events occur.
+<h2> Description: </h2>
+Create a script to monitor server logs for specific events and send alerts when those events occur.
 
-python
-Copy code
+```
 import subprocess
 import smtplib
 
@@ -2104,24 +2108,19 @@ def send_alert_email(log_file, keyword):
 
 # Usage
 monitor_logs()  # Monitor logs for errors and send alerts if found
-Summary: This script monitors server logs for specific events and sends email alerts if the defined keyword is found.
+```
+<h2> Summary: </h2>
+This script monitors server logs for specific events and sends email alerts if the defined keyword is found.
 
 These Python scripts can help automate various system administration tasks, including user account management, software updates, server configuration backups, and log monitoring.
-
-
-
-
-User
-give me more examples like this as cybersecurity analyst.
-ChatGPT
 Certainly, here are more examples of Python scripts for automating tasks as a cybersecurity analyst:
 
-73. Network Port Scanner Script
+<h1> 73. Network Port Scanner Script </h1>
 
-Description: Create a script to scan and list open network ports on a target system.
+<h2> Description: </h2>
+Create a script to scan and list open network ports on a target system.
 
-python
-Copy code
+```
 import socket
 
 # Network Port Scanner Script
@@ -2142,14 +2141,16 @@ target_host = "example.com"
 port_range_to_scan = (1, 100)
 open_ports = scan_ports(target_host, port_range_to_scan)
 print(f"Open ports on {target_host}: {open_ports}")
-Summary: This script allows you to scan a range of network ports on a target system and list the open ports.
+```
+<h2> Summary: </h2>
+This script allows you to scan a range of network ports on a target system and list the open ports.
 
-74. Log Analysis Script
+<h1> 74. Log Analysis Script </h1>
 
-Description: Create a script to analyze log files for security-related events and generate reports.
+<h2> Description: </h2> 
+Create a script to analyze log files for security-related events and generate reports.
 
-python
-Copy code
+```
 # Log Analysis Script
 
 def analyze_logs(log_file):
@@ -2169,14 +2170,16 @@ def analyze_logs(log_file):
 # Usage
 log_file_to_analyze = "/var/log/auth.log"
 analyze_logs(log_file_to_analyze)
-Summary: This script reads a log file, extracts security-related events, and generates a report with those events.
+```
+<h2> Summary: </h2>
+This script reads a log file, extracts security-related events, and generates a report with those events.
 
-75. Automated Vulnerability Scanner Script
+<h1> 75. Automated Vulnerability Scanner Script </h1>
 
-Description: Create a script to run a vulnerability scanner on a target system and produce a vulnerability report.
+<h2> Description: </h2>
+Create a script to run a vulnerability scanner on a target system and produce a vulnerability report.
 
-python
-Copy code
+```
 import subprocess
 
 # Automated Vulnerability Scanner Script
@@ -2193,14 +2196,16 @@ def run_vulnerability_scan(target):
 # Usage
 target_to_scan = "example.com"
 run_vulnerability_scan(target_to_scan)
-Summary: This script uses the nmap tool to run a vulnerability scan on a target system and saves the results in a report.
+```
+<h2> Summary: </h2>
+This script uses the nmap tool to run a vulnerability scan on a target system and saves the results in a report.
 
-76. Password Strength Checker Script
+<h1> 76. Password Strength Checker Script </h1>
 
-Description: Create a script to check the strength of user passwords and enforce password policies.
+<h2> Description: </h2> 
+Create a script to check the strength of user passwords and enforce password policies.
 
-python
-Copy code
+```
 # Password Strength Checker Script
 
 def check_password_strength(password):
@@ -2215,24 +2220,20 @@ def check_password_strength(password):
 user_password = "SecureP@ssw0rd"
 strength = check_password_strength(user_password)
 print(f"Password strength: {strength}")
-Summary: This script checks the strength of a user's password based on length, complexity, and enforces password policies.
+```
+<h2> Summary: </h2>
+This script checks the strength of a user's password based on length, complexity, and enforces password policies.
 
 These Python scripts can assist cybersecurity analysts in automating tasks related to network port scanning, log analysis, vulnerability scanning, and password strength checking.
-
-
-
-
-User
-give me examples
-ChatGPT
 Certainly, here are more examples of Python scripts for automating tasks as a cybersecurity analyst:
 
-77. Intrusion Detection Script
 
-Description: Create a script to monitor log files for suspicious activity and trigger alerts.
+<h1> 77. Intrusion Detection Script </h1>
 
-python
-Copy code
+<h2> Description: </h2>
+Create a script to monitor log files for suspicious activity and trigger alerts.
+
+```
 import time
 
 # Intrusion Detection Script
@@ -2253,14 +2254,16 @@ def alert_security_team(event):
 # Usage
 log_file_to_monitor = "security.log"
 monitor_logs(log_file_to_monitor)
-Summary: This script continuously monitors log files for specific patterns indicating suspicious activity and alerts the security team.
+```
+<h2> Summary: </h2>
+This script continuously monitors log files for specific patterns indicating suspicious activity and alerts the security team.
 
-78. SSL Certificate Expiry Checker Script
+<h1> 78. SSL Certificate Expiry Checker Script </h1>
 
-Description: Create a script to check the expiration dates of SSL certificates on web servers.
+<h2> Description: </h2>
+Create a script to check the expiration dates of SSL certificates on web servers.
 
-python
-Copy code
+```
 import ssl
 import socket
 
@@ -2279,9 +2282,11 @@ web_domain = "example.com"
 web_port = 443
 expiry_date = check_ssl_certificate_expiry(web_domain, web_port)
 print(f"SSL certificate for {web_domain} expires on {expiry_date}.")
-Summary: This script checks the expiration date of an SSL certificate for a specified web domain.
+```
+<h2> Summary: </h2>
+This script checks the expiration date of an SSL certificate for a specified web domain.
 
-79. Security Policy Compliance Checker Script
+<h1> 79. Security Policy Compliance Checker Script </h1>
 
 Description: Create a script to verify system configurations against security policies.
 
