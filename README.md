@@ -2742,10 +2742,10 @@ This script queries a threat feed API to check if a given IP address or domain i
 
 <h1> 94. Network Traffic Capture Script </h1>
 
-Description: Create a script to capture network traffic using a tool like tcpdump and analyze it.
+<h2> Description: </h2>
+Create a script to capture network traffic using a tool like tcpdump and analyze it.
 
-python
-Copy code
+```
 import os
 
 # Network Traffic Capture Script
@@ -2763,14 +2763,16 @@ network_interface = "eth0"
 output_capture_file = "captured_traffic.pcap"
 capture_duration = 60  # Captures traffic for 60 seconds
 capture_network_traffic(network_interface, output_capture_file, capture_duration)
-Summary: This script captures network traffic on a specified interface for a duration and saves it to a capture file.
+```
+<h2> Summary: </h2>
+This script captures network traffic on a specified interface for a duration and saves it to a capture file.
 
-95. Digital Certificate Checker Script
+<h1> 95. Digital Certificate Checker Script </h1>
 
-Description: Create a script to check the validity and details of SSL certificates.
+<h2> Description: </h2>
+Create a script to check the validity and details of SSL certificates.
 
-python
-Copy code
+```
 import ssl
 import OpenSSL.crypto
 
@@ -2802,24 +2804,19 @@ target_host = "example.com"
 port = 443
 certificate_details = check_ssl_certificate(target_host, port)
 print(f"Certificate Details:\n{certificate_details}")
-Summary: This script checks the validity and details of SSL certificates for a given hostname and port.
+```
+<h2> Summary: </h2>
+This script checks the validity and details of SSL certificates for a given hostname and port.
 
 These Python scripts can be valuable tools for cybersecurity analysts to perform tasks such as network port scanning, threat feed integration, network traffic capture, and SSL certificate checking, enhancing their efficiency and capabilities.
-
-
-
-
-User
-give me examples
-ChatGPT
 Certainly, here are more examples of Python scripts for a cybersecurity analyst:
 
-96. Log Analysis Script
+<h1> 96. Log Analysis Script </h1>
 
-Description: Create a script that analyzes log files, such as Apache or Nginx access logs, to identify suspicious or malicious activities.
+<h2> Description: </h2>
+Create a script that analyzes log files, such as Apache or Nginx access logs, to identify suspicious or malicious activities.
 
-python
-Copy code
+```
 # Log Analysis Script
 
 def analyze_access_logs(log_file):
@@ -2839,14 +2836,16 @@ def analyze_access_logs(log_file):
 log_file_path = "/var/log/apache/access.log"
 suspicious_ip_addresses = analyze_access_logs(log_file_path)
 print(f"Suspicious IP addresses: {suspicious_ip_addresses}")
-Summary: This script parses access logs to identify IP addresses associated with suspicious activities, like probing for WordPress login pages.
+```
+<h2> Summary: </h2>
+This script parses access logs to identify IP addresses associated with suspicious activities, like probing for WordPress login pages.
 
-97. Password Strength Checker Script
+<h1> 97. Password Strength Checker Script </h1>
 
-Description: Create a script to check the strength of user passwords against common password policies.
+<h2> Description: </h2>
+Create a script to check the strength of user passwords against common password policies.
 
-python
-Copy code
+```
 # Password Strength Checker Script
 
 import re
@@ -2875,14 +2874,16 @@ def check_password_strength(password):
 user_password = "SecureP@ssw0rd123"
 password_strength = check_password_strength(user_password)
 print(password_strength)
-Summary: This script checks if a user's password meets specific policy requirements, such as length, character types, and special characters.
+```
+<h2> Summary: </h2>
+This script checks if a user's password meets specific policy requirements, such as length, character types, and special characters.
 
-98. Web Application Vulnerability Scanner Script
+<h1> 98. Web Application Vulnerability Scanner Script </h1>
 
-Description: Create a script to scan a web application for common vulnerabilities, such as cross-site scripting (XSS) or SQL injection.
+<h2> Description: </h2> 
+Create a script to scan a web application for common vulnerabilities, such as cross-site scripting (XSS) or SQL injection.
 
-python
-Copy code
+```
 # Web Application Vulnerability Scanner Script
 
 import requests
@@ -2908,14 +2909,16 @@ def scan_web_application(url):
 web_app_url = "https://example.com"
 vulnerabilities_found = scan_web_application(web_app_url)
 print(f"Vulnerabilities found: {vulnerabilities_found}")
-Summary: This script scans a web application for common vulnerabilities by analyzing its HTML content for potential issues.
+```
+<h2> Summary: </h2>
+This script scans a web application for common vulnerabilities by analyzing its HTML content for potential issues.
 
-99. Hash Cracker Script
+<h1> 99. Hash Cracker Script </h1>
 
-Description: Create a script to crack hashed passwords using common password dictionaries.
+<h2> Description: </h2>
+Create a script to crack hashed passwords using common password dictionaries.
 
-python
-Copy code
+```
 # Hash Cracker Script
 
 import hashlib
@@ -2931,14 +2934,16 @@ hashed_password = "5f4dcc3b5aa765d61d8327deb882cf99"  # Hash of "password"
 password_dictionary = ["password", "letmein", "admin", "123456"]
 cracked_password = crack_password_hash(hashed_password, password_dictionary)
 print(cracked_password)
-Summary: This script attempts to crack a hashed password using a list of common passwords.
+```
+<h2> Summary: </h2>
+This script attempts to crack a hashed password using a list of common passwords.
 
-100. Security Information and Event Management (SIEM) Log Aggregator Script
+<h1> 100. Security Information and Event Management (SIEM) Log Aggregator Script </h1>
 
-Description: Create a script to aggregate log data from various sources into a SIEM system for centralized monitoring and analysis.
+<h2> Description: </h2>
+Create a script to aggregate log data from various sources into a SIEM system for centralized monitoring and analysis.
 
-python
-Copy code
+```
 # SIEM Log Aggregator Script
 
 def aggregate_logs(log_sources, siem_system):
@@ -2953,24 +2958,19 @@ log_sources = ["firewall_logs", "server_logs", "network_logs"]
 siem_instance = SIEM("siem.example.com")
 result = aggregate_logs(log_sources, siem_instance)
 print(result)
-Summary: This script collects logs from various sources, such as firewalls, servers, and network devices, and sends them to a SIEM system for analysis.
+```
+<h2> Summary: </h2>
+This script collects logs from various sources, such as firewalls, servers, and network devices, and sends them to a SIEM system for analysis.
 
 These Python scripts are valuable tools for a cybersecurity analyst to perform tasks like log analysis, password strength checking, web application vulnerability scanning, password hash cracking, and log aggregation, which can enhance their capabilities in enhancing security.
-
-
-
-
-User
-give me more examples like this as SOC Analyst
-ChatGPT
 Certainly, here are more examples of Python scripts for a Security Operations Center (SOC) Analyst:
 
-101. Incident Ticketing Automation Script
+<h1> 101. Incident Ticketing Automation Script </h1>
 
-Description: Create a script to automate the generation of incident tickets for security events that require investigation.
+<h2> Description: </h2>
+Create a script to automate the generation of incident tickets for security events that require investigation.
 
-python
-Copy code
+```
 # Incident Ticketing Automation Script
 
 import requests
@@ -3009,14 +3009,16 @@ ticketing_url = 'https://ticketing.example.com/api/incidents'
 api_token = 'your-api-token'
 result = create_incident_ticket(event_info, ticketing_url, api_token)
 print(result)
-Summary: This script automates the creation of incident tickets in a ticketing system for security events requiring investigation.
+```
+<h2> Summary: </h2>
+This script automates the creation of incident tickets in a ticketing system for security events requiring investigation.
 
-102. Threat Intelligence Feed Integration Script
+<h1> 102. Threat Intelligence Feed Integration Script </h1>
 
-Description: Create a script that integrates with threat intelligence feeds to fetch and analyze the latest threat data.
+<h2> Description: </h2>
+Create a script that integrates with threat intelligence feeds to fetch and analyze the latest threat data.
 
-python
-Copy code
+```
 # Threat Intelligence Feed Integration Script
 
 import requests
@@ -3035,14 +3037,16 @@ def fetch_threat_intelligence_feed(feed_url):
 threat_feed_url = 'https://threatintel.example.com/feed'
 result = fetch_threat_intelligence_feed(threat_feed_url)
 print(result)
-Summary: This script fetches and analyzes threat intelligence data from a feed source to stay updated on the latest threats.
+```
+<h2> Summary: </h2>
+This script fetches and analyzes threat intelligence data from a feed source to stay updated on the latest threats.
 
-103. Endpoint Security Health Checker Script
+<h1> 103. Endpoint Security Health Checker Script </h1>
 
-Description: Create a script that checks the health and compliance of endpoints by querying their security status.
+<h2> Description: </h2>
+Create a script that checks the health and compliance of endpoints by querying their security status.
 
-python
-Copy code
+```
 # Endpoint Security Health Checker Script
 
 import requests
@@ -3066,14 +3070,16 @@ endpoint_url = 'https://endpoint.example.com/health'
 api_token = 'your-api-token'
 result = check_endpoint_health(endpoint_url, api_token)
 print(result)
-Summary: This script queries the security status of endpoints, enabling the SOC analyst to monitor and maintain endpoint security.
+```
+<h2> Summary: </h2>
+This script queries the security status of endpoints, enabling the SOC analyst to monitor and maintain endpoint security.
 
-104. Network Traffic Analyzer Script
+<h1> 104. Network Traffic Analyzer Script </h1>
 
-Description: Create a script that captures and analyzes network traffic to detect suspicious or unauthorized activity.
+<h2> Description: </h2> 
+Create a script that captures and analyzes network traffic to detect suspicious or unauthorized activity.
 
-python
-Copy code
+```
 # Network Traffic Analyzer Script
 
 import scapy
@@ -3125,24 +3131,19 @@ target_url = 'https://example.com'
 api_key = 'your-scanner-api-key'
 result = initiate_vulnerability_scan(target_url, api_key)
 print(result)
-Summary: This script integrates with a vulnerability scanner to initiate scans on target systems and retrieves scan results for analysis.
+```
+<h2> Summary: </h2>
+This script integrates with a vulnerability scanner to initiate scans on target systems and retrieves scan results for analysis.
 
 These Python scripts are useful for SOC analysts in automating incident ticketing, integrating threat intelligence feeds, checking endpoint security health, analyzing network traffic, and interacting with vulnerability scanners, thereby enhancing their incident response and threat analysis capabilities.
-
-
-
-
-User
-give me more examples
-ChatGPT
 Certainly, here are more examples of Python scripts for a Security Operations Center (SOC) Analyst:
 
-106. Log Analysis Script
+<h1> 106. Log Analysis Script </h1>
 
-Description: Create a script to parse and analyze log files from various sources, searching for signs of security incidents.
+<h2> Description: </h2>
+Create a script to parse and analyze log files from various sources, searching for signs of security incidents.
 
-python
-Copy code
+```
 # Log Analysis Script
 
 import re
@@ -3164,14 +3165,16 @@ log_file_path = 'security.log'
 incidents = analyze_logs(log_file_path)
 for incident in incidents:
     print(incident)
-Summary: This script parses log files, searching for predefined security incident patterns or keywords and then reports any findings.
+```
+<h2> Summary: </h2>
+This script parses log files, searching for predefined security incident patterns or keywords and then reports any findings.
 
-107. Suspicious File Detector Script
+<h1> 107. Suspicious File Detector Script </h1>
 
-Description: Create a script to scan and detect suspicious files on endpoints by comparing file hashes to known malware signatures.
+<h2> Description: </h2>
+Create a script to scan and detect suspicious files on endpoints by comparing file hashes to known malware signatures.
 
-python
-Copy code
+```
 # Suspicious File Detector Script
 
 import hashlib
@@ -3203,14 +3206,16 @@ known_malware_signatures = ['hash1', 'hash2', 'hash3']
 suspicious = detect_suspicious_files(endpoint_directory, known_malware_signatures)
 for file in suspicious:
     print(f"Suspicious file found: {file}")
-Summary: This script scans an endpoint directory for files that match known malware signatures and reports any suspicious files found.
+```
+<h2> Summary: </h2> 
+This script scans an endpoint directory for files that match known malware signatures and reports any suspicious files found.
 
-108. User Account Lock Script
+<h1> 108. User Account Lock Script </h1>
 
-Description: Create a script to monitor user account login attempts and lock accounts after a specified number of failed attempts.
+<h2> Description: </h2>
+Create a script to monitor user account login attempts and lock accounts after a specified number of failed attempts.
 
-python
-Copy code
+```
 # User Account Lock Script
 
 import time
@@ -3239,14 +3244,16 @@ for _ in range(5):
     result = monitor_login_attempts(username, max_login_attempts, lock_duration_seconds)
     print(result)
     time.sleep(60)
-Summary: This script monitors user login attempts and locks accounts temporarily after a defined number of failed attempts.
+```
+<h2> Summary: </h2>
+This script monitors user login attempts and locks accounts temporarily after a defined number of failed attempts.
 
-109. Phishing Email Analyzer Script
+<h1> 109. Phishing Email Analyzer Script </h1>
 
-Description: Create a script to analyze email headers and content to identify potential phishing emails.
+<h2> Description: </h2>
+Create a script to analyze email headers and content to identify potential phishing emails.
 
-python
-Copy code
+```
 # Phishing Email Analyzer Script
 
 import email
@@ -3281,14 +3288,16 @@ PayPal Team
 email_message = email.message_from_string(raw_email)
 result = analyze_phishing_email(email_message)
 print(result)
-Summary: This script examines email headers and content to identify potential phishing emails based on predefined patterns.
+```
+<h2> Summary: </h2>
+This script examines email headers and content to identify potential phishing emails based on predefined patterns.
 
-110. Patch Management Script
+<h1> 110. Patch Management Script </h1>
 
-Description: Create a script to automate the process of applying security patches to software and operating systems on endpoints.
+<h2> Description: </h2>
+Create a script to automate the process of applying security patches to software and operating systems on endpoints.
 
-python
-Copy code
+```
 # Patch Management Script
 
 import subprocess
@@ -3300,24 +3309,19 @@ def apply_security_patches():
 
 # Usage
 apply_security_patches()
-Summary: This script automates the process of updating and applying security patches to software and operating systems on endpoints.
+```
+<h2> Summary: 
+This script automates the process of updating and applying security patches to software and operating systems on endpoints.
 
 These Python scripts are designed to assist SOC analysts in log analysis, detecting suspicious files, monitoring login attempts, analyzing phishing emails, managing patches, and improving security incident response.
-
-
-
-
-User
-give me more examples
-ChatGPT
 Certainly, here are more examples of Python scripts for a Security Operations Center (SOC) Analyst:
 
-111. Network Traffic Analysis Script
+<h1> 111. Network Traffic Analysis Script </h1>
 
-Description: Create a script to capture and analyze network traffic to detect and report anomalies.
+<h2> Description: </h2>
+Create a script to capture and analyze network traffic to detect and report anomalies.
 
-python
-Copy code
+```
 # Network Traffic Analysis Script
 
 import pyshark
@@ -3335,14 +3339,16 @@ interface = 'eth0'
 filter = 'tcp port 80'
 duration = 60
 analyze_network_traffic(interface, filter, duration)
-Summary: This script uses the PyShark library to capture and analyze network traffic, helping detect suspicious patterns.
+```
+<h2> Summary: </h2>
+This script uses the PyShark library to capture and analyze network traffic, helping detect suspicious patterns.
 
-112. Security Alert Notification Script
+<h2> 112. Security Alert Notification Script </h2>
 
-Description: Create a script to monitor security alerts and send notifications via email or other channels.
+<h2> Description: </h2>
+Create a script to monitor security alerts and send notifications via email or other channels.
 
-python
-Copy code
+```
 # Security Alert Notification Script
 
 import smtplib
@@ -3369,14 +3375,16 @@ receiver = 'admin@example.com'
 subject = 'Security Alert'
 message = 'A potential security incident has been detected. Please investigate.'
 send_alert_email(receiver, subject, message)
-Summary: This script sends email notifications for security alerts to specified recipients.
+```
+<h2> Summary: </h2>
+This script sends email notifications for security alerts to specified recipients.
 
-113. Threat Intelligence Integration Script
+<h1> 113. Threat Intelligence Integration Script </h1>
 
-Description: Create a script to integrate threat intelligence feeds and enrich indicators of compromise (IoCs).
+<h2> Description: </h2>
+Create a script to integrate threat intelligence feeds and enrich indicators of compromise (IoCs).
 
-python
-Copy code
+```
 # Threat Intelligence Integration Script
 
 import requests
@@ -3403,14 +3411,16 @@ if threat_data:
     print(f"Threat Intelligence Data for {ioc}: {threat_data}")
 else:
     print("No threat intelligence data found.")
-Summary: This script queries a threat intelligence API to enrich IoCs with additional information.
+```
+<h2> Summary: </h2>
+This script queries a threat intelligence API to enrich IoCs with additional information.
 
-114. Network Port Scanner Script
+<h1> 114. Network Port Scanner Script </h1>
 
-Description: Create a script to scan network hosts for open ports and services.
+<h2> Description: </h2>
+Create a script to scan network hosts for open ports and services.
 
-python
-Copy code
+```
 # Network Port Scanner Script
 
 import socket
@@ -3434,14 +3444,16 @@ target_host = 'example.com'
 target_ports = range(1, 1025)
 open_ports = scan_ports(target_host, target_ports)
 print(f"Open ports on {target_host}: {open_ports}")
-Summary: This script scans network hosts to identify open ports, which can help identify potential security risks.
+```
+<h2> Summary: </h2>
+This script scans network hosts to identify open ports, which can help identify potential security risks.
+ 
+<h1> 115. Endpoint Detection and Response (EDR) Data Collector Script </h1>
 
-115. Endpoint Detection and Response (EDR) Data Collector Script
+<h2> Description: </h2>
+Create a script to collect endpoint data, such as process information, from multiple systems and centralize it for analysis.
 
-Description: Create a script to collect endpoint data, such as process information, from multiple systems and centralize it for analysis.
-
-python
-Copy code
+```
 # EDR Data Collector Script
 
 import os
@@ -3457,24 +3469,19 @@ def collect_endpoint_data(agents, destination):
 agent_list = ['agent1', 'agent2', 'agent3']
 collection_destination = '/central_data_storage'
 collect_endpoint_data(agent_list, collection_destination)
-Summary: This script collects data from multiple endpoint agents and centralizes it for analysis.
+```
+<h2> Summary: </h2>
+This script collects data from multiple endpoint agents and centralizes it for analysis.
 
 These Python scripts are designed to assist SOC analysts in network traffic analysis, security alert notifications, threat intelligence integration, network port scanning, and EDR data collection, helping improve incident detection and response capabilities.
-
-
-
-
-User
-give me more examples
-ChatGPT
 Of course! Here are more examples of Python scripts for a Security Operations Center (SOC) Analyst:
 
-116. Log Analysis Script
+<h1> 116. Log Analysis Script </h1>
 
-Description: Create a script to parse and analyze log files from various sources like firewalls, servers, and applications.
+<h2> Description: </h2>
+Create a script to parse and analyze log files from various sources like firewalls, servers, and applications.
 
-python
-Copy code
+```
 # Log Analysis Script
 
 import re
@@ -3490,14 +3497,16 @@ def analyze_logs(log_file):
 # Usage
 log_file_path = '/var/log/app.log'
 analyze_logs(log_file_path)
-Summary: This script helps SOC analysts parse and analyze log files for security incidents.
+```
+<h2> Summary: </h2>
+This script helps SOC analysts parse and analyze log files for security incidents.
 
-117. Network Enumeration Script
+<h1> 117. Network Enumeration Script </h1>
 
-Description: Create a script to enumerate network resources, such as hosts, services, and shares.
+<h2> Description: </h2>
+Create a script to enumerate network resources, such as hosts, services, and shares.
 
-python
-Copy code
+```
 # Network Enumeration Script
 
 import nmap
@@ -3518,14 +3527,16 @@ def enumerate_network(hosts, ports):
 target_hosts = '192.168.0.1-20'
 target_ports = '22,80,443'
 enumerate_network(target_hosts, target_ports)
-Summary: This script uses the Nmap library to scan and enumerate network resources.
+```
+<h2> Summary: </h2>
+This script uses the Nmap library to scan and enumerate network resources.
 
-118. Threat Hunting Script
+<h1> 118. Threat Hunting Script  </h1>
 
-Description: Create a script to proactively search for signs of compromise or threats within the network.
+<h2> Description: </h2>
+Create a script to proactively search for signs of compromise or threats within the network.
 
-python
-Copy code
+```
 # Threat Hunting Script
 
 import elasticsearch
@@ -3544,14 +3555,16 @@ def hunt_for_threats(indicator):
 # Usage
 ioc_to_hunt = 'suspicious_domain.com'
 hunt_for_threats(ioc_to_hunt)
-Summary: This script queries Elasticsearch for logs containing indicators of compromise (IoCs) to proactively hunt for threats.
+```
+<h2> Summary: </h2>
+This script queries Elasticsearch for logs containing indicators of compromise (IoCs) to proactively hunt for threats.
 
-119. Incident Reporting Script
+<h1> 119. Incident Reporting Script </h1>
 
-Description: Create a script to generate and send incident reports to stakeholders.
+<h2> Description:</h2>
+Create a script to generate and send incident reports to stakeholders.
 
-python
-Copy code
+```
 # Incident Reporting Script
 
 import os
@@ -3596,14 +3609,16 @@ recipient = 'stakeholder@example.com'
 email_subject = 'Incident Report - Data Breach'
 generate_report(incident_details, template_path, output_path)
 send_report(output_path, recipient, email_subject)
-Summary: This script generates an incident report from a template and sends it to the specified recipient.
+```
+<h2> Summary: </h2>
+This script generates an incident report from a template and sends it to the specified recipient.
 
-120. Data Loss Prevention (DLP) Script
+<h1> 120. Data Loss Prevention (DLP) Script </h1>
 
-Description: Create a script to monitor and enforce data loss prevention policies by scanning files and network traffic for sensitive information.
+<h2> Description: </h2>
+Create a script to monitor and enforce data loss prevention policies by scanning files and network traffic for sensitive information.
 
-python
-Copy code
+```
 # Data Loss Prevention Script
 
 import os
@@ -3629,24 +3644,19 @@ found_sensitive_files = scan_files_for_sensitive_data(directory_to_scan, sensiti
 print("Sensitive data found in these files:")
 for file in found_sensitive_files:
     print(file)
-Summary: This script scans files for sensitive data using regular expressions.
+```
+<h2> Summary: </h2>
+This script scans files for sensitive data using regular expressions.
 
 These Python scripts are designed to assist SOC analysts with log analysis, network enumeration, threat hunting, incident reporting, and data loss prevention, enhancing security monitoring and incident response capabilities.
-
-
-
-
-User
-give me more examples
-ChatGPT
 Certainly! Here are more examples of Python scripts for a Security Operations Center (SOC) Analyst:
 
-121. Security Incident Ticketing Script
+<h1> 121. Security Incident Ticketing Script </h1>
 
-Description: Create a script that generates and tracks security incident tickets.
+<h2> Description: </h2>
+Create a script that generates and tracks security incident tickets.
 
-python
-Copy code
+```
 # Security Incident Ticketing Script
 
 import requests
@@ -3676,14 +3686,17 @@ incident_description = "A user attempted unauthorized access to a critical serve
 incident_severity = "High"
 result = create_security_ticket(incident_title, incident_description, incident_severity)
 print(result)
-Summary: This script automates the creation of security incident tickets in a ticketing system.
+```
+<h2> Summary: </h2>
+This script automates the creation of security incident tickets in a ticketing system.
 
-122. IOC (Indicators of Compromise) Validation Script
 
-Description: Create a script to validate known IOCs against network traffic or log data.
+<h1> 122. IOC (Indicators of Compromise) Validation Script </h1>
 
-python
-Copy code
+<h2> Description: </h2>
+Create a script to validate known IOCs against network traffic or log data.
+
+```
 # IOC Validation Script
 
 import re
@@ -3706,14 +3719,16 @@ validation_results = validate_iocs(log_file_path, ioc_patterns)
 print("IOC Validation Results:")
 for result in validation_results:
     print(result)
-Summary: This script checks log data for matches with known IOC patterns.
+```
+<h2> Summary: </h2>
+This script checks log data for matches with known IOC patterns.
 
-123. Certificate Expiry Checker Script
+<h1> 123. Certificate Expiry Checker Script </h1>
 
-Description: Create a script that checks SSL/TLS certificate expiration dates for web servers.
+<h2> Description: </h2>
+Create a script that checks SSL/TLS certificate expiration dates for web servers.
 
-python
-Copy code
+```
 # Certificate Expiry Checker Script
 
 import ssl
@@ -3738,14 +3753,16 @@ web_server = 'example.com'
 web_server_port = 443
 result = check_certificate_expiry(web_server, web_server_port)
 print(result)
-Summary: This script checks SSL/TLS certificate expiration for web servers and notifies if certificates are about to expire.
+```
+<h2> Summary: </h2>
+This script checks SSL/TLS certificate expiration for web servers and notifies if certificates are about to expire.
 
-124. DNS Query Monitor Script
+<h1> 124. DNS Query Monitor Script </h1>
 
-Description: Create a script to monitor DNS queries on the network and identify suspicious domains.
+<h2> Description: </h2>
+Create a script to monitor DNS queries on the network and identify suspicious domains.
 
-python
-Copy code
+```
 # DNS Query Monitor Script
 
 from scapy.all import sniff, DNSQR
@@ -3758,14 +3775,16 @@ def dns_query_monitor(pkt):
 
 # Usage
 sniff(filter="udp port 53", prn=dns_query_monitor)
-Summary: This script uses Scapy to monitor DNS queries and raises alerts for suspicious domains.
+```
+<h2> Summary: </h2>
+This script uses Scapy to monitor DNS queries and raises alerts for suspicious domains.
 
-125. Firewall Rule Review Script
+<h1> 125. Firewall Rule Review Script </h1>
 
-Description: Create a script to review and validate firewall rules against a security policy.
+<h2> Description: </h2>
+Create a script to review and validate firewall rules against a security policy.
 
-python
-Copy code
+```
 # Firewall Rule Review Script
 
 import csv
@@ -3789,24 +3808,19 @@ def review_firewall_rules(firewall_rules_csv, security_policy_csv):
 firewall_rules_csv = 'firewall_rules.csv'
 security_policy_csv = 'security_policy.csv'
 review_firewall_rules(firewall_rules_csv, security_policy_csv)
-Summary: This script helps SOC analysts compare firewall rules against an established security policy.
+```
+<h2> Summary: </h2>
+This script helps SOC analysts compare firewall rules against an established security policy.
 
 These Python scripts are designed to assist SOC analysts with tasks like incident ticketing, IOC validation, certificate expiry checks, DNS query monitoring, and firewall rule reviews, enhancing security operations and incident response capabilities.
-
-
-
-
-User
-give me more examples
-ChatGPT
 Certainly! Here are more examples of Python scripts for a Security Operations Center (SOC) Analyst:
 
-126. Malware Signature Scanner
+<h1> 126. Malware Signature Scanner </h1>
 
-Description: Create a script that scans files for known malware signatures.
+<h2> Description: </h2>
+Create a script that scans files for known malware signatures.
 
-python
-Copy code
+```
 # Malware Signature Scanner
 
 import hashlib
@@ -3849,14 +3863,16 @@ def analyze_network_flows(pkt):
 
 # Usage
 sniff(filter="tcp and port 80", prn=analyze_network_flows)
-Summary: This script uses Scapy to capture and analyze network flows for anomalies.
+```
+<h2> Summary: </h2>
+This script uses Scapy to capture and analyze network flows for anomalies.
 
-128. Log File Anomaly Detector
+<h1> 128. Log File Anomaly Detector </h1>
 
-Description: Create a script that analyzes log files and detects anomalies in log entries.
+<h2> Description: </h2>
+Create a script that analyzes log files and detects anomalies in log entries.
 
-python
-Copy code
+```
 # Log File Anomaly Detector
 
 import re
@@ -3878,14 +3894,16 @@ anomalies = detect_log_anomalies(log_file_path)
 print("Log Anomalies:")
 for anomaly in anomalies:
     print(anomaly)
-Summary: This script scans log files for error and warning messages to detect anomalies.
+```
+<h2> Summary: </h2>
+This script scans log files for error and warning messages to detect anomalies.
 
-129. SIEM Integration Script
+<h1> 129. SIEM Integration Script </h1>
 
-Description: Create a script to integrate with a Security Information and Event Management (SIEM) system to send alerts.
+<h2> Description: </h2>
+Create a script to integrate with a Security Information and Event Management (SIEM) system to send alerts.
 
-python
-Copy code
+```
 # SIEM Integration Script
 
 import requests
@@ -3910,9 +3928,11 @@ event_data = {
 }
 result = send_alert_to_siem(event_data)
 print(result)
-Summary: This script sends security alerts to a SIEM system for further analysis.
+```
+<h2> Summary: </h2>
+This script sends security alerts to a SIEM system for further analysis.
 
-130. Password Policy Checker
+<h1> 130. Password Policy Checker </h1>
 
 Description: Create a script that checks user passwords against a defined password policy.
 
