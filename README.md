@@ -3310,7 +3310,7 @@ def apply_security_patches():
 # Usage
 apply_security_patches()
 ```
-<h2> Summary: 
+<h2> Summary: </h2>
 This script automates the process of updating and applying security patches to software and operating systems on endpoints.
 
 These Python scripts are designed to assist SOC analysts in log analysis, detecting suspicious files, monitoring login attempts, analyzing phishing emails, managing patches, and improving security incident response.
@@ -3934,10 +3934,10 @@ This script sends security alerts to a SIEM system for further analysis.
 
 <h1> 130. Password Policy Checker </h1>
 
-Description: Create a script that checks user passwords against a defined password policy.
+<h2> Description: </h2>
+Create a script that checks user passwords against a defined password policy.
 
-python
-Copy code
+```
 # Password Policy Checker
 
 import re
@@ -3954,24 +3954,19 @@ def check_password_policy(password):
 user_password = 'SecureP@ss1'
 result = check_password_policy(user_password)
 print(result)
-Summary: This script checks user passwords for compliance with a defined password policy.
+```
+<h2> Summary: </h2>
+This script checks user passwords for compliance with a defined password policy.
 
 These Python scripts can assist SOC analysts in various tasks, including malware signature scanning, network flow analysis, log file anomaly detection, SIEM integration, and password policy checking, to enhance security monitoring and incident detection capabilities.
-
-
-
-
-User
-give me more examples
-ChatGPT
 Certainly! Here are more Python script examples for a Security Operations Center (SOC) Analyst:
 
-131. Vulnerability Scanner Integration
+<h1> 131. Vulnerability Scanner Integration </h1>
 
-Description: Create a script to integrate with a vulnerability scanner to automate vulnerability assessments.
+<h2> Description: </h2>
+Create a script to integrate with a vulnerability scanner to automate vulnerability assessments.
 
-python
-Copy code
+```
 # Vulnerability Scanner Integration
 
 import requests
@@ -3996,14 +3991,16 @@ def run_vulnerability_scan(target):
 target_host = 'example.com'
 result = run_vulnerability_scan(target_host)
 print(result)
-Summary: This script integrates with a vulnerability scanner to initiate scans on target hosts.
+```
+<h2> Summary: </h2>
+This script integrates with a vulnerability scanner to initiate scans on target hosts.
 
-132. Threat Intelligence Feed Parser
+<h1> 132. Threat Intelligence Feed Parser </h1>
 
-Description: Create a script that parses threat intelligence feeds and extracts indicators of compromise (IoCs).
+<h2> Description: </h2>
+Create a script that parses threat intelligence feeds and extracts indicators of compromise (IoCs).
 
-python
-Copy code
+```
 # Threat Intelligence Feed Parser
 
 import requests
@@ -4024,14 +4021,16 @@ indicators = parse_threat_intel_feed(threat_feed_url)
 print("Indicators of Compromise:")
 for indicator in indicators:
     print(indicator)
-Summary: This script fetches and parses threat intelligence feeds for indicators of compromise.
+```
+<h2> Summary: </h2>
+This script fetches and parses threat intelligence feeds for indicators of compromise.
 
-133. Security Incident Ticket Generator
+<h1> 133. Security Incident Ticket Generator </h1>
 
-Description: Create a script to generate incident tickets for security incidents.
+<h2> Description: </h2>
+Create a script to generate incident tickets for security incidents.
 
-python
-Copy code
+```
 # Security Incident Ticket Generator
 
 import random
@@ -4044,14 +4043,16 @@ def generate_incident_ticket():
 # Usage
 ticket = generate_incident_ticket()
 print(ticket)
-Summary: This script generates unique incident ticket IDs for tracking security incidents.
+```
+<h2> Summary: </h2>
+This script generates unique incident ticket IDs for tracking security incidents.
 
-134. Disk Space Monitor
+<h1> 134. Disk Space Monitor </h1>
 
-Description: Create a script to monitor disk space on critical servers and send alerts when space is low.
+<h2> Description: </h2>
+Create a script to monitor disk space on critical servers and send alerts when space is low.
 
-python
-Copy code
+```
 # Disk Space Monitor
 
 import psutil
@@ -4083,14 +4084,16 @@ def send_alert(message):
 server_to_monitor = '/'
 threshold_percent = 90
 check_disk_space(server_to_monitor, threshold_percent)
-Summary: This script monitors disk space on a server and sends email alerts when disk usage exceeds a defined threshold.
+```
+<h2> Summary: </h2>
+This script monitors disk space on a server and sends email alerts when disk usage exceeds a defined threshold.
 
-135. Security Dashboard Data Fetcher
+<h1> 135. Security Dashboard Data Fetcher </h1>
 
-Description: Create a script to fetch security data for a dashboard, such as incident statistics and threat alerts.
+<h2> Description: </h2>
+Create a script to fetch security data for a dashboard, such as incident statistics and threat alerts.
 
-python
-Copy code
+```
 # Security Dashboard Data Fetcher
 
 import requests
@@ -4109,24 +4112,19 @@ dashboard_api_url = 'https://security-dashboard.example.com/api/data'
 security_data = fetch_security_data(dashboard_api_url)
 print("Security Dashboard Data:")
 print(security_data)
-Summary: This script fetches security data from an API to populate a security dashboard.
+```
+<h2> Summary: </h2>
+This script fetches security data from an API to populate a security dashboard.
 
 These Python scripts can assist SOC analysts in tasks such as vulnerability scanning, threat feed parsing, incident ticket generation, disk space monitoring, and security dashboard data fetching, streamlining security operations and incident response.
-
-
-
-
-User
-give me more examples
-ChatGPT
 Certainly! Here are more Python script examples for a Security Operations Center (SOC) Analyst:
 
-136. SIEM Log Enrichment
+<h1> 136. SIEM Log Enrichment </h1>
 
-Description: Create a script to enrich Security Information and Event Management (SIEM) logs with additional contextual information.
+<h2> Description: </h2>
+Create a script to enrich Security Information and Event Management (SIEM) logs with additional contextual information.
 
-python
-Copy code
+```
 # SIEM Log Enrichment
 
 import requests
@@ -4158,14 +4156,16 @@ siem_log_entry = {
 enriched_log = enrich_siem_log(siem_log_entry)
 print("Enriched SIEM Log:")
 print(json.dumps(enriched_log, indent=4))
-Summary: This script enriches SIEM log entries with geolocation information based on the source IP address.
+```
+<h2> Summary: </h2>
+This script enriches SIEM log entries with geolocation information based on the source IP address.
 
-137. Phishing Email Analysis
+<h1> 137. Phishing Email Analysis </h1>
 
-Description: Create a script to analyze phishing emails, extract URLs, and check them against threat intelligence feeds.
+<h2> Description: </h2>
+Create a script to analyze phishing emails, extract URLs, and check them against threat intelligence feeds.
 
-python
-Copy code
+```
 # Phishing Email Analysis
 
 import re
@@ -4194,14 +4194,16 @@ threat_intel_feeds = ["https://threatfeed1.example.com", "https://threatfeed2.ex
 suspicious_urls = analyze_phishing_email(phishing_email, threat_intel_feeds)
 print("Suspicious URLs:")
 print(suspicious_urls)
-Summary: This script analyzes a phishing email, extracts URLs, and checks them against known threat intelligence feeds for malicious links.
+```
+<h2> Summary: </h2>
+This script analyzes a phishing email, extracts URLs, and checks them against known threat intelligence feeds for malicious links.
 
-138. User Account Activity Monitor
+<h1> 138. User Account Activity Monitor </h1>
 
-Description: Create a script to monitor user account activities and detect unusual login patterns.
+<h2> Description: </h2>
+Create a script to monitor user account activities and detect unusual login patterns.
 
-python
-Copy code
+```
 # User Account Activity Monitor
 
 import time
@@ -4235,14 +4237,16 @@ def alert_security_team(user_id):
 user_to_monitor = 'user123'
 activity_threshold = 5  # Check every 5 minutes
 monitor_user_activity(user_to_monitor, activity_threshold)
-Summary: This script continuously monitors user account activity and alerts the security team if unusual patterns are detected.
+```
+<h2> Summary: </h2>
+This script continuously monitors user account activity and alerts the security team if unusual patterns are detected.
 
-139. Firewall Rule Management
+<h1> 139. Firewall Rule Management </h1>
 
-Description: Create a script to manage firewall rules, allowing SOC analysts to add or remove rules easily.
+<h2> Description: </h2>
+Create a script to manage firewall rules, allowing SOC analysts to add or remove rules easily.
 
-python
-Copy code
+```
 # Firewall Rule Management
 
 import subprocess
@@ -4270,14 +4274,16 @@ print(result)
 rule_to_remove = "port=8080/tcp"
 result = remove_firewall_rule(rule_to_remove)
 print(result)
-Summary: This script allows SOC analysts to add and remove firewall rules easily using firewall-cmd commands.
+```
+<h2> Summary: </h2>
+This script allows SOC analysts to add and remove firewall rules easily using firewall-cmd commands.
 
-140. Incident Response Workflow Tracker
+<h1> 140. Incident Response Workflow Tracker </h1>
 
-Description: Create a script to track and manage the incident response workflow, including task assignments and progress.
+<h2> Description: </h2> 
+Create a script to track and manage the incident response workflow, including task assignments and progress.
 
-python
-Copy code
+```
 # Incident Response Workflow Tracker
 
 class Incident:
@@ -4319,24 +4325,19 @@ incidents = tracker.list_incidents()
 print("Current Incidents:")
 for incident in incidents:
     print(f"Title: {incident[0]}, Status: {incident[1]}")
-Summary: This script tracks and manages the incident response workflow, allowing SOC analysts to add, assign tasks, and resolve incidents.
+```
+<h2> Summary: </h2>
+This script tracks and manages the incident response workflow, allowing SOC analysts to add, assign tasks, and resolve incidents.
 
 These Python scripts are designed to help SOC analysts streamline various tasks, from SIEM log enrichment and phishing email analysis to user account activity monitoring, firewall rule management, and incident response workflow tracking.
-
-
-
-
-User
-give me more examples
-ChatGPT
 Of course! Here are additional Python script examples for a Security Operations Center (SOC) Analyst:
 
-141. Log Aggregation and Analysis
+<h1> 141. Log Aggregation and Analysis </h1>
 
-Description: Create a script to aggregate and analyze logs from multiple sources, allowing SOC analysts to quickly identify security incidents.
+<h2> Description: </h2>
+Create a script to aggregate and analyze logs from multiple sources, allowing SOC analysts to quickly identify security incidents.
 
-python
-Copy code
+```
 # Log Aggregation and Analysis
 
 import time
@@ -4367,14 +4368,16 @@ def analyze_logs(log_entries):
 # Usage
 log_sources = ['source1.log', 'source2.log', 'source3.log']
 aggregate_logs(log_sources)
-Summary: This script aggregates logs from various sources and triggers log analysis when a sufficient number of logs are available.
+```
+<h2> Summary: </h2>
+This script aggregates logs from various sources and triggers log analysis when a sufficient number of logs are available.
 
-142. File Integrity Monitoring
+<h1> 142. File Integrity Monitoring </h1>
 
-Description: Create a script to monitor critical system files for any unauthorized changes, helping detect potential intrusions.
+<h2> Description: </h2>
+Create a script to monitor critical system files for any unauthorized changes, helping detect potential intrusions.
 
-python
-Copy code
+```
 # File Integrity Monitoring
 
 import os
@@ -4422,14 +4425,16 @@ def alert_security_team(file_path):
 directory_to_monitor = '/var/www/html'
 file_extensions_to_monitor = ('.php', '.html')
 monitor_files(directory_to_monitor, file_extensions_to_monitor)
-Summary: This script continuously monitors critical system files for changes and alerts the security team if unauthorized modifications are detected.
+```
+<h2> Summary: </h2>
+This script continuously monitors critical system files for changes and alerts the security team if unauthorized modifications are detected.
 
-143. Threat Intelligence Feed Integration
+<h1> 143. Threat Intelligence Feed Integration </h1>
 
-Description: Create a script to fetch threat intelligence feeds, parse the data, and check if any indicators of compromise (IOCs) match the organization's systems.
+<h2> Description: </h2>
+Create a script to fetch threat intelligence feeds, parse the data, and check if any indicators of compromise (IOCs) match the organization's systems.
 
-python
-Copy code
+```
 # Threat Intelligence Feed Integration
 
 import requests
@@ -4465,7 +4470,9 @@ if threat_data:
         print(f"Indicator: {ioc['value']}, Type: {ioc['type']}")
 else:
     print("Failed to fetch threat intelligence feed.")
-Summary: This script fetches a threat intelligence feed, checks if any IOCs match the organization's systems, and reports the matched IOCs.
+```
+<h2> Summary: </h2>
+This script fetches a threat intelligence feed, checks if any IOCs match the organization's systems, and reports the matched IOCs.
 
 144. DNS Query Analyzer
 
