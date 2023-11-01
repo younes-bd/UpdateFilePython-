@@ -4474,12 +4474,12 @@ else:
 <h2> Summary: </h2>
 This script fetches a threat intelligence feed, checks if any IOCs match the organization's systems, and reports the matched IOCs.
 
-144. DNS Query Analyzer
+<h1> 144. DNS Query Analyzer </h1>
 
-Description: Create a script to analyze DNS query logs for unusual patterns or potentially malicious domain names.
+<h2> Description: </h2>
+Create a script to analyze DNS query logs for unusual patterns or potentially malicious domain names.
 
-python
-Copy code
+```
 # DNS Query Analyzer
 
 import re
@@ -4508,24 +4508,20 @@ suspicious_domains = analyze_dns_queries(dns_log_file)
 print("Suspicious Domains:")
 for domain in suspicious_domains:
     print(domain)
-Summary: This script analyzes DNS query logs, detects suspicious queries, and extracts potentially malicious domain names.
+```
+<h2> Summary: </h2>
+This script analyzes DNS query logs, detects suspicious queries, and extracts potentially malicious domain names.
 
 These Python scripts provide SOC analysts with tools for log aggregation and analysis, file integrity monitoring, threat intelligence feed integration, and DNS query analysis. They help improve the security monitoring and incident detection capabilities of a Security Operations Center.
 
-
-
-
-User
-give me more examples
-ChatGPT
 Certainly! Here are more Python script examples for a Security Operations Center (SOC) Analyst:
 
-145. User Account Monitoring
+<h1> 145. User Account Monitoring </h1>
 
-Description: Create a script to monitor user account activities, such as login attempts and privilege changes, and notify the SOC team of suspicious activities.
+<h2> Description: </h2>
+Create a script to monitor user account activities, such as login attempts and privilege changes, and notify the SOC team of suspicious activities.
 
-python
-Copy code
+```
 # User Account Monitoring
 
 import subprocess
@@ -4544,14 +4540,16 @@ def send_alert_email(message):
 
 # Usage
 monitor_user_accounts()
-Summary: This script monitors the system logs for failed login attempts and sends an email alert to the SOC team when a suspicious activity is detected.
+```
+<h2> Summary: </h2>
+This script monitors the system logs for failed login attempts and sends an email alert to the SOC team when a suspicious activity is detected.
 
-146. Network Traffic Analysis
+<h1> 146. Network Traffic Analysis </h1>
 
-Description: Create a script to capture and analyze network traffic, helping to detect unusual patterns or traffic from blacklisted IP addresses.
+<h2> Description: </h2>
+Create a script to capture and analyze network traffic, helping to detect unusual patterns or traffic from blacklisted IP addresses.
 
-python
-Copy code
+```
 # Network Traffic Analysis
 
 import scapy.all as scapy
@@ -4577,14 +4575,16 @@ def analyze_tcp_or_udp_packet(packet):
 
 # Usage
 capture_and_analyze_traffic("eth0")
-Summary: This script captures network traffic on a specified interface and analyzes it for suspicious patterns or potentially malicious IP addresses.
+```
+<h2> Summary: </h2>
+This script captures network traffic on a specified interface and analyzes it for suspicious patterns or potentially malicious IP addresses.
 
-147. Email Header Analyzer
+<h1> 147. Email Header Analyzer </h1>
 
-Description: Create a script to extract and analyze email headers, checking for signs of phishing or spoofed emails.
+<h2> Description: </h2>
+Create a script to extract and analyze email headers, checking for signs of phishing or spoofed emails.
 
-python
-Copy code
+```
 # Email Header Analyzer
 
 import email
@@ -4612,14 +4612,17 @@ def send_alert_email(message):
 
 # Usage
 analyze_email_header("suspicious_email.eml")
-Summary: This script extracts and analyzes email headers for signs of phishing or spoofed emails and sends an alert to the SOC team when suspicious activity is detected.
+```
+<h2> Summary: </h2>
+This script extracts and analyzes email headers for signs of phishing or spoofed emails and sends an alert to the SOC team when suspicious activity is detected.
 
-148. Firewall Rule Change Detection
 
-Description: Create a script to monitor and detect changes in firewall rules, alerting the SOC team when unauthorized changes are made.
+<h1> 148. Firewall Rule Change Detection </h1>
 
-python
-Copy code
+<h2> Description: </h2>
+Create a script to monitor and detect changes in firewall rules, alerting the SOC team when unauthorized changes are made.
+
+```
 # Firewall Rule Change Detection
 
 import os
@@ -4646,24 +4649,20 @@ def send_alert_email(message):
 
 # Usage
 detect_firewall_rule_changes("firewall_rules_old.txt", "firewall_rules_new.txt")
-Summary: This script detects changes in firewall rules by comparing old and new rule sets and sends an alert to the SOC team when unauthorized changes are found.
+```
+<h2> Summary: </h2>
+This script detects changes in firewall rules by comparing old and new rule sets and sends an alert to the SOC team when unauthorized changes are found.
 
 These Python scripts provide additional tools for SOC analysts, including user account monitoring, network traffic analysis, email header analysis, and firewall rule change detection, to enhance security monitoring and incident detection in a Security Operations Center.
 
-
-
-
-User
-give me more examples
-ChatGPT
 Certainly! Here are more Python script examples for a Security Operations Center (SOC) Analyst:
 
-149. Log File Analysis
+<h1> 149. Log File Analysis </h1>
 
-Description: Create a script to parse and analyze various log files from servers and devices in your network, looking for signs of security incidents.
+<h2> Description: </h2>
+Create a script to parse and analyze various log files from servers and devices in your network, looking for signs of security incidents.
 
-python
-Copy code
+```
 # Log File Analysis
 
 import os
@@ -4690,14 +4689,16 @@ def send_alert_email(message):
 
 # Usage
 analyze_logs("/var/log")
-Summary: This script analyzes log files in a specified directory for signs of security incidents, such as unauthorized access attempts.
+```
+<h2> Summary: </h2>
+This script analyzes log files in a specified directory for signs of security incidents, such as unauthorized access attempts.
 
-150. SIEM Integration
+<h1> 150. SIEM Integration </h1>
 
-Description: Develop a script to integrate with a Security Information and Event Management (SIEM) system to automate event handling and alerting.
+<h2> Description: </h2>
+Develop a script to integrate with a Security Information and Event Management (SIEM) system to automate event handling and alerting.
 
-python
-Copy code
+```
 # SIEM Integration
 
 import requests
@@ -4719,14 +4720,16 @@ def send_alert_to_siem(severity, description):
 
 # Usage
 send_alert_to_siem("High", "Security breach detected in database server")
-Summary: This script sends security alerts to a SIEM system, allowing for automated event handling and alerting.
+```
+<h2> Summary: </h2>
+This script sends security alerts to a SIEM system, allowing for automated event handling and alerting.
 
-151. Threat Feed Integration
+<h1> 151. Threat Feed Integration </h1>
 
-Description: Create a script that integrates with threat intelligence feeds to automatically update threat information and apply it to your security systems.
+<h1> Description: </h1>
+Create a script that integrates with threat intelligence feeds to automatically update threat information and apply it to your security systems.
 
-python
-Copy code
+```
 # Threat Feed Integration
 
 import requests
@@ -4752,14 +4755,16 @@ def update_firewall_blacklist(indicator):
 
 # Usage
 fetch_threat_feed()
-Summary: This script fetches threat intelligence data from a threat feed, processes the data, and applies threat indicators to security systems like firewalls.
+```
+<h2> Summary: </h2>
+This script fetches threat intelligence data from a threat feed, processes the data, and applies threat indicators to security systems like firewalls.
 
-152. Security Awareness Training Reminder
+<h1> 152. Security Awareness Training Reminder </h1>
 
-Description: Create a script to automate security awareness training reminders for employees, ensuring they complete required training modules.
+<h2> Description: </h2>
+Create a script to automate security awareness training reminders for employees, ensuring they complete required training modules.
 
-python
-Copy code
+```
 # Security Awareness Training Reminder
 
 import smtplib
@@ -4787,24 +4792,21 @@ def send_training_email():
 
 # Usage
 send_training_reminder()
-Summary: This script sends automated security awareness training reminders to employees, helping ensure they complete their training on time.
+```
+<h2> Summary: </h2>
+This script sends automated security awareness training reminders to employees, helping ensure they complete their training on time.
 
 These Python scripts offer additional automation capabilities for SOC analysts, including log file analysis, SIEM integration, threat feed integration, and security awareness training reminders, to enhance security monitoring and incident response in a Security Operations Center.
 
-
-
-
-User
-give me more examples
-ChatGPT
 Certainly! Here are more Python script examples for a Security Operations Center (SOC) Analyst:
 
-153. Network Traffic Analysis
 
-Description: Create a script to capture and analyze network traffic to identify anomalies or potential security threats.
+<h1> 153. Network Traffic Analysis </h1>
 
-python
-Copy code
+<h2> Description: </h2>
+Create a script to capture and analyze network traffic to identify anomalies or potential security threats.
+
+```
 # Network Traffic Analysis
 
 import scapy.all as scapy
@@ -4847,14 +4849,16 @@ def check_password_policy(password):
 # Usage
 password = "SecureP@ssw0rd"
 check_password_policy(password)
-Summary: This script checks if a given password adheres to the organization's password policy, which includes length, uppercase, lowercase, and digit requirements.
+```
+<h2> Summary: </h2>
+This script checks if a given password adheres to the organization's password policy, which includes length, uppercase, lowercase, and digit requirements.
 
-155. Security Incident Reporting
+<h1> 155. Security Incident Reporting </h1>
 
-Description: Create a script that allows employees to report security incidents by providing necessary information.
+<h2> Description: </h2>
+Create a script that allows employees to report security incidents by providing necessary information.
 
-python
-Copy code
+```
 # Security Incident Reporting
 
 def report_security_incident():
@@ -4878,7 +4882,9 @@ def save_incident_report(incident_type, description, timestamp):
 
 # Usage
 report_security_incident()
-Summary: This script allows employees to report security incidents by providing details such as incident type, description, and a timestamp.
+```
+<h2> Summary: </h2>
+This script allows employees to report security incidents by providing details such as incident type, description, and a timestamp.
 
 156. Security Patch Management
 
