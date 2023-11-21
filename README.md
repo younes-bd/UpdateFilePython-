@@ -4822,12 +4822,16 @@ def analyze_network_traffic():
 
 # Usage
 analyze_network_traffic()
-Summary: This script uses the Scapy library to capture and analyze network traffic, making it easier to identify suspicious or potentially malicious network activities.
+```
+<h2> Summary: </h2>
+This script uses the Scapy library to capture and analyze network traffic, making it easier to identify suspicious or potentially malicious network activities.
 
-154. Password Policy Checker
+<h1> 154. Password Policy Checker </h1>
 
-Description: Develop a script to check if user passwords meet the organization's password policy.
+<h2> Description: </h2>
+Develop a script to check if user passwords meet the organization's password policy.
 
+```
 python
 Copy code
 # Password Policy Checker
@@ -4886,10 +4890,12 @@ report_security_incident()
 <h2> Summary: </h2>
 This script allows employees to report security incidents by providing details such as incident type, description, and a timestamp.
 
-156. Security Patch Management
+<h1> 156. Security Patch Management </h1>
 
-Description: Develop a script to automate the process of checking for and applying security patches to servers and devices.
+<h2> Description: </h2>
+Develop a script to automate the process of checking for and applying security patches to servers and devices.
 
+```
 python
 Copy code
 # Security Patch Management
@@ -4917,12 +4923,16 @@ def check_device_patches(device):
 
 # Usage
 check_and_apply_patches()
-Summary: This script automates the process of checking for and applying security patches on servers and devices, helping to keep the environment secure.
+```
+<h2> Summary: </h2>
+This script automates the process of checking for and applying security patches on servers and devices, helping to keep the environment secure.
 
-157. Threat Intel Feeds Monitoring
+<h1> 157. Threat Intel Feeds Monitoring </h1>
 
-Description: Create a script to monitor threat intelligence feeds for the latest threats and alert the SOC team when relevant information is found.
+<h2> Description: </h2>
+Create a script to monitor threat intelligence feeds for the latest threats and alert the SOC team when relevant information is found.
 
+```
 python
 Copy code
 # Threat Intel Feeds Monitoring
@@ -4951,24 +4961,21 @@ def send_alert_to_soc(threat_entry):
 
 # Usage
 monitor_threat_intel_feeds()
-Summary: This script monitors threat intelligence feeds for the latest threats, alerts the SOC team when high-severity information is found, and allows further analysis.
+```
+<h2> Summary: </h2>
+This script monitors threat intelligence feeds for the latest threats, alerts the SOC team when high-severity information is found, and allows further analysis.
 
 These Python scripts provide additional automation capabilities for SOC analysts, including network traffic analysis, password policy checking, security incident reporting, security patch management, and threat intelligence feeds monitoring, all aimed at improving security and incident response in a Security Operations Center.
 
 
-
-
-User
-give me more examples
-ChatGPT
 Certainly, here are more examples of Python scripts for a Security Operations Center (SOC) Analyst:
 
-158. Log Analysis for Anomaly Detection
+<h1> 158. Log Analysis for Anomaly Detection </h1>
 
-Description: Create a script to analyze system logs for anomalies or suspicious activities, which can help in early threat detection.
+<h2> Description: </h2>
+Create a script to analyze system logs for anomalies or suspicious activities, which can help in early threat detection.
 
-python
-Copy code
+```
 # Log Analysis for Anomaly Detection
 
 def analyze_system_logs(log_file):
@@ -4985,14 +4992,16 @@ def send_alert(alert_message, log_entry):
 # Usage
 log_file = "system.log"
 analyze_system_logs(log_file)
-Summary: This script analyzes system logs for suspicious activity and sends alerts to the SOC team when anomalies are detected.
+```
+<h2> Summary: </h2>
+This script analyzes system logs for suspicious activity and sends alerts to the SOC team when anomalies are detected.
 
-159. Threat Hunting Automation
+<h1> 159. Threat Hunting Automation </h1>
 
-Description: Develop a script to automate threat hunting by querying logs, network data, and endpoint data for patterns that may indicate threats.
+<h2> Description: </h2>
+Develop a script to automate threat hunting by querying logs, network data, and endpoint data for patterns that may indicate threats.
 
-python
-Copy code
+```
 # Threat Hunting Automation
 
 import elasticsearch
@@ -5018,14 +5027,16 @@ query = {
     }
 }
 hunt_for_threats(query)
-Summary: This script automates the process of threat hunting by querying logs stored in Elasticsearch and sending alerts when high-level threats are found.
+```
+<h2> Summary: </h2>
+This script automates the process of threat hunting by querying logs stored in Elasticsearch and sending alerts when high-level threats are found.
 
-160. User Account Activity Monitoring
+<h1> 160. User Account Activity Monitoring </h1>
 
-Description: Create a script to monitor user account activities, including login attempts and privilege changes, and notify the SOC team of any suspicious events.
+<h2> Description: </h2>
+Create a script to monitor user account activities, including login attempts and privilege changes, and notify the SOC team of any suspicious events.
 
-python
-Copy code
+```
 # User Account Activity Monitoring
 
 import subprocess
@@ -5048,14 +5059,16 @@ def send_alert(alert_message, account_activity):
 
 # Usage
 monitor_user_activity()
-Summary: This script monitors user account activity, such as login attempts, by analyzing system logs and sends alerts when suspicious activity is detected.
+```
+<h2> Summary: </h2>
+This script monitors user account activity, such as login attempts, by analyzing system logs and sends alerts when suspicious activity is detected.
 
-161. Security Dashboard Generator
+<h1> 161. Security Dashboard Generator </h1>
 
-Description: Develop a script to generate a security dashboard summarizing key security metrics and incidents.
+<h2> Description: </h2>
+Develop a script to generate a security dashboard summarizing key security metrics and incidents.
 
-python
-Copy code
+```
 # Security Dashboard Generator
 
 import matplotlib.pyplot as plt
@@ -5074,24 +5087,20 @@ def plot_security_metrics(metrics):
 
 # Usage
 generate_security_dashboard()
-Summary: This script generates a simple security dashboard displaying key security metrics using a bar chart.
+```
+<h2> Summary: </h2>
+This script generates a simple security dashboard displaying key security metrics using a bar chart.
 
 These Python scripts cover various aspects of SOC tasks, including log analysis for anomaly detection, threat hunting automation, user account activity monitoring, and security dashboard generation. They help automate and streamline SOC activities for improved security monitoring and response.
 
-
-
-
-User
-give me more examples
-ChatGPT
 Certainly, here are more examples of Python scripts for a Security Operations Center (SOC) Analyst:
 
-162. Real-time Log Monitoring and Alerting
+<h1> 162. Real-time Log Monitoring and Alerting </h1>
 
-Description: Create a script that monitors log files in real-time and sends alerts when specific events are detected.
+<h2> Description: </h2>
+Create a script that monitors log files in real-time and sends alerts when specific events are detected.
 
-python
-Copy code
+```
 # Real-time Log Monitoring and Alerting
 
 import time
@@ -5111,14 +5120,16 @@ def send_alert(alert_message, log_entry):
 log_file = "system.log"
 keyword = "suspicious_activity"
 real_time_log_monitor(log_file, keyword)
-Summary: This script monitors log files in real-time and sends alerts when a specified keyword (e.g., "suspicious_activity") is detected.
+```
+<h2> Summary: </h2>
+This script monitors log files in real-time and sends alerts when a specified keyword (e.g., "suspicious_activity") is detected.
 
-163. Automated Malware Analysis
+<h1> 163. Automated Malware Analysis </h1>
 
-Description: Develop a script that automates the analysis of suspicious files for malware characteristics.
+<h2> Description: </h2>
+Develop a script that automates the analysis of suspicious files for malware characteristics.
 
-python
-Copy code
+```
 # Automated Malware Analysis
 
 import hashlib
@@ -5156,14 +5167,16 @@ def send_alert(alert_message, report):
 # Usage
 file_path = "suspicious_file.exe"
 analyze_malware(file_path)
-Summary: This script automates the analysis of suspicious files for malware characteristics and sends alerts when malicious files are detected.
+```
+<h2> Summary: </h2>
+This script automates the analysis of suspicious files for malware characteristics and sends alerts when malicious files are detected.
 
-164. Security Incident Handling Workflow
+<h1> 164. Security Incident Handling Workflow </h1>
 
-Description: Create a script that automates the workflow for handling security incidents, including documentation and response actions.
+<h2> Description: </h2>
+Create a script that automates the workflow for handling security incidents, including documentation and response actions.
 
-python
-Copy code
+```
 # Security Incident Handling Workflow
 
 import time
@@ -5201,24 +5214,20 @@ incident_details = {
     "timestamp": time.strftime("%Y-%m-%d %H:%M:%S")
 }
 handle_security_incident(incident_details)
-Summary: This script automates the workflow for handling security incidents, including documenting the incident, assessing risk, taking response actions, recovering systems, and closing the incident.
+```
+<h2> Summary: </h2>
+This script automates the workflow for handling security incidents, including documenting the incident, assessing risk, taking response actions, recovering systems, and closing the incident.
 
 These Python scripts cover various SOC tasks, including real-time log monitoring and alerting, automated malware analysis, and security incident handling. They help SOC analysts streamline their work and enhance their ability to detect and respond to security threats.
 
-
-
-
-User
-give me more examples
-ChatGPT
 Certainly, here are more examples of Python scripts for a Security Operations Center (SOC) Analyst:
 
-165. Network Port Scanner
+<h1> 165. Network Port Scanner </h1>
 
-Description: Create a Python script that scans a range of IP addresses for open network ports.
+<h2> Description:</h2>
+Create a Python script that scans a range of IP addresses for open network ports.
 
-python
-Copy code
+```
 # Network Port Scanner
 
 import socket
@@ -5239,14 +5248,16 @@ target = "192.168.1.1"
 port_range = (1, 1024)
 open_ports = port_scanner(target, port_range)
 print(f"Open ports on {target}: {open_ports}")
-Summary: This script scans a range of network ports on a specified IP address and returns a list of open ports.
+```
+<h2> Summary: </h2>
+This script scans a range of network ports on a specified IP address and returns a list of open ports.
 
-166. Log Analysis for Anomalies
+<h1> 166. Log Analysis for Anomalies </h1>
 
-Description: Develop a script that analyzes log files for anomalies and triggers alerts for unusual patterns.
+<h2> Description: </h2>
+Develop a script that analyzes log files for anomalies and triggers alerts for unusual patterns.
 
-python
-Copy code
+```
 # Log Analysis for Anomalies
 
 import re
@@ -5267,14 +5278,16 @@ def send_alert(alert_message, log_entry):
 # Usage
 log_file = "system.log"
 analyze_logs(log_file)
-Summary: This script analyzes log files for anomalies and sends alerts when patterns like "Unauthorized access" are detected.
+```
+<h2> Summary: </h2>
+This script analyzes log files for anomalies and sends alerts when patterns like "Unauthorized access" are detected.
 
-167. Network Traffic Analysis
+<h1> 167. Network Traffic Analysis </h1>
 
-Description: Create a script that captures and analyzes network traffic to detect suspicious patterns.
+<h2> Description: </h2>
+Create a script that captures and analyzes network traffic to detect suspicious patterns.
 
-python
-Copy code
+```
 # Network Traffic Analysis
 
 import scapy.all as scapy
@@ -5294,14 +5307,16 @@ def send_alert(alert_message, url):
 
 # Usage
 analyze_network_traffic()
-Summary: This script uses the Scapy library to capture and analyze network traffic, sending alerts when suspicious URLs are detected.
+```
+<h2> Summary: </h2>
+This script uses the Scapy library to capture and analyze network traffic, sending alerts when suspicious URLs are detected.
 
-168. Security Policy Compliance Checker
+<h1> 168. Security Policy Compliance Checker </h1>
 
-Description: Develop a script that checks systems for compliance with security policies and generates reports.
+<h2> Description: </h2>
+Develop a script that checks systems for compliance with security policies and generates reports.
 
-python
-Copy code
+```
 # Security Policy Compliance Checker
 
 def check_security_policy_compliance(systems):
@@ -5328,7 +5343,9 @@ def send_alert(alert_message, non_compliant_systems):
 # Usage
 systems = ["Server1", "Server2", "Workstation1"]
 check_security_policy_compliance(systems)
-Summary: This script checks systems for compliance with security policies, generates a report of non-compliant systems, and sends alerts to the SOC team.
+```
+<h2> Summary: </h2>
+This script checks systems for compliance with security policies, generates a report of non-compliant systems, and sends alerts to the SOC team.
 
 These Python scripts cover a range of SOC tasks, including network port scanning, log analysis for anomalies, network traffic analysis, and security policy compliance checking. They assist SOC analysts in identifying vulnerabilities, monitoring logs, analyzing network traffic, and ensuring compliance with security policies.
 
