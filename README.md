@@ -7,6 +7,8 @@ At my organization, access to restricted content is controlled with an allow lis
 
 Open the file that contains the allow list:
 
+<h2> Python Script: </h2>
+
 ```
 For the first part of the algorithm, I opened the "allow_list.txt" file. First, I assigned this file name as a string to the import_file variable:
 
@@ -98,6 +100,8 @@ This Python script automatically removes log files older than a specified number
 <h2> Description: </h2>
 Automate disk space monitoring and alerting when free disk space falls below a threshold.
 
+<h2> Python Script: </h2>
+
 ```
 import psutil
 
@@ -119,6 +123,8 @@ This Python script automatically monitors disk space and alerts when free space 
 
 <h2> Description:</h2> 
  Automate system backups with date-based directories.
+
+<h2> Python Script: </h2>
 
 ```
 import shutil
@@ -142,6 +148,8 @@ This Python script automates backups of a specified source directory, creating b
 <h2> Description: </h2>
 Automate the addition of firewall rules to enhance network security.
 
+<h2> Python Script: </h2>
+
 ```
 import subprocess
 
@@ -158,6 +166,8 @@ This Python script automates the addition of a new firewall rule to allow incomi
 
 <h2> Description: </h2>
  Automate server reboots on a schedule.
+
+<h2> Python Script: </h2>
 
 ```
 import subprocess
@@ -184,6 +194,8 @@ Certainly, here are more examples of Python scripts for automating routine tasks
 
 <h2> Description: </h2>
 Automate user account creation and deletion on a Linux system.
+
+<h2> Python Script: </h2>
 
 ```
 import subprocess
