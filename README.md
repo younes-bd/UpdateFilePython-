@@ -39,16 +39,12 @@ for element in remove_list:
     # use the .remove() method to remove # elements from `ip_addresses`
     ip_addresses.remove(element)
 
-```
-First, within my for loop, I created a conditional that evaluated whether or not the loop variable element was found in the ip_addresses list. I did this because applying .remove() to elements that were not found in ip_addresses would result in an error.  <br/>
-Then, within that conditional, I applied .remove() to ip_addresses. I passed in the loop variable element as the argument so that each IP address that was in the remove_list would be removed from ip_addresses.
 
-Update the file with the revised list of IP addresses:  
-As a final step in my algorithm, I needed to update the allow list file with the revised list of IP addresses. To do so, I first needed to convert the list back into a string. I used the .join() method for this: 
+# Update the file with the revised list of IP addresses:  As a final step in my algorithm, I needed to update the allow list file with the revised list of IP addresses. To do so, I # # first needed to convert the list back into a string. I used the .join() method for this: 
 
-```
 # Convert `ip_addresses back to a string so that it can be written into the text file 
 ip_addresses = "\n".join(ip_addresses)
+
 ```
 
 The .join() method combines all items in an iterable into a string. The .join() method is applied to a string containing characters that will separate the elements in the iterable once joined into a string. In this algorithm, I used the .join() method to create a string from the list ip_addresses so that I could pass it in as an argument to the .write() method when writing to the file "allow_list.txt". I used the string ("\n") as the separator to instruct Python to place each element on a new line.  <br/>
@@ -57,17 +53,14 @@ Then, I used another with statement and the .write() method to update the file:
 ```
 # Build with statement to rewrite the original file
 with open(import_file, "w") as file:
-# Rewrite the file, replacing its contents with `ip_addresses
-file.write(ip_addresses)
+  # Rewrite the file, replacing its contents with `ip_addresses
+  file.write(ip_addresses)
 ```
 
-This time, I used a second argument of "w" with the open() function in my with statement. This argument indicates that I want to open a file to write over its contents. When using this argument "w", I can call the .write() function in the body of the with statement. The .write() function writes string data to a specified file and replaces any existing file content. 
 In this case I wanted to write the updated allow list as a string to the file "allow_list.txt". This way, the restricted content will no longer be accessible to any IP addresses that were removed from the allow list. To rewrite the file, I appended the .write() function to the file object file that I identified in the with statement. I passed in the ip_addresses variable as the argument to specify that the contents of the file specified in the with statement should be replaced with the data in this variable.
 
 <h2> Summary: </h2>
  I created an algorithm that removes IP addresses identified in a remove_list variable from the "allow_list.txt" file of approved IP addresses. This algorithm involved opening the file, converting it to a string to be read, and then converting this string to a list stored in the variable ip_addresses. I then iterated through the IP addresses in remove_list. With each iteration, I evaluated if the element was part of the ip_addresses list. If it was, I applied the .remove() method to it to remove the element from ip_addresses.. After this, I used the .join() method to convert the ip_addresses back into a string so that I could write over the contents of the "allow_list.txt" file with the revised list of IP addresses.
-
-
 
 
 Certainly, here are more examples of automation Python scripts for system administrators:
