@@ -222,6 +222,8 @@ This Python script automates user account management tasks, including user creat
 <h2> Description: </h2>
 Automate the process of checking for and applying software updates.
 
+<h2> Python Script: </h2>
+
 ```
 import subprocess
 
@@ -240,6 +242,8 @@ This Python script automates the process of checking for and applying software u
 
 <h2> Description: </h2>
 Automate log file analysis to identify and report specific patterns or issues.
+
+<h2> Python Script: </h2>
 
 ```
 import re
@@ -262,6 +266,8 @@ This Python script automates log file analysis to identify and report log entrie
 <h2> Description: </h2>
 Automate service status monitoring and restart services if they are down.
 
+<h2> Python Script: </h2>
+
 ``` 
 import subprocess
 
@@ -283,6 +289,8 @@ This Python script automates the monitoring and restart of a specific service if
 
 <h2> Description: </h2>
 Automate system health checks, such as checking CPU and memory usage.
+
+<h2> Python Script: </h2>
 
 ```
 import psutil
@@ -309,6 +317,8 @@ Certainly, here are more examples of Python scripts for automating routine tasks
 <h2> Description: </h2>
 Automate the process of backing up critical system files to a specified location.
 
+<h2> Python Script: </h2>
+
 ```
 import shutil
 import os
@@ -334,6 +344,8 @@ This script automates the process of creating a timestamped backup of system fil
 <h2> Description: </h2>
 Automate log file rotation and compression to manage log file sizes.
 
+<h2> Python Script: </h2>
+
 ```
 import subprocess
 
@@ -354,6 +366,8 @@ This script automates log rotation and compression to keep log files from consum
 <h2> Description: </h2>
 Automate filesystem checks to ensure the integrity of filesystems and repair issues if necessary.
 
+<h2> Python Script: </h2>
+
 ```
 import subprocess
 
@@ -371,6 +385,8 @@ This script automates the filesystem check process to maintain the integrity of 
 
 <h2> Description: </h2>
 Automate email notifications for system events or alerts.
+
+<h2> Python Script: </h2>
 
 ```
 import smtplib
@@ -404,6 +420,8 @@ This script automates the process of sending email notifications for system even
 <h2> Description: </h2>
 Automate system cleanup tasks, such as removing temporary files and logs.
 
+<h2> Python Script: </h2>
+
 ```
 import subprocess
 
@@ -426,6 +444,8 @@ Certainly, here are more examples of Python scripts for automating tasks as a sy
 <h2> Description: </h2>
 Automate the creation and management of user accounts on a Linux system.
 
+<h2> Python Script: </h2>
+
 ```
 import subprocess
 
@@ -445,6 +465,8 @@ This script simplifies the process of creating user accounts on a Linux system.
 
 <h2> Description: </h2>
 Automate the management of firewall rules to control network traffic.
+
+<h2> Python Script: </h2>
 
 ```
 import subprocess
@@ -466,6 +488,8 @@ This script automates the process of adding and removing firewall rules, enhanci
 <h2> Description: </h2>
 Automate log file monitoring for specific events or errors.
 
+<h2> Python Script: </h2>
+
 ```
 import subprocess
 
@@ -486,6 +510,8 @@ This script simplifies log file monitoring for system administrators, making it 
 
 <h2> Description: </h2>
 Automate system health checks, including checking CPU, memory, and disk usage.
+
+<h2> Python Script: </h2>
 
 ```
 import psutil
@@ -511,6 +537,8 @@ This script automates system health checks, providing real-time information on C
 <h2> Description: </h2>
 Automate the process of checking for and applying system updates.
 
+<h2> Python Script: </h2>
+
 ```
 import subprocess
 
@@ -533,6 +561,8 @@ Certainly, here are more examples of Python scripts for automating tasks as a sy
 
 <h2> Description: </h2>
 Automate regular backups of important files and directories.
+
+<h2> Python Script: </h2>
 
 ```
 import shutil
@@ -557,6 +587,8 @@ This script automates the backup of specified files or directories, creating a t
 
 <h2> Description: </h2>
 Automate log file rotation to prevent log files from consuming excessive disk space.
+
+<h2> Python Script: </h2>
 
 ```
 import logging.handlers
@@ -583,6 +615,8 @@ This script automates log file rotation to manage log files efficiently.
 
 <h2> Description: </h2>
 Automate the monitoring of services and restart them if they go down.
+
+<h2> Python Script: </h2>
 
 ```
 import subprocess
@@ -635,6 +669,8 @@ This script automates the monitoring of disk space and sends alerts when it fall
 <h2> Description:</h2>
 Automate user management tasks in Active Directory, like adding, disabling, or enabling user accounts.
 
+<h2> Python Script: </h2>
+
 ```
 import pyad.adquery
 from pyad import *
@@ -660,6 +696,8 @@ Of course, here are more examples of Python scripts for automating tasks as a sy
 
 <h2> Description: </h2>
 Automate the scanning of network ports on a target machine.
+
+<h2> Python Script: </h2>
 
 ```
 import socket
@@ -691,6 +729,8 @@ This script automates network port scanning to identify open ports on a target m
 <h2> Description: </h2>
 Automate the cleanup of files or directories based on certain criteria like age or size.
 
+<h2> Python Script: </h2>
+
 ```
 import os
 import time
@@ -717,6 +757,8 @@ This script automates the cleanup of files or directories older than a specified
 
 <h2> Description: </h2> 
  Automate the checking of SSL certificate expiry dates.
+ 
+<h2> Python Script: </h2>
 
 ```
 import ssl
@@ -747,6 +789,8 @@ This script automates the checking of SSL certificate expiry dates for a specifi
 <h2> Description: </h2>
 Automate the checking of available security patches for the system.
 
+<h2> Python Script: </h2>
+
 ```
 import os
 import subprocess
@@ -771,6 +815,8 @@ This script automates the checking of available security patches for the system.
 
 <h2> Description: </h2>
 Automate the aggregation of logs from multiple servers to a central location.
+
+<h2> Python Script: </h2>
 
 ```
 import socketserver
@@ -804,6 +850,8 @@ Here are more examples of Python scripts for automating tasks as a system admini
 <h2> Description: </h2>
 Automate user account management tasks, such as creating, updating, and deleting user accounts on a Linux system.
 
+<h2> Python Script: </h2>
+
 ```
 import subprocess
 
@@ -829,6 +877,8 @@ This script automates the creation and deletion of user accounts on a Linux syst
 
 <h2> Description: </h2>
 Automate the retrieval of system information from remote servers, such as OS version, available RAM, and disk space.
+
+<h2> Python Script: </h2>
 
 ```
 import paramiko
@@ -873,6 +923,8 @@ This script automates the retrieval of system information from a remote server.
 <h2> Description: </h2>
  Automate the process of creating backups for specific directories.
 
+<h2> Python Script: </h2>
+
 ```
 import shutil
 import tarfile
@@ -904,6 +956,8 @@ This script automates the creation of backups for a specified directory.
 <h2> Description: </h2>
 Automate the management of configuration files, such as editing, backup, and restoration.
 
+<h2> Python Script: </h2>
+
 ```
 import shutil
 
@@ -923,14 +977,18 @@ def edit_and_backup_config_file(config_file, new_settings):
 config_file_path = '/path/to/config.conf'
 new_settings = {'setting_1': 'new_value_1', 'setting_2': 'new_value_2'}
 edit_and_backup_config_file(config_file_path, new_settings)
-Summary: This script automates the editing and backup of configuration files.
+```
+<h2> Summary: </h2>
+This script automates the editing and backup of configuration files.
 
-35. Service Status Checker Script
+<h1> 35. Service Status Checker Script </h1>
 
-Description: Automate checking the status of services on a remote server.
+<h2> Description:  </h2>
+Automate checking the status of services on a remote server.
 
-python
-Copy code
+<h2> Python Script: </h2>
+
+```
 import paramiko
 
 # Service Status Checker Script
@@ -969,6 +1027,8 @@ Certainly, here are more examples of Python scripts for automating tasks as a sy
 <h2> Description: </h2>
  Automate the analysis of log files, such as identifying critical events, errors, or unusual patterns in the log data.
 
+<h2> Python Script: </h2>
+
 ```
 # Log File Analysis Script
 
@@ -996,6 +1056,8 @@ This script automates the analysis of log files to identify critical events or e
 <h2> Description: </h2>
 Automate the process of checking for and updating installed packages or software.
 
+<h2> Python Script: </h2>
+
 ```
 import subprocess
 
@@ -1007,14 +1069,18 @@ def update_packages():
 
 # Usage
 update_packages()
-Summary: This script automates the update of installed packages on a Debian-based system.
+```
+<h2> Summary: </h2>
+This script automates the update of installed packages on a Debian-based system.
 
-38. Disk Space Monitoring Script
+<h1> 38. Disk Space Monitoring Script </h1>
 
-Description: Automate the monitoring of disk space usage on a server and receive alerts when usage exceeds a certain threshold.
+<h2> Description: </h2>
+Automate the monitoring of disk space usage on a server and receive alerts when usage exceeds a certain threshold.
 
-python
-Copy code
+<h2> Python Script: </h2>
+
+```
 import shutil
 
 # Disk Space Monitoring Script
@@ -1039,6 +1105,8 @@ This script automates disk space monitoring and alerts when usage exceeds a spec
 
 <h2> Description: </h2>
 Automate the creation of scheduled backups for specific directories and databases.
+
+<h2> Python Script: </h2>
 
 ```
 import subprocess
@@ -1069,6 +1137,8 @@ This script automates the creation of scheduled backups for a specified director
 
 <h2> Description:</h2> 
 Automate the rotation of SSH keys for user accounts, providing enhanced security.
+
+<h2> Python Script: </h2>
 
 ```
 import os
@@ -1109,6 +1179,8 @@ This script automates the rotation of SSH keys for enhanced security.
 <h2> Description: </h2>
 Automate the cleanup of temporary files, log files, and other resources to free up disk space.
 
+<h2> Python Script: </h2>
+
 ```
 import os
 
@@ -1141,6 +1213,8 @@ Certainly, here are more examples of Python scripts for automating tasks as a sy
 <h2> Description: </h2>
 Automate the creation, modification, or deletion of user accounts on a Linux system.
 
+<h2> Python Script: </h2>
+
 ```
 import subprocess
 
@@ -1160,14 +1234,19 @@ def delete_user(username):
 create_user('newuser', 'newpassword')
 modify_user('existinguser', 'newpassword')
 delete_user('obsoleteuser')
-Summary: This script automates user account management tasks, including account creation, modification, and deletion.
+```
+<h2> Summary: </h2>
+This script automates user account management tasks, including account creation, modification, and deletion.
 
-43. SSL Certificate Renewal Script
 
-Description: Automate the renewal of SSL certificates to ensure secure connections.
+<h1> 43. SSL Certificate Renewal Script </h1>
 
-python
-Copy code
+<h2> Description: </h2>
+Automate the renewal of SSL certificates to ensure secure connections.
+
+<h2> Python Script: </h2>
+
+```
 import subprocess
 import datetime
 
@@ -1194,6 +1273,8 @@ This script automates the renewal of SSL certificates when they are close to exp
 <h2> Description: </h2>
 Automate the management of firewall rules, including adding, modifying, or deleting rules.
 
+<h2> Python Script: </h2>
+
 ```
 import subprocess
 
@@ -1216,6 +1297,8 @@ This script automates firewall rule management tasks, including adding and delet
 
 <h2> Description: </h2>
 Automate server monitoring and receive alerts when predefined conditions are met.
+
+<h2> Python Script: </h2>
 
 ```
 import subprocess
@@ -1260,6 +1343,8 @@ This script automates server monitoring and sends alert emails when predefined c
 <h2> Description: </h2>
 Automate the verification of backups to ensure data integrity.
 
+<h2> Python Script: </h2>
+
 ```
 import subprocess
 
@@ -1283,6 +1368,8 @@ Certainly, here are more examples of Python scripts for automating tasks as a sy
 
 <h2> Description: </h2>
 Gather and display essential system information, such as OS version, CPU, RAM, and disk space.
+
+<h2> Python Script: </h2>  
 
 ```
 import platform
@@ -1316,6 +1403,8 @@ This script gathers and displays essential system information, making it useful 
 <h2> Description: </h2>
 Automate log rotation to manage log files efficiently.
 
+<h2> Python Script: </h2>
+
 ```
 import subprocess
 
@@ -1341,6 +1430,8 @@ This script automates log rotation and cleanup, ensuring that log files do not c
 
 <h2> Description: </h2>
 Continuously monitor disk space usage and receive alerts when it reaches a critical level.
+
+<h2> Python Script: </h2>
 
 ```
 import subprocess
@@ -1384,6 +1475,8 @@ This script continuously monitors disk space usage and sends alert emails when i
 <h2> Description: </h2>
  Automate the deployment of SSH keys to multiple servers.
 
+<h2> Python Script: </h2>
+
 ```
 import subprocess
 
@@ -1402,6 +1495,8 @@ This script automates the deployment of SSH keys to multiple servers, simplifyin
 
 <h2> Description: </h2>
 Continuously monitor network services (e.g., HTTP, SSH) and send alerts if they become unavailable.
+
+<h2> Python Script: </h2>
 
 ```
 import socket
@@ -1451,6 +1546,8 @@ Certainly, here are more examples of Python scripts for automation tasks relevan
 <h2> Description: </h2>
 Create a script to automate scheduled backups of critical files and directories.
 
+<h2> Python Script: </h2>
+
 ```
 import shutil
 import datetime
@@ -1478,6 +1575,8 @@ This script automates the backup of files and directories to a specified backup 
 
 <h2> Description: </h2>
 Automate user account management tasks, such as creating, modifying, or deleting user accounts.
+
+<h2> Python Script: </h2>
 
 ```
 import subprocess
@@ -1508,6 +1607,8 @@ This script simplifies user account management tasks, such as user creation, pas
 
 <h2> Description: </h2>
 Create a script to monitor server health and send alerts if critical conditions are met.
+
+<h2> Python Script: </h2>
 
 ```
 import psutil
@@ -1551,6 +1652,8 @@ This script monitors server health, specifically CPU and memory usage, and sends
 <h2> Description: </h2>
 Automate configuration management tasks, such as deploying and maintaining configuration files across multiple servers.
 
+<h2> Python Script: </h2>
+
 ```
 import paramiko
 
@@ -1580,6 +1683,8 @@ This script uses SSH to deploy a local configuration file to a remote server, si
 
 <h2> Description: </h2>
 Create a script to collect and centralize logs from multiple servers to a central log server.
+
+<h2> Python Script: </h2>
 
 ```
 import socket
@@ -1613,6 +1718,8 @@ Of course, here are more examples of Python scripts for automating common system
 
 <h2> Description: </h2>
 Create a script to monitor disk space usage and send alerts when it exceeds a specified threshold.
+
+<h2> Python Script: </h2>
 
 ```
 import psutil
@@ -1656,6 +1763,8 @@ This script monitors the free disk space of a specified directory and sends an e
 <h2> Description: </h2>
 Automate the backup of network device configurations using the Paramiko library.
 
+<h2> Python Script: </h2>
+
 ```
 import paramiko
 import os
@@ -1696,6 +1805,8 @@ This script connects to a network device via SSH, retrieves its configuration, a
 
 <h2> Description: </h2>
 Create a script to reboot a remote server using SSH.
+
+<h2> Python Script: </h2>
 
 ```
 import paramiko
