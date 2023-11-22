@@ -70,6 +70,8 @@ Certainly, here are more examples of automation Python scripts for system admini
 <h2> Description: </h2>
 Automate log file cleanup by removing log files older than a specified number of days.
 
+<h2> Python Script: </h2>
+
 ```
 import os
 import datetime
