@@ -4119,6 +4119,8 @@ This script scans files for known malware signatures using MD5 hashes.
 <h2> Description: </h2>
 Create a script that analyzes network flows to detect anomalies.
 
+<h2> Python Script: </h2>
+
 ```
 # Network Flow Analyzer
 
@@ -4239,6 +4241,8 @@ Certainly! Here are more Python script examples for a Security Operations Center
 <h2> Description: </h2>
 Create a script to integrate with a vulnerability scanner to automate vulnerability assessments.
 
+<h2> Python Script: </h2>
+
 ```
 # Vulnerability Scanner Integration
 
@@ -4273,6 +4277,8 @@ This script integrates with a vulnerability scanner to initiate scans on target 
 <h2> Description: </h2>
 Create a script that parses threat intelligence feeds and extracts indicators of compromise (IoCs).
 
+<h2> Python Script: </h2>
+
 ```
 # Threat Intelligence Feed Parser
 
@@ -4303,6 +4309,8 @@ This script fetches and parses threat intelligence feeds for indicators of compr
 <h2> Description: </h2>
 Create a script to generate incident tickets for security incidents.
 
+<h2> Python Script: </h2>
+
 ```
 # Security Incident Ticket Generator
 
@@ -4324,6 +4332,8 @@ This script generates unique incident ticket IDs for tracking security incidents
 
 <h2> Description: </h2>
 Create a script to monitor disk space on critical servers and send alerts when space is low.
+
+<h2> Python Script: </h2>
 
 ```
 # Disk Space Monitor
@@ -4366,6 +4376,8 @@ This script monitors disk space on a server and sends email alerts when disk usa
 <h2> Description: </h2>
 Create a script to fetch security data for a dashboard, such as incident statistics and threat alerts.
 
+<h2> Python Script: </h2>
+
 ```
 # Security Dashboard Data Fetcher
 
@@ -4396,6 +4408,8 @@ Certainly! Here are more Python script examples for a Security Operations Center
 
 <h2> Description: </h2>
 Create a script to enrich Security Information and Event Management (SIEM) logs with additional contextual information.
+
+<h2> Python Script: </h2>
 
 ```
 # SIEM Log Enrichment
@@ -4438,6 +4452,8 @@ This script enriches SIEM log entries with geolocation information based on the 
 <h2> Description: </h2>
 Create a script to analyze phishing emails, extract URLs, and check them against threat intelligence feeds.
 
+<h2> Python Script: </h2>
+
 ```
 # Phishing Email Analysis
 
@@ -4475,6 +4491,8 @@ This script analyzes a phishing email, extracts URLs, and checks them against kn
 
 <h2> Description: </h2>
 Create a script to monitor user account activities and detect unusual login patterns.
+
+<h2> Python Script: </h2>
 
 ```
 # User Account Activity Monitor
@@ -4519,6 +4537,8 @@ This script continuously monitors user account activity and alerts the security 
 <h2> Description: </h2>
 Create a script to manage firewall rules, allowing SOC analysts to add or remove rules easily.
 
+<h2> Python Script: </h2>
+
 ```
 # Firewall Rule Management
 
@@ -4555,6 +4575,8 @@ This script allows SOC analysts to add and remove firewall rules easily using fi
 
 <h2> Description: </h2> 
 Create a script to track and manage the incident response workflow, including task assignments and progress.
+
+<h2> Python Script: </h2>
 
 ```
 # Incident Response Workflow Tracker
@@ -4610,6 +4632,8 @@ Of course! Here are additional Python script examples for a Security Operations 
 <h2> Description: </h2>
 Create a script to aggregate and analyze logs from multiple sources, allowing SOC analysts to quickly identify security incidents.
 
+<h2> Python Script: </h2>
+
 ```
 # Log Aggregation and Analysis
 
@@ -4649,6 +4673,8 @@ This script aggregates logs from various sources and triggers log analysis when 
 
 <h2> Description: </h2>
 Create a script to monitor critical system files for any unauthorized changes, helping detect potential intrusions.
+
+<h2> Python Script: </h2>
 
 ```
 # File Integrity Monitoring
@@ -4707,6 +4733,8 @@ This script continuously monitors critical system files for changes and alerts t
 <h2> Description: </h2>
 Create a script to fetch threat intelligence feeds, parse the data, and check if any indicators of compromise (IOCs) match the organization's systems.
 
+<h2> Python Script: </h2>
+
 ```
 # Threat Intelligence Feed Integration
 
@@ -4752,6 +4780,8 @@ This script fetches a threat intelligence feed, checks if any IOCs match the org
 <h2> Description: </h2>
 Create a script to analyze DNS query logs for unusual patterns or potentially malicious domain names.
 
+<h2> Python Script: </h2>
+
 ```
 # DNS Query Analyzer
 
@@ -4794,6 +4824,8 @@ Certainly! Here are more Python script examples for a Security Operations Center
 <h2> Description: </h2>
 Create a script to monitor user account activities, such as login attempts and privilege changes, and notify the SOC team of suspicious activities.
 
+<h2> Python Script: </h2>
+
 ```
 # User Account Monitoring
 
@@ -4821,6 +4853,8 @@ This script monitors the system logs for failed login attempts and sends an emai
 
 <h2> Description: </h2>
 Create a script to capture and analyze network traffic, helping to detect unusual patterns or traffic from blacklisted IP addresses.
+
+<h2> Python Script: </h2>
 
 ```
 # Network Traffic Analysis
@@ -4856,6 +4890,8 @@ This script captures network traffic on a specified interface and analyzes it fo
 
 <h2> Description: </h2>
 Create a script to extract and analyze email headers, checking for signs of phishing or spoofed emails.
+
+<h2> Python Script: </h2>
 
 ```
 # Email Header Analyzer
@@ -4894,6 +4930,8 @@ This script extracts and analyzes email headers for signs of phishing or spoofed
 
 <h2> Description: </h2>
 Create a script to monitor and detect changes in firewall rules, alerting the SOC team when unauthorized changes are made.
+
+<h2> Python Script: </h2>
 
 ```
 # Firewall Rule Change Detection
@@ -4935,6 +4973,8 @@ Certainly! Here are more Python script examples for a Security Operations Center
 <h2> Description: </h2>
 Create a script to parse and analyze various log files from servers and devices in your network, looking for signs of security incidents.
 
+<h2> Python Script: </h2>
+
 ```
 # Log File Analysis
 
@@ -4971,6 +5011,8 @@ This script analyzes log files in a specified directory for signs of security in
 <h2> Description: </h2>
 Develop a script to integrate with a Security Information and Event Management (SIEM) system to automate event handling and alerting.
 
+<h2> Python Script: </h2>
+
 ```
 # SIEM Integration
 
@@ -5001,6 +5043,8 @@ This script sends security alerts to a SIEM system, allowing for automated event
 
 <h1> Description: </h1>
 Create a script that integrates with threat intelligence feeds to automatically update threat information and apply it to your security systems.
+
+<h2> Python Script: </h2>
 
 ```
 # Threat Feed Integration
@@ -5036,6 +5080,8 @@ This script fetches threat intelligence data from a threat feed, processes the d
 
 <h2> Description: </h2>
 Create a script to automate security awareness training reminders for employees, ensuring they complete required training modules.
+
+<h2> Python Script: </h2>
 
 ```
 # Security Awareness Training Reminder
@@ -5079,6 +5125,8 @@ Certainly! Here are more Python script examples for a Security Operations Center
 <h2> Description: </h2>
 Create a script to capture and analyze network traffic to identify anomalies or potential security threats.
 
+<h2> Python Script: </h2>
+
 ```
 # Network Traffic Analysis
 
@@ -5103,6 +5151,8 @@ This script uses the Scapy library to capture and analyze network traffic, makin
 
 <h2> Description: </h2>
 Develop a script to check if user passwords meet the organization's password policy.
+
+<h2> Python Script: </h2>
 
 ```
 python
@@ -5134,6 +5184,8 @@ This script checks if a given password adheres to the organization's password po
 
 <h2> Description: </h2>
 Create a script that allows employees to report security incidents by providing necessary information.
+
+<h2> Python Script: </h2>
 
 ```
 # Security Incident Reporting
@@ -5167,6 +5219,8 @@ This script allows employees to report security incidents by providing details s
 
 <h2> Description: </h2>
 Develop a script to automate the process of checking for and applying security patches to servers and devices.
+
+<h2> Python Script: </h2>
 
 ```
 python
@@ -5204,6 +5258,8 @@ This script automates the process of checking for and applying security patches 
 
 <h2> Description: </h2>
 Create a script to monitor threat intelligence feeds for the latest threats and alert the SOC team when relevant information is found.
+
+<h2> Python Script: </h2>
 
 ```
 python
@@ -5248,6 +5304,8 @@ Certainly, here are more examples of Python scripts for a Security Operations Ce
 <h2> Description: </h2>
 Create a script to analyze system logs for anomalies or suspicious activities, which can help in early threat detection.
 
+<h2> Python Script: </h2>
+
 ```
 # Log Analysis for Anomaly Detection
 
@@ -5273,6 +5331,8 @@ This script analyzes system logs for suspicious activity and sends alerts to the
 
 <h2> Description: </h2>
 Develop a script to automate threat hunting by querying logs, network data, and endpoint data for patterns that may indicate threats.
+
+<h2> Python Script: </h2>
 
 ```
 # Threat Hunting Automation
@@ -5309,6 +5369,8 @@ This script automates the process of threat hunting by querying logs stored in E
 <h2> Description: </h2>
 Create a script to monitor user account activities, including login attempts and privilege changes, and notify the SOC team of any suspicious events.
 
+<h2> Python Script: </h2>
+
 ```
 # User Account Activity Monitoring
 
@@ -5340,6 +5402,8 @@ This script monitors user account activity, such as login attempts, by analyzing
 
 <h2> Description: </h2>
 Develop a script to generate a security dashboard summarizing key security metrics and incidents.
+
+<h2> Python Script: </h2>
 
 ```
 # Security Dashboard Generator
@@ -5373,6 +5437,8 @@ Certainly, here are more examples of Python scripts for a Security Operations Ce
 <h2> Description: </h2>
 Create a script that monitors log files in real-time and sends alerts when specific events are detected.
 
+<h2> Python Script: </h2>
+
 ```
 # Real-time Log Monitoring and Alerting
 
@@ -5401,6 +5467,8 @@ This script monitors log files in real-time and sends alerts when a specified ke
 
 <h2> Description: </h2>
 Develop a script that automates the analysis of suspicious files for malware characteristics.
+
+<h2> Python Script: </h2>
 
 ```
 # Automated Malware Analysis
@@ -5448,6 +5516,8 @@ This script automates the analysis of suspicious files for malware characteristi
 
 <h2> Description: </h2>
 Create a script that automates the workflow for handling security incidents, including documentation and response actions.
+
+<h2> Python Script: </h2>
 
 ```
 # Security Incident Handling Workflow
@@ -5500,6 +5570,8 @@ Certainly, here are more examples of Python scripts for a Security Operations Ce
 <h2> Description:</h2>
 Create a Python script that scans a range of IP addresses for open network ports.
 
+<h2> Python Script: </h2>
+
 ```
 # Network Port Scanner
 
@@ -5529,6 +5601,8 @@ This script scans a range of network ports on a specified IP address and returns
 
 <h2> Description: </h2>
 Develop a script that analyzes log files for anomalies and triggers alerts for unusual patterns.
+
+<h2> Python Script: </h2>
 
 ```
 # Log Analysis for Anomalies
@@ -5560,6 +5634,8 @@ This script analyzes log files for anomalies and sends alerts when patterns like
 <h2> Description: </h2>
 Create a script that captures and analyzes network traffic to detect suspicious patterns.
 
+<h2> Python Script: </h2>
+
 ```
 # Network Traffic Analysis
 
@@ -5588,6 +5664,8 @@ This script uses the Scapy library to capture and analyze network traffic, sendi
 
 <h2> Description: </h2>
 Develop a script that checks systems for compliance with security policies and generates reports.
+
+<h2> Python Script: </h2>
 
 ```
 # Security Policy Compliance Checker
