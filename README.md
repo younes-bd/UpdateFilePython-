@@ -5700,6 +5700,122 @@ This script checks systems for compliance with security policies, generates a re
 
 These Python scripts cover a range of SOC tasks, including network port scanning, log analysis for anomalies, network traffic analysis, and security policy compliance checking. They assist SOC analysts in identifying vulnerabilities, monitoring logs, analyzing network traffic, and ensuring compliance with security policies.
 
+
+170. Threat Intelligence Feed Integration
+
+Description: Create a script that fetches threat intelligence feeds and checks them against your network traffic.
+
+```
+# Threat Intelligence Feed Integration
+
+import requests
+
+def fetch_threat_intelligence_feed():
+    # Replace the URL with the actual threat intelligence feed URL
+    feed_url = "https://example.com/threat_feed.json
+User
+can you give me more examples like these
+ChatGPT
+Absolutely! Here are more Python script examples for a Security Operations Center (SOC) Analyst:
+```
+
+171. Network Port Scanner
+
+Description: Develop a script to scan open ports on a given host or a range of hosts.
+
+```
+# Network Port Scanner
+
+import socket
+
+def port_scan(target_host, target_ports):
+    for port in target_ports:
+        sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        sock.settimeout(1)
+        result = sock.connect_ex((target_host, port))
+        if result == 0:
+            print(f"Port {port} is open")
+        else:
+            print(f"Port {port} is closed")
+        sock.close()
+
+# Usage
+target_host = "example.com"
+target_ports = range(1, 1024)
+port_scan(target_host, target_ports)
+```
+Summary: 
+This script allows you to scan a range of ports on a target host and identify which ports are open.
+
+172. Log Analysis for Anomalies
+
+Description: Create a script to analyze logs for anomalies, such as multiple failed login attempts.
+
+```
+# Log Analysis for Anomalies
+
+def analyze_logs(logs):
+    for log in logs:
+        if "Failed login" in log:
+            handle_failed_login(log)
+
+def handle_failed_login(log):
+    # Implement actions to respond to a series of failed login attempts
+    send_alert("Potential brute force attack detected", log)
+
+def send_alert(alert_message, log):
+    # Implement code to send an alert to the SOC team
+    print(alert_message)
+    print(log)
+
+# Usage
+log_entries = ["Failed login attempt for user 'admin'", "Failed login attempt for user 'root'"]
+analyze_logs(log_entries)
+```
+Summary: 
+This script analyzes logs for anomalies, such as repeated failed login attempts, and triggers alerts.
+
+173. Security Awareness Quiz Generator
+
+Description: Generate quizzes for security awareness training programs.
+
+```
+# Security Awareness Quiz Generator
+
+import random
+
+def generate_security_quiz():
+    questions = [
+        "What is phishing?",
+        "How often should you update your passwords?",
+        "What is the purpose of a firewall?",
+        # Add more questions
+    ]
+
+    answers = [
+        "A type of cyber attack to trick individuals",
+        "Regularly, at least every three months",
+        "To monitor and control incoming and outgoing network traffic",
+        # Add more answers
+    ]
+
+    quiz = list(zip(questions, answers))
+    random.shuffle(quiz)
+
+    for i, (question, answer) in enumerate(quiz, start=1):
+        print(f"Question {i}: {question}")
+        user_answer = input("Your answer: ")
+        if user_answer.lower() == answer.lower():
+            print("Correct!\n")
+        else:
+            print(f"Incorrect. The correct answer is: {answer}\n")
+
+# Usage
+generate_security_quiz()
+```
+Summary: 
+This script generates randomized security awareness quizzes to enhance the knowledge of users.
+
  
 <!--
  ```diff
