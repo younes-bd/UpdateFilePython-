@@ -5701,9 +5701,12 @@ This script checks systems for compliance with security policies, generates a re
 These Python scripts cover a range of SOC tasks, including network port scanning, log analysis for anomalies, network traffic analysis, and security policy compliance checking. They assist SOC analysts in identifying vulnerabilities, monitoring logs, analyzing network traffic, and ensuring compliance with security policies.
 
 
-170. Threat Intelligence Feed Integration
+<h1> 170. Threat Intelligence Feed Integration </h1>
 
-Description: Create a script that fetches threat intelligence feeds and checks them against your network traffic.
+<h2> Description: </h2>
+Create a script that fetches threat intelligence feeds and checks them against your network traffic.
+
+<h2> Python Script: </h2>
 
 ```
 # Threat Intelligence Feed Integration
@@ -5723,6 +5726,8 @@ Absolutely! Here are more Python script examples for a Security Operations Cente
 
 <h2> Description: </h2>
 Develop a script to scan open ports on a given host or a range of hosts.
+
+<h2> Python Script: </h2>
 
 ```
 # Network Port Scanner
@@ -5753,6 +5758,8 @@ This script allows you to scan a range of ports on a target host and identify wh
 <h2> Description: </h2>
 Create a script to analyze logs for anomalies, such as multiple failed login attempts.
 
+<h2> Python Script: </h2>
+
 ```
 # Log Analysis for Anomalies
 
@@ -5781,6 +5788,8 @@ This script analyzes logs for anomalies, such as repeated failed login attempts,
 
 <h2> Description: </h2>
 Generate quizzes for security awareness training programs.
+
+<h2> Python Script: </h2>
 
 ```
 # Security Awareness Quiz Generator
@@ -5828,6 +5837,8 @@ Certainly! Here are more Python script examples for a Security Operations Center
 <h2> Description: </h2>
 Develop a script to calculate and monitor the hash values of critical system files. This can be used to detect unauthorized changes.
 
+<h2> Python Script: </h2>
+
 ```
 # File Integrity Checker
 
@@ -5874,6 +5885,8 @@ This script calculates hash values for critical files and alerts if any changes 
 <h2> Description: </h2>
 Create a script to analyze network traffic logs and identify patterns or potential security incidents.
 
+<h2> Python Script: </h2>
+
 ```
 # Network Traffic Analyzer
 
@@ -5903,6 +5916,8 @@ This script analyzes network traffic logs for unauthorized access or malicious a
 
 <h2> Description: </h2>
 Develop a script to automate common incident response tasks, such as isolating a compromised system.
+
+<h2> Python Script: </h2>
 
 ```
 # Incident Response Automation
@@ -5943,6 +5958,8 @@ This script automates incident response tasks based on the type of security inci
 <h2> Description: </h2>
 Develop a script to analyze system logs for anomalies that might indicate a security threat.
 
+<h2> Python Script: </h2>
+
 ```
 # Log Analysis for Anomaly Detection
 
@@ -5972,6 +5989,8 @@ This script analyzes system logs for anomalies and sends an alert if any are det
 <h2> Description: </h2>
 Create a script to check if user passwords meet security policy requirements.
 
+<h2> Python Script: </h2>
+
 ```
 # Password Policy Checker
 
@@ -5997,6 +6016,8 @@ This script checks if a user password meets the defined security policy.
 
 <h2> Description: </h2> 
 Develop a script to check if systems are up-to-date with the latest security patches.
+
+<h2> Python Script: </h2>
 
 ```
 # Security Patch Checker
@@ -6031,6 +6052,8 @@ This script checks if systems have the latest security patches installed.
 
 <h2> Description: </h2>
 Create a script to generate incident tickets with relevant details.
+
+<h2> Python Script: </h2>
 
 ```
 # Incident Ticket Generator
@@ -6075,6 +6098,8 @@ This script generates incident tickets for different incident types.
 <h2> Description: </h2>
 Develop a script to fetch threat intelligence feeds and update a local database.
 
+<h2> Python Script: </h2>
+
 ```
 # Threat Intelligence Feeder
 
@@ -6102,6 +6127,8 @@ This script fetches threat intelligence feeds and updates a local database with 
 <h2> Description: </h2>
 Create a script to generate security awareness quizzes for employees.
 
+<h2> Python Script: </h2>
+
 ```
 # Security Awareness Quiz Generator
 
@@ -6128,6 +6155,8 @@ This script generates a security awareness quiz for employees.
 
 <h2> Description: </h2>
 Develop a script to analyze network traffic logs and identify potential security incidents.
+
+<h2> Python Script: </h2>
 
 ```
 # Network Traffic Analyzer
@@ -6157,6 +6186,8 @@ This script analyzes network traffic logs for suspicious activity and sends aler
 
 <h2> Description: </h2>
 Create a script to monitor user account activity and detect unusual patterns.
+
+<h2> Python Script: </h2>
 
 ```
 # User Account Activity Monitor
@@ -6195,6 +6226,8 @@ Absolutely! Here are more examples of Python scripts for a Security Operations C
 <h2> Description: </h2>
 Develop a script to automatically analyze logs and identify patterns indicative of security incidents.
 
+<h2> Python Script: </h2>
+
 ```
 # Automated Log Analysis
 
@@ -6229,6 +6262,8 @@ This script automates the analysis of logs and alerts on potential security inci
 <h2> Description: </h2>
 Create a script to perform threat hunting based on predefined indicators of compromise (IoCs).
 
+<h2> Python Script: </h2>
+
 ```
 # Threat Hunting Script
 
@@ -6257,6 +6292,8 @@ This script hunts for potential threats in network traffic based on known indica
 
 <h2> Description: </h2>
 Develop a script to automate some aspects of incident response, such as isolating affected systems.
+
+<h2> Python Script: </h2>
 
 ```
 # Incident Response Automation
@@ -6292,6 +6329,8 @@ Certainly! Here are more examples of Python scripts tailored for a Security Oper
 <h2> Description: </h2>
 Develop a script to integrate with a SIEM tool and parse security events for further analysis.
 
+<h2> Python Script: </h2>
+
 ```
 # SIEM Integration Script
 
@@ -6321,6 +6360,8 @@ This script integrates with a SIEM tool, parses security events, and alerts on s
 
 <h2> Description: </h2>
 Create a script to fetch and integrate threat intelligence feeds, enhancing the ability to detect known threats.
+
+<h2> Python Script: </h2>
 
 ```
 # Threat Intelligence Integration Script
@@ -6354,6 +6395,8 @@ This script fetches threat intelligence data from a feed, analyzes it, and takes
 
 <h2> Description: </h2>
 Develop a script to monitor user account activities and detect suspicious behavior.
+
+<h2> Python Script: </h2>
 
 ```
 # User Account Monitoring Script
