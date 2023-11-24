@@ -6426,6 +6426,344 @@ monitor_user_accounts(user_logs)
 ```
 <h2> Summary: </h2>
 This script monitors user account activities for suspicious behavior and alerts on potential security threats.
+
+<h1> 191. Threat Hunting Script </h1>
+
+<h2> Description: </h2>
+Develop a script to perform threat hunting by searching for indicators of compromise (IOCs) across various data sources.
+
+```
+# Threat Hunting Script
+
+def hunt_for_iocs(log_data, ioc_list):
+    for log_entry in log_data:
+        for ioc in ioc_list:
+            if ioc in log_entry:
+                handle_ioc_detection(log_entry, ioc)
+
+def handle_ioc_detection(log_entry, ioc):
+    # Implement actions to respond to detected IOCs
+    send_alert(f"IOC detected in log entry: {ioc} | Log: {log_entry}")
+
+# Usage
+log_data = ["Suspicious activity detected: malware.exe", "Login from unauthorized IP: 192.168.1.100"]
+ioc_list = ["malware.exe", "192.168.1.100"]
+hunt_for_iocs(log_data, ioc_list)
+```
+<h2> Summary: </h2>
+This script performs threat hunting by searching for predefined IOCs in log data and triggers alerts on detection.
+
+<h1> 192. Malware Analysis Automation </h1>
+
+<h2> Description: </h2>
+Create a script to automate basic analysis tasks for a suspicious file, such as extracting file properties and conducting static analysis.
+
+```
+# Malware Analysis Automation Script
+
+def analyze_malware(file_path):
+    file_properties = extract_file_properties(file_path)
+    conduct_static_analysis(file_path)
+
+def extract_file_properties(file_path):
+    # Implement code to extract basic properties of the file
+    # For example, file size, creation date, and hash
+    return {"File Size": "1024 KB", "Creation Date": "2023-07-30", "MD5 Hash": "a1b2c3d4e5"}
+
+def conduct_static_analysis(file_path):
+    # Implement code to conduct static analysis on the file
+    # For simplicity, printing a static analysis report
+    static_analysis_report = "Static analysis results:\n- File contains obfuscated code\n- Imports suspicious DLL"
+    print(static_analysis_report)
+
+# Usage
+file_path = "/path/to/suspicious_file.exe"
+analyze_malware(file_path)
+```
+<h2> Summary: </h2> 
+This script automates basic analysis tasks for a suspicious file, providing essential information and static analysis results.
+
+<h1> 193. Threat Intelligence Enrichment </h1>
+
+<h2> Description: </h2>
+Develop a script to enrich threat intelligence data with additional context, such as WHOIS information for a suspicious domain.
+
+```
+# Threat Intelligence Enrichment Script
+
+def enrich_threat_intelligence(threat_data):
+    for threat in threat_data:
+        enriched_threat = enrich_with_whois(threat)
+        handle_enriched_threat(enriched_threat)
+
+def enrich_with_whois(threat):
+    # Implement code to fetch WHOIS information for a given domain
+    # For simplicity, returning static WHOIS data
+    return {**threat, "WHOIS": {"Registrar": "Example Registrar", "Creation Date": "2022-01-01"}}
+
+def handle_enriched_threat(enriched_threat):
+    # Implement actions to respond to enriched threat intelligence
+    send_alert(f"Enriched threat data: {enriched_threat}")
+
+# Usage
+threat_data = [{"Type": "Domain", "Value": "example.com"}]
+enrich_threat_intelligence(threat_data)
+```
+<h2> Summary: </h2>
+This script enriches threat intelligence data with WHOIS information for a suspicious domain, providing additional context for analysis.
+
+<h1> 194. Network Traffic Analysis </h1>
+
+<h2> Description: </h2>
+Create a script to analyze network traffic logs and identify anomalous patterns that might indicate a security threat.
+
+```
+# Network Traffic Analysis Script
+
+def analyze_network_traffic(log_data):
+    for log_entry in log_data:
+        if is_anomalous_traffic(log_entry):
+            handle_anomalous_traffic(log_entry)
+
+def is_anomalous_traffic(log_entry):
+    # Implement logic to detect anomalous patterns in network traffic logs
+    # For example, detecting a sudden increase in outbound traffic
+    return "Outbound Traffic Spike" in log_entry
+
+def handle_anomalous_traffic(log_entry):
+    # Implement actions to respond to anomalous network traffic
+    send_alert(f"Anomalous network traffic detected: {log_entry}")
+
+# Usage
+network_logs = ["Normal traffic: 1000 packets/min", "Outbound Traffic Spike: 5000 packets/min"]
+analyze_network_traffic(network_logs)
+```
+<h2> Summary: </h2>
+This script analyzes network traffic logs for anomalous patterns and triggers alerts when detected.
+
+<h1> 195. Incident Triage Automation </h1>
+
+<h2> Description: </h2>
+Develop a script to automate the initial triage of security incidents, categorizing them based on predefined criteria.
+
+```
+# Incident Triage Automation Script
+
+def triage_incidents(incident_data):
+    for incident in incident_data:
+        incident_category = categorize_incident(incident)
+        handle_triaged_incident(incident, incident_category)
+
+def categorize_incident(incident):
+    # Implement logic to categorize incidents based on predefined criteria
+    # For example, categorizing incidents as malware, phishing, or unauthorized access
+    return "Malware" if "Malicious File" in incident["Description"] else "Phishing"
+
+def handle_triaged_incident(incident, incident_category):
+    # Implement actions to respond to triaged incidents
+    send_alert(f"Incident triaged: {incident_category} - {incident['Description']}")
+
+# Usage
+incident_data = [{"Description": "Malicious File Detected", "Source": "Endpoint"}]
+triage_incidents(incident_data)
+```
+<h2> Summary: </h2>
+This script automates the triage of security incidents, categorizing them based on predefined criteria.
+
+<h1> 196. Threat Actor Attribution </h1>
+
+<h2> Description: </h2>
+Create a script to gather and analyze threat intelligence data to attribute a security incident to a known threat actor or group.
+
+```
+# Threat Actor Attribution Script
+
+def attribute_threat_actor(incident_data, threat_actor_database):
+    for incident in incident_data:
+        threat_actor = lookup_threat_actor(incident, threat_actor_database)
+        handle_attributed_threat_actor(incident, threat_actor)
+
+def lookup_threat_actor(incident, threat_actor_database):
+    # Implement logic to lookup threat actor based on incident details
+    # For simplicity, returning a static threat actor for demonstration
+    return threat_actor_database.get("APT29")
+
+def handle_attributed_threat_actor(incident, threat_actor):
+    # Implement actions to respond to attributed threat actor
+    send_alert(f"Incident attributed to Threat Actor: {threat_actor} - {incident['Description']}")
+
+# Usage
+incident_data = [{"Description": "Phishing Campaign", "Source": "Email"}]
+threat_actor_database = {"APT29": "Cozy Bear"}
+attribute_threat_actor(incident_data, threat_actor_database)
+```
+<h2> Summary: </h2>
+This script attributes a security incident to a known threat actor based on threat intelligence data
+
+<h1> 197. Threat Hunting Automation </h1>
+
+<h2> Description: </h2>
+Develop a script to automate the process of threat hunting by searching for indicators of compromise (IoCs) across various logs and data sources.
+
+python
+Copy code
+# Threat Hunting Automation Script
+
+def hunt_for_threats(log_data, indicators_of_compromise):
+    for log_entry in log_data:
+        for indicator in indicators_of_compromise:
+            if is_ioc_present(log_entry, indicator):
+                handle_detected_ioc(log_entry, indicator)
+
+def is_ioc_present(log_entry, indicator):
+    # Implement logic to check if the indicator of compromise is present in the log entry
+    return indicator in log_entry
+
+def handle_detected_ioc(log_entry, indicator):
+    # Implement actions to respond to the detected indicator of compromise
+    send_alert(f"Indicator of Compromise Detected: {indicator} - {log_entry}")
+
+# Usage
+log_data = ["Malicious IP detected", "Phishing domain in DNS log"]
+indicators_of_compromise = ["Malicious IP", "Phishing Domain"]
+hunt_for_threats(log_data, indicators_of_compromise)
+Summary: This script automates the threat hunting process by searching for indicators of compromise in various logs.
+
+198. Threat Intelligence Feed Integration
+
+Description: Create a script to fetch and integrate threat intelligence feeds, updating your organization's threat intelligence database.
+
+python
+Copy code
+# Threat Intelligence Feed Integration Script
+
+def update_threat_intelligence(threat_intelligence_database, threat_feed):
+    new_indicators = fetch_threat_indicators(threat_feed)
+    update_database(threat_intelligence_database, new_indicators)
+
+def fetch_threat_indicators(threat_feed):
+    # Implement logic to fetch indicators of compromise from the threat intelligence feed
+    # For demonstration, returning static indicators
+    return ["New_Malware_MD5", "New_Phishing_Domain"]
+
+def update_database(threat_intelligence_database, new_indicators):
+    # Implement logic to update the threat intelligence database with new indicators
+    threat_intelligence_database.extend(new_indicators)
+    print("Threat Intelligence Database Updated")
+
+# Usage
+threat_intelligence_database = ["Known_Malware_MD5", "Known_Phishing_Domain"]
+threat_feed = "https://example.com/threat-feed"
+update_threat_intelligence(threat_intelligence_database, threat_feed)
+Summary: This script fetches new indicators of compromise from a threat intelligence feed and updates the organization's threat intelligence database.
+
+199. Threat Simulation Script
+
+Description: Develop a script to simulate potential threat scenarios, allowing the organization to assess its detection and response capabilities.
+
+python
+Copy code
+# Threat Simulation Script
+
+def simulate_threat_scenario(organization_environment):
+    threat_scenario = generate_threat_scenario()
+    simulate_attack(organization_environment, threat_scenario)
+
+def generate_threat_scenario():
+    # Implement logic to generate a simulated threat scenario
+    return {"Attack_Type": "Phishing", "Target": "Employee Workstations"}
+
+def simulate_attack(organization_environment, threat_scenario):
+    # Implement logic to simulate the threat scenario in the organization's environment
+    send_alert(f"Simulated {threat_scenario['Attack_Type']} attack on {threat_scenario['Target']}")
+
+# Usage
+organization_environment = {"Network": "Corporate_Network", "Users": ["Alice", "Bob"]}
+simulate_threat_scenario(organization_environment)
+Summary: This script simulates a threat scenario, helping the organization assess its detection and response capabilities.
+
+200. IOC Enrichment Script
+
+Description: Develop a script to enrich indicators of compromise (IoCs) with additional context and threat intelligence data.
+
+python
+Copy code
+# IOC Enrichment Script
+
+def enrich_ioc(ioc):
+    ioc_details = fetch_ioc_details(ioc)
+    return ioc_details
+
+def fetch_ioc_details(ioc):
+    # Implement logic to fetch additional details for the given indicator of compromise
+    # For demonstration, returning static details
+    if ioc == "Malicious_IP":
+        return {"Category": "Malware", "Country": "Unknown", "Last_Seen": "2023-08-15"}
+    elif ioc == "Phishing_Domain":
+        return {"Category": "Phishing", "Registrar": "Example Registrar", "Creation_Date": "2023-07-01"}
+
+# Usage
+ioc_to_enrich = "Malicious_IP"
+enriched_ioc_details = enrich_ioc(ioc_to_enrich)
+print(f"Enriched IOC Details: {enriched_ioc_details}")
+Summary: This script enriches indicators of compromise with additional details such as category, country, and last seen date.
+
+201. Threat Actor Attribution Script
+
+Description: Create a script to analyze threat intelligence data and attribute potential threat actors based on known tactics, techniques, and procedures (TTPs).
+
+python
+Copy code
+# Threat Actor Attribution Script
+
+def attribute_threat_actor(threat_intelligence_data):
+    potential_threat_actor = analyze_ttps(threat_intelligence_data)
+    return potential_threat_actor
+
+def analyze_ttps(threat_intelligence_data):
+    # Implement logic to analyze tactics, techniques, and procedures to attribute potential threat actors
+    # For demonstration, returning a potential threat actor
+    return "APT28"
+
+# Usage
+threat_intelligence_data = {"TTPs": ["Spear Phishing", "Data Exfiltration"]}
+potential_threat_actor = attribute_threat_actor(threat_intelligence_data)
+print(f"Potential Threat Actor: {potential_threat_actor}")
+Summary: This script analyzes threat intelligence data to attribute potential threat actors based on observed tactics, techniques, and procedures.
+
+202. Threat Intelligence Report Generation
+
+Description: Develop a script to generate a comprehensive threat intelligence report based on the analysis of various intelligence sources.
+
+python
+Copy code
+# Threat Intelligence Report Generation Script
+
+def generate_threat_intelligence_report(threat_intelligence_sources):
+    threat_intelligence_data = gather_intelligence_data(threat_intelligence_sources)
+    report = format_threat_intelligence_report(threat_intelligence_data)
+    save_report_to_file(report)
+
+def gather_intelligence_data(threat_intelligence_sources):
+    # Implement logic to gather threat intelligence data from various sources
+    # For demonstration, returning static intelligence data
+    return {"Indicators_of_Compromise": ["Malicious_IP", "Phishing_Domain"],
+            "TTPs": ["Spear Phishing", "Ransomware"]}
+
+def format_threat_intelligence_report(threat_intelligence_data):
+    # Implement logic to format threat intelligence data into a comprehensive report
+    return f"Threat Intelligence Report:\nIOCs: {threat_intelligence_data['Indicators_of_Compromise']}\nTTPs: {threat_intelligence_data['TTPs']}"
+
+def save_report_to_file(report):
+    # Implement logic to save the generated report to a file
+    with open("threat_intelligence_report.txt", "w") as file:
+        file.write(report)
+    print("Threat Intelligence Report saved to 'threat_intelligence_report.txt'")
+
+# Usage
+threat_intelligence_sources = ["Open Source Feeds", "Dark Web Monitoring"]
+generate_threat_intelligence_report(threat_intelligence_sources)
+Summary: This script gathers threat intelligence data from various sources and generates a comprehensive threat intelligence report.
  
 <!--
  ```diff
