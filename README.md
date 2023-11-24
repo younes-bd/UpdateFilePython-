@@ -5719,9 +5719,10 @@ ChatGPT
 Absolutely! Here are more Python script examples for a Security Operations Center (SOC) Analyst:
 ```
 
-171. Network Port Scanner
+<h1> 171. Network Port Scanner </h1>
 
-Description: Develop a script to scan open ports on a given host or a range of hosts.
+<h2> Description: </h2>
+Develop a script to scan open ports on a given host or a range of hosts.
 
 ```
 # Network Port Scanner
@@ -5744,12 +5745,13 @@ target_host = "example.com"
 target_ports = range(1, 1024)
 port_scan(target_host, target_ports)
 ```
-Summary: 
+<h2> Summary: </h2>
 This script allows you to scan a range of ports on a target host and identify which ports are open.
 
-172. Log Analysis for Anomalies
+<h1> 172. Log Analysis for Anomalies </h1>
 
-Description: Create a script to analyze logs for anomalies, such as multiple failed login attempts.
+<h2> Description: </h2>
+Create a script to analyze logs for anomalies, such as multiple failed login attempts.
 
 ```
 # Log Analysis for Anomalies
@@ -5772,12 +5774,13 @@ def send_alert(alert_message, log):
 log_entries = ["Failed login attempt for user 'admin'", "Failed login attempt for user 'root'"]
 analyze_logs(log_entries)
 ```
-Summary: 
+<h2> Summary: </h2>
 This script analyzes logs for anomalies, such as repeated failed login attempts, and triggers alerts.
 
-173. Security Awareness Quiz Generator
+<h1> 173. Security Awareness Quiz Generator </h1>
 
-Description: Generate quizzes for security awareness training programs.
+<h2> Description: </h2>
+Generate quizzes for security awareness training programs.
 
 ```
 # Security Awareness Quiz Generator
@@ -5813,9 +5816,259 @@ def generate_security_quiz():
 # Usage
 generate_security_quiz()
 ```
-Summary: 
+<h2> Summary: </h2>
 This script generates randomized security awareness quizzes to enhance the knowledge of users.
+Absolutely! Here are more Python script examples for a Security Operations Center (SOC) Analyst:
 
+
+Certainly! Here are more Python script examples for a Security Operations Center (SOC) Analyst:
+
+<h1> 174. File Integrity Checker </h1>
+
+<h2> Description: </h2>
+Develop a script to calculate and monitor the hash values of critical system files. This can be used to detect unauthorized changes.
+
+```
+# File Integrity Checker
+
+import hashlib
+import os
+
+def calculate_hash(file_path):
+    hasher = hashlib.sha256()
+    with open(file_path, "rb") as f:
+        for byte_block in iter(lambda: f.read(4096), b""):
+            hasher.update(byte_block)
+    return hasher.hexdigest()
+
+def check_integrity(files):
+    for file_path in files:
+        stored_hash = get_stored_hash(file_path)
+        current_hash = calculate_hash(file_path)
+        if stored_hash and stored_hash != current_hash:
+            handle_integrity_issue(file_path)
+
+def get_stored_hash(file_path):
+    # Implement code to retrieve the stored hash from a secure location
+    # For simplicity, using a dictionary as a placeholder
+    stored_hashes = {"critical_file.txt": "a1b2c3d4e5f6..."}
+    return stored_hashes.get(os.path.basename(file_path))
+
+def handle_integrity_issue(file_path):
+    # Implement actions to respond to a detected integrity issue
+    send_alert(f"Integrity issue detected for {file_path}")
+
+def send_alert(alert_message):
+    # Implement code to send an alert to the SOC team
+    print(alert_message)
+
+# Usage
+critical_files = ["critical_file.txt", "important_config.ini"]
+check_integrity(critical_files)
+```
+<h2> Summary: </h2>
+This script calculates hash values for critical files and alerts if any changes are detected.
+
+<h1> 175. Network Traffic Analyzer </h1>
+
+<h2> Description: </h2>
+Create a script to analyze network traffic logs and identify patterns or potential security incidents.
+
+```
+# Network Traffic Analyzer
+
+def analyze_network_traffic(logs):
+    for log in logs:
+        if "Unauthorized access" in log:
+            handle_unauthorized_access(log)
+        elif "Malicious activity" in log:
+            handle_malicious_activity(log)
+
+def handle_unauthorized_access(log):
+    # Implement actions for unauthorized access
+    send_alert("Unauthorized access detected", log)
+
+def handle_malicious_activity(log):
+    # Implement actions for detected malicious activity
+    send_alert("Malicious activity detected", log)
+
+# Usage
+network_logs = ["User authentication successful", "Malicious packet detected"]
+analyze_network_traffic(network_logs)
+```
+<h2> Summary: </h2>
+This script analyzes network traffic logs for unauthorized access or malicious activity and triggers alerts accordingly.
+
+<h1> 176. Incident Response Automation </h1>
+
+<h2> Description: </h2>
+Develop a script to automate common incident response tasks, such as isolating a compromised system.
+
+```
+# Incident Response Automation
+
+def automate_incident_response(incident_type):
+    if incident_type == "Malware":
+        isolate_system()
+        conduct_forensic_analysis()
+    elif incident_type == "UnauthorizedAccess":
+        reset_user_credentials()
+        review access logs()
+
+def isolate_system():
+    # Implement code to isolate the compromised system
+    send_alert("Compromised system isolated")
+
+def conduct_forensic_analysis():
+    # Implement code to conduct forensic analysis on the isolated system
+    print("Forensic analysis in progress")
+
+def reset_user_credentials():
+    # Implement code to reset user credentials
+    print("User credentials reset")
+
+def review_access_logs():
+    # Implement code to review access logs for the affected user
+    print("Access logs under review")
+
+# Usage
+incident_type = "Malware"
+automate_incident_response(incident_type)
+```
+<h2> Summary: </h2>
+This script automates incident response tasks based on the type of security incident detected.
+
+<h1> 177. Log Analysis for Anomaly Detection </h1>
+
+<h2> Description: </h2>
+Develop a script to analyze system logs for anomalies that might indicate a security threat.
+
+```
+# Log Analysis for Anomaly Detection
+
+def analyze_logs_for_anomalies(logs):
+    for log_entry in logs:
+        if is_anomalous(log_entry):
+            handle_anomaly(log_entry)
+
+def is_anomalous(log_entry):
+    # Implement logic to determine if a log entry is anomalous
+    # For simplicity, checking if the log entry contains certain keywords
+    return "Anomaly detected" in log_entry
+
+def handle_anomaly(log_entry):
+    # Implement actions to respond to an anomalous log entry
+    send_alert(f"Anomaly detected: {log_entry}")
+
+# Usage
+system_logs = ["User login from unusual location", "Anomaly detected in file access"]
+analyze_logs_for_anomalies(system_logs)
+```
+<h2> Summary: </h2>
+This script analyzes system logs for anomalies and sends an alert if any are detected.
+
+<h1> 178. Password Policy Checker </h1>
+
+<h2> Description: </h2>
+Create a script to check if user passwords meet security policy requirements.
+
+```
+# Password Policy Checker
+
+def check_password_policy(password):
+    if is_strong_password(password):
+        print("Password meets security policy")
+    else:
+        print("Password does not meet security policy")
+
+def is_strong_password(password):
+    # Implement logic to check if the password meets security policy
+    # For simplicity, checking minimum length and complexity
+    return len(password) >= 8 and any(c.isalpha() for c in password) and any(c.isdigit() for c in password)
+
+# Usage
+user_password = "SecureP@ssw0rd"
+check_password_policy(user_password)
+```
+<h2> Summary: </h2>
+This script checks if a user password meets the defined security policy.
+
+<h1> 179. Security Patch Checker </h1>
+
+<h2> Description: </h2> 
+Develop a script to check if systems are up-to-date with the latest security patches.
+
+```
+# Security Patch Checker
+
+def check_security_patches(systems):
+    for system in systems:
+        if is_up_to_date(system):
+            print(f"{system} is up-to-date with security patches")
+        else:
+            print(f"{system} requires security patches")
+
+def is_up_to_date(system):
+    # Implement logic to check if the system has the latest security patches
+    # For simplicity, assume a list of required patches for each system
+    required_patches = {"SystemA": ["Patch1", "Patch2"], "SystemB": ["Patch3", "Patch4"]}
+    installed_patches = get_installed_patches(system)
+    return set(required_patches[system]) <= set(installed_patches)
+
+def get_installed_patches(system):
+    # Implement code to retrieve the list of installed patches for a system
+    # For simplicity, return a static list
+    return ["Patch1", "Patch2"]
+
+# Usage
+systems_to_check = ["SystemA", "SystemB"]
+check_security_patches(systems_to_check)
+```
+<h2> Summary: </h2>
+This script checks if systems have the latest security patches installed.
+
+<h1> 180. Incident Ticket Generator </h1>
+
+<h2> Description: </h2>
+Create a script to generate incident tickets with relevant details.
+
+```
+# Incident Ticket Generator
+
+def generate_incident_ticket(incident_type, description):
+    ticket_id = generate_ticket_id()
+    ticket = {
+        "TicketID": ticket_id,
+        "IncidentType": incident_type,
+        "Description": description,
+        "Status": "Open"
+    }
+    save_ticket_to_database(ticket)
+    send_notification(f"Incident ticket created: {ticket_id}")
+
+def generate_ticket_id():
+    # Implement logic to generate a unique ticket ID
+    # For simplicity, using a counter
+    generate_ticket_id.counter += 1
+    return f"TICKET{generate_ticket_id.counter}"
+
+generate_ticket_id.counter = 0
+
+def save_ticket_to_database(ticket):
+    # Implement code to save the incident ticket to a database
+    print(f"Ticket {ticket['TicketID']} saved to the database")
+
+def send_notification(message):
+    # Implement code to send a notification to the SOC team
+    print(message)
+
+# Usage
+incident_type = "Malware"
+incident_description = "Malware detected on server"
+generate_incident_ticket(incident_type, incident_description)
+```
+<h2> Summary: </h2>
+This script generates incident tickets for different incident types.
  
 <!--
  ```diff
