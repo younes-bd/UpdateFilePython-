@@ -6069,6 +6069,320 @@ generate_incident_ticket(incident_type, incident_description)
 ```
 <h2> Summary: </h2>
 This script generates incident tickets for different incident types.
+
+<h1> 181. Threat Intelligence Feeder </h1>
+
+<h2> Description: </h2>
+Develop a script to fetch threat intelligence feeds and update a local database.
+
+```
+# Threat Intelligence Feeder
+
+def fetch_threat_intelligence():
+    # Implement code to fetch threat intelligence feeds from external sources
+    # For simplicity, returning a static list of indicators
+    threat_indicators = ["malicious_ip_1", "malicious_domain_2", "suspicious_url_3"]
+    update_local_database(threat_indicators)
+
+def update_local_database(indicators):
+    # Implement code to update a local threat intelligence database
+    # For simplicity, printing the indicators
+    print("Updating local database with threat indicators:")
+    for indicator in indicators:
+        print(indicator)
+
+# Usage
+fetch_threat_intelligence()
+```
+<h2> Summary: </h2>
+This script fetches threat intelligence feeds and updates a local database with indicators.
+
+<h1> 182. Security Awareness Quiz Generator </h1>
+
+<h2> Description: </h2>
+Create a script to generate security awareness quizzes for employees.
+
+```
+# Security Awareness Quiz Generator
+
+def generate_security_quiz():
+    quiz_questions = [
+        {"question": "What is phishing?", "options": ["A fishing activity", "A cybersecurity threat", "A type of software"]},
+        {"question": "Why is two-factor authentication important?", "options": ["It adds an extra layer of security", "It slows down access", "It's unnecessary"]},
+        # Add more questions as needed
+    ]
+    print("Security Awareness Quiz:")
+    for i, question in enumerate(quiz_questions, 1):
+        print(f"{i}. {question['question']}")
+        for j, option in enumerate(question['options'], 1):
+            print(f"   {j}. {option}")
+
+# Usage
+generate_security_quiz()
+```
+<h2> Summary: </h2>
+This script generates a security awareness quiz for employees.
+
+
+<h1> 183. Network Traffic Analyzer </h1>
+
+<h2> Description: </h2>
+Develop a script to analyze network traffic logs and identify potential security incidents.
+
+```
+# Network Traffic Analyzer
+
+def analyze_network_traffic(logs):
+    for log_entry in logs:
+        if is_suspicious_traffic(log_entry):
+            handle_suspicious_traffic(log_entry)
+
+def is_suspicious_traffic(log_entry):
+    # Implement logic to identify suspicious network traffic
+    # For simplicity, checking for unusually high data transfer
+    return "Data transfer exceeded threshold" in log_entry
+
+def handle_suspicious_traffic(log_entry):
+    # Implement actions to respond to suspicious network traffic
+    send_alert(f"Suspicious network traffic detected: {log_entry}")
+
+# Usage
+network_logs = ["Data transfer exceeded threshold from IP 192.168.1.100", "Normal network activity"]
+analyze_network_traffic(network_logs)
+```
+<h2> Summary: </h2>
+This script analyzes network traffic logs for suspicious activity and sends alerts if detected.
+
+<h1> 184. User Account Activity Monitor </h1>
+
+<h2> Description: </h2>
+Create a script to monitor user account activity and detect unusual patterns.
+
+```
+# User Account Activity Monitor
+
+def monitor_user_activity(user_logs):
+    for log_entry in user_logs:
+        if is_unusual_activity(log_entry):
+            handle_unusual_activity(log_entry)
+
+def is_unusual_activity(log_entry):
+    # Implement logic to identify unusual user activity
+    # For simplicity, checking for multiple failed login attempts
+    return "Failed login attempt" in log_entry and count_failed_attempts(log_entry) > 3
+
+def count_failed_attempts(log_entry):
+    # Implement code to count the number of failed login attempts in a log entry
+    # For simplicity, returning a static count
+    return 4
+
+def handle_unusual_activity(log_entry):
+    # Implement actions to respond to unusual user activity
+    send_alert(f"Unusual user activity detected: {log_entry}")
+
+# Usage
+user_logs = ["Failed login attempt for user1", "Successful login for user2"]
+monitor_user_activity(user_logs)
+```
+<h2> Summary: </h2>
+This script monitors user account activity for unusual patterns and sends alerts if detected.
+
+Feel free to adapt these scripts based on your specific needs and integrate them into your SOC workflows!
+Absolutely! Here are more examples of Python scripts for a Security Operations Center (SOC) Analyst:
+
+<h1> 185. Automated Log Analysis </h1>
+
+<h2> Description: </h2>
+Develop a script to automatically analyze logs and identify patterns indicative of security incidents.
+
+```
+# Automated Log Analysis
+
+def analyze_logs(logs):
+    for log_entry in logs:
+        if is_security_incident(log_entry):
+            handle_security_incident(log_entry)
+
+def is_security_incident(log_entry):
+    # Implement logic to identify security incidents in logs
+    # For example, detecting repeated failed login attempts
+    return "Failed login attempt" in log_entry and count_failed_attempts(log_entry) > 3
+
+def count_failed_attempts(log_entry):
+    # Implement code to count the number of failed login attempts in a log entry
+    # For simplicity, returning a static count
+    return 4
+
+def handle_security_incident(log_entry):
+    # Implement actions to respond to security incidents
+    send_alert(f"Security incident detected: {log_entry}")
+
+# Usage
+system_logs = ["Failed login attempt for user1", "Successful login for user2"]
+analyze_logs(system_logs)
+```
+<h2> Summary: </h2>
+This script automates the analysis of logs and alerts on potential security incidents.
+
+<h1> 186. Threat Hunting Script </h1>
+
+<h2> Description: </h2>
+Create a script to perform threat hunting based on predefined indicators of compromise (IoCs).
+
+```
+# Threat Hunting Script
+
+def hunt_for_threats(network_traffic, known_iocs):
+    for entry in network_traffic:
+        if matches_iocs(entry, known_iocs):
+            handle_threat_detection(entry)
+
+def matches_iocs(entry, iocs):
+    # Implement logic to match network traffic against known IoCs
+    return any(ioc in entry for ioc in iocs)
+
+def handle_threat_detection(entry):
+    # Implement actions to respond to detected threats
+    send_alert(f"Potential threat detected: {entry}")
+
+# Usage
+network_traffic = ["Malicious IP detected: 192.168.1.100", "Normal network activity"]
+ioc_list = ["Malicious IP", "Phishing domain"]
+hunt_for_threats(network_traffic, ioc_list)
+```
+<h2> Summary: </h2>
+This script hunts for potential threats in network traffic based on known indicators of compromise.
+
+<h1> 187. Incident Response Automation </h1>
+
+<h2> Description: </h2>
+Develop a script to automate some aspects of incident response, such as isolating affected systems.
+
+```
+# Incident Response Automation
+
+def automate_incident_response(incident_type, affected_systems):
+    if incident_type == "Malware Outbreak":
+        isolate_infected_systems(affected_systems)
+        perform_malware_analysis(affected_systems)
+
+def isolate_infected_systems(affected_systems):
+    # Implement code to isolate affected systems from the network
+    for system in affected_systems:
+        print(f"Isolating system: {system}")
+
+def perform_malware_analysis(affected_systems):
+    # Implement code to perform malware analysis on affected systems
+    for system in affected_systems:
+        print(f"Analyzing malware on system: {system}")
+
+# Usage
+incident_type = "Malware Outbreak"
+affected_systems = ["Server1", "Desktop2"]
+automate_incident_response(incident_type, affected_systems)
+```
+<h2> Summary: </h2>
+This script automates incident response for a specific incident type, isolating affected systems and initiating malware analysis.
+
+
+Certainly! Here are more examples of Python scripts tailored for a Security Operations Center (SOC) Analyst:
+
+<h1> 188. Security Information and Event Management (SIEM) Integration </h1>
+
+<h2> Description: </h2>
+Develop a script to integrate with a SIEM tool and parse security events for further analysis.
+
+```
+# SIEM Integration Script
+
+def parse_siem_events(siem_logs):
+    for event in siem_logs:
+        parsed_event = parse_event(event)
+        analyze_security_event(parsed_event)
+
+def parse_event(raw_event):
+    # Implement code to parse raw events from the SIEM tool
+    # For example, extracting timestamp, source IP, event type, etc.
+    return {"timestamp": "2023-07-30T12:30:45", "source_ip": "192.168.1.1", "event_type": "Login Failure"}
+
+def analyze_security_event(parsed_event):
+    # Implement logic to analyze security events and take appropriate actions
+    if parsed_event["event_type"] == "Login Failure":
+        send_alert(f"Login failure detected from IP {parsed_event['source_ip']} at {parsed_event['timestamp']}")
+
+# Usage
+siem_logs = ["2023-07-30T12:30:45 | 192.168.1.1 | Login Failure", "2023-07-30T12:31:00 | 192.168.2.1 | Successful Login"]
+parse_siem_events(siem_logs)
+```
+<h2> Summary: </h2>
+This script integrates with a SIEM tool, parses security events, and alerts on specific events.
+
+<h1> 189. Threat Intelligence Feed Integration </h1>
+
+<h2> Description: </h2>
+Create a script to fetch and integrate threat intelligence feeds, enhancing the ability to detect known threats.
+
+```
+# Threat Intelligence Integration Script
+
+def fetch_threat_intelligence(threat_feed_url):
+    threat_intel_feed = fetch_feed(threat_feed_url)
+    analyze_threat_intelligence(threat_intel_feed)
+
+def fetch_feed(feed_url):
+    # Implement code to fetch threat intelligence feed from a given URL
+    # For simplicity, returning static threat intelligence data
+    return ["Malicious IP: 192.168.1.100", "Phishing Domain: example.com"]
+
+def analyze_threat_intelligence(threat_feed):
+    # Implement logic to analyze threat intelligence and take actions
+    for threat in threat_feed:
+        handle_threat(threat)
+
+def handle_threat(threat):
+    # Implement actions to respond to threats, such as blocking IP addresses or domains
+    send_alert(f"Threat detected: {threat}")
+
+# Usage
+threat_feed_url = "https://example.com/threat-feed"
+fetch_threat_intelligence(threat_feed_url)
+```
+<h2> Summary: </h2>
+This script fetches threat intelligence data from a feed, analyzes it, and takes actions based on detected threats.
+
+<h1> 190. User Account Monitoring Script </h1>
+
+<h2> Description: </h2>
+Develop a script to monitor user account activities and detect suspicious behavior.
+
+```
+# User Account Monitoring Script
+
+def monitor_user_accounts(user_logs):
+    for user_activity in user_logs:
+        if is_suspicious_activity(user_activity):
+            handle_suspicious_activity(user_activity)
+
+def is_suspicious_activity(user_activity):
+    # Implement logic to identify suspicious user activity
+    # For example, multiple failed login attempts within a short period
+    return "Failed login attempt" in user_activity and count_failed_attempts(user_activity) > 3
+
+def count_failed_attempts(user_activity):
+    # Implement code to count the number of failed login attempts in a user activity log
+    # For simplicity, returning a static count
+    return 4
+
+def handle_suspicious_activity(user_activity):
+    # Implement actions to respond to suspicious user activity
+    send_alert(f"Suspicious user activity detected: {user_activity}")
+
+# Usage
+user_logs = ["Failed login attempt for user1", "Successful login for user2"]
+monitor_user_accounts(user_logs)
+```
+<h2> Summary: </h2>
+This script monitors user account activities for suspicious behavior and alerts on potential security threats.
  
 <!--
  ```diff
