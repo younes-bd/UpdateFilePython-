@@ -6432,6 +6432,8 @@ This script monitors user account activities for suspicious behavior and alerts 
 <h2> Description: </h2>
 Develop a script to perform threat hunting by searching for indicators of compromise (IOCs) across various data sources.
 
+<h2> Python Script: </h2>
+
 ```
 # Threat Hunting Script
 
@@ -6457,6 +6459,8 @@ This script performs threat hunting by searching for predefined IOCs in log data
 
 <h2> Description: </h2>
 Create a script to automate basic analysis tasks for a suspicious file, such as extracting file properties and conducting static analysis.
+
+<h2> Python Script: </h2>
 
 ```
 # Malware Analysis Automation Script
@@ -6488,6 +6492,8 @@ This script automates basic analysis tasks for a suspicious file, providing esse
 <h2> Description: </h2>
 Develop a script to enrich threat intelligence data with additional context, such as WHOIS information for a suspicious domain.
 
+<h2> Python Script: </h2>
+
 ```
 # Threat Intelligence Enrichment Script
 
@@ -6516,6 +6522,8 @@ This script enriches threat intelligence data with WHOIS information for a suspi
 
 <h2> Description: </h2>
 Create a script to analyze network traffic logs and identify anomalous patterns that might indicate a security threat.
+
+<h2> Python Script: </h2>
 
 ```
 # Network Traffic Analysis Script
@@ -6546,6 +6554,8 @@ This script analyzes network traffic logs for anomalous patterns and triggers al
 <h2> Description: </h2>
 Develop a script to automate the initial triage of security incidents, categorizing them based on predefined criteria.
 
+<h2> Python Script: </h2>
+
 ```
 # Incident Triage Automation Script
 
@@ -6574,6 +6584,8 @@ This script automates the triage of security incidents, categorizing them based 
 
 <h2> Description: </h2>
 Create a script to gather and analyze threat intelligence data to attribute a security incident to a known threat actor or group.
+
+<h2> Python Script: </h2>
 
 ```
 # Threat Actor Attribution Script
@@ -6605,8 +6617,9 @@ This script attributes a security incident to a known threat actor based on thre
 <h2> Description: </h2>
 Develop a script to automate the process of threat hunting by searching for indicators of compromise (IoCs) across various logs and data sources.
 
-python
-Copy code
+<h2> Python Script: </h2>
+
+```
 # Threat Hunting Automation Script
 
 def hunt_for_threats(log_data, indicators_of_compromise):
@@ -6627,14 +6640,18 @@ def handle_detected_ioc(log_entry, indicator):
 log_data = ["Malicious IP detected", "Phishing domain in DNS log"]
 indicators_of_compromise = ["Malicious IP", "Phishing Domain"]
 hunt_for_threats(log_data, indicators_of_compromise)
-Summary: This script automates the threat hunting process by searching for indicators of compromise in various logs.
+```
+<h2> Summary: </h2>
+This script automates the threat hunting process by searching for indicators of compromise in various logs.
 
-198. Threat Intelligence Feed Integration
+<h1> 198. Threat Intelligence Feed Integration </h1>
 
-Description: Create a script to fetch and integrate threat intelligence feeds, updating your organization's threat intelligence database.
+<h2> Description: </h2>
+Create a script to fetch and integrate threat intelligence feeds, updating your organization's threat intelligence database.
 
-python
-Copy code
+<h2> Python Script: </h2>
+
+```
 # Threat Intelligence Feed Integration Script
 
 def update_threat_intelligence(threat_intelligence_database, threat_feed):
@@ -6655,14 +6672,18 @@ def update_database(threat_intelligence_database, new_indicators):
 threat_intelligence_database = ["Known_Malware_MD5", "Known_Phishing_Domain"]
 threat_feed = "https://example.com/threat-feed"
 update_threat_intelligence(threat_intelligence_database, threat_feed)
-Summary: This script fetches new indicators of compromise from a threat intelligence feed and updates the organization's threat intelligence database.
+```
+<h2> Summary: </h2>
+This script fetches new indicators of compromise from a threat intelligence feed and updates the organization's threat intelligence database.
 
-199. Threat Simulation Script
+<h1> 199. Threat Simulation Script </h1>
 
-Description: Develop a script to simulate potential threat scenarios, allowing the organization to assess its detection and response capabilities.
+<h2> Description: </h2>
+Develop a script to simulate potential threat scenarios, allowing the organization to assess its detection and response capabilities.
 
-python
-Copy code
+<h2> Python Script: </h2>
+
+```
 # Threat Simulation Script
 
 def simulate_threat_scenario(organization_environment):
@@ -6680,14 +6701,17 @@ def simulate_attack(organization_environment, threat_scenario):
 # Usage
 organization_environment = {"Network": "Corporate_Network", "Users": ["Alice", "Bob"]}
 simulate_threat_scenario(organization_environment)
-Summary: This script simulates a threat scenario, helping the organization assess its detection and response capabilities.
+```
+<h2> Summary: </h2>
+This script simulates a threat scenario, helping the organization assess its detection and response capabilities.
 
-200. IOC Enrichment Script
 
-Description: Develop a script to enrich indicators of compromise (IoCs) with additional context and threat intelligence data.
+<h1> 200. IOC Enrichment Script </h1>
 
-python
-Copy code
+<h2> Description: </h2>
+Develop a script to enrich indicators of compromise (IoCs) with additional context and threat intelligence data.
+
+```
 # IOC Enrichment Script
 
 def enrich_ioc(ioc):
@@ -6706,14 +6730,16 @@ def fetch_ioc_details(ioc):
 ioc_to_enrich = "Malicious_IP"
 enriched_ioc_details = enrich_ioc(ioc_to_enrich)
 print(f"Enriched IOC Details: {enriched_ioc_details}")
-Summary: This script enriches indicators of compromise with additional details such as category, country, and last seen date.
+```
+<h2> Summary: </h2>
+This script enriches indicators of compromise with additional details such as category, country, and last seen date.
 
-201. Threat Actor Attribution Script
+<h1> 201. Threat Actor Attribution Script </h1>
 
-Description: Create a script to analyze threat intelligence data and attribute potential threat actors based on known tactics, techniques, and procedures (TTPs).
+<h2> Description: </h2>
+Create a script to analyze threat intelligence data and attribute potential threat actors based on known tactics, techniques, and procedures (TTPs).
 
-python
-Copy code
+```
 # Threat Actor Attribution Script
 
 def attribute_threat_actor(threat_intelligence_data):
@@ -6729,14 +6755,16 @@ def analyze_ttps(threat_intelligence_data):
 threat_intelligence_data = {"TTPs": ["Spear Phishing", "Data Exfiltration"]}
 potential_threat_actor = attribute_threat_actor(threat_intelligence_data)
 print(f"Potential Threat Actor: {potential_threat_actor}")
-Summary: This script analyzes threat intelligence data to attribute potential threat actors based on observed tactics, techniques, and procedures.
+```
+<h2> Summary: </h2>
+This script analyzes threat intelligence data to attribute potential threat actors based on observed tactics, techniques, and procedures.
 
-202. Threat Intelligence Report Generation
+<h1> 202. Threat Intelligence Report Generation </h1>
 
-Description: Develop a script to generate a comprehensive threat intelligence report based on the analysis of various intelligence sources.
+<h2> Description: </h2>
+Develop a script to generate a comprehensive threat intelligence report based on the analysis of various intelligence sources.
 
-python
-Copy code
+```e
 # Threat Intelligence Report Generation Script
 
 def generate_threat_intelligence_report(threat_intelligence_sources):
@@ -6763,7 +6791,9 @@ def save_report_to_file(report):
 # Usage
 threat_intelligence_sources = ["Open Source Feeds", "Dark Web Monitoring"]
 generate_threat_intelligence_report(threat_intelligence_sources)
-Summary: This script gathers threat intelligence data from various sources and generates a comprehensive threat intelligence report.
+```
+<h2> Summary: </h2>
+This script gathers threat intelligence data from various sources and generates a comprehensive threat intelligence report.
  
 <!--
  ```diff
