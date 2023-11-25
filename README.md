@@ -6711,6 +6711,8 @@ This script simulates a threat scenario, helping the organization assess its det
 <h2> Description: </h2>
 Develop a script to enrich indicators of compromise (IoCs) with additional context and threat intelligence data.
 
+<h2> Python Script: </h2>
+
 ```
 # IOC Enrichment Script
 
@@ -6739,6 +6741,8 @@ This script enriches indicators of compromise with additional details such as ca
 <h2> Description: </h2>
 Create a script to analyze threat intelligence data and attribute potential threat actors based on known tactics, techniques, and procedures (TTPs).
 
+<h2> Python Script: </h2>
+
 ```
 # Threat Actor Attribution Script
 
@@ -6764,7 +6768,9 @@ This script analyzes threat intelligence data to attribute potential threat acto
 <h2> Description: </h2>
 Develop a script to generate a comprehensive threat intelligence report based on the analysis of various intelligence sources.
 
-```e
+<h2> Python Script: </h2>
+
+```
 # Threat Intelligence Report Generation Script
 
 def generate_threat_intelligence_report(threat_intelligence_sources):
@@ -6794,6 +6800,113 @@ generate_threat_intelligence_report(threat_intelligence_sources)
 ```
 <h2> Summary: </h2>
 This script gathers threat intelligence data from various sources and generates a comprehensive threat intelligence report.
+
+<h1> 203. Threat Hunting Script </h1>
+
+<h2> Description: </h2>
+Develop a script to automate the process of hunting for potential threats in logs and network traffic.
+
+<h2> Python Script: </h2>
+
+```
+# Threat Hunting Script
+
+def hunt_for_threats(log_data, network_traffic):
+    potential_threats = []
+
+    for log_entry in log_data:
+        if "suspicious_pattern" in log_entry:
+            potential_threats.append({"Type": "Log Analysis", "Details": log_entry})
+
+    for packet in network_traffic:
+        if "malicious_signature" in packet:
+            potential_threats.append({"Type": "Network Traffic", "Details": packet})
+
+    return potential_threats
+
+# Usage
+sample_logs = ["Normal log entry", "Suspicious pattern detected", "Another normal log"]
+sample_traffic = ["Normal packet", "Malicious packet with signature", "Another normal packet"]
+
+potential_threats = hunt_for_threats(sample_logs, sample_traffic)
+print("Potential Threats:")
+for threat in potential_threats:
+    print(threat)
+```
+<h2> Summary: </h2>
+This script automates the process of threat hunting by analyzing logs and network traffic for suspicious patterns and signatures.
+
+<h1> 204. Threat Indicator Correlation Script </h1>
+
+<h2> Description: </h2> 
+Create a script to correlate various threat indicators and identify potential relationships or patterns.
+
+<h2> Python Script: </h2>
+
+```
+# Threat Indicator Correlation Script
+
+def correlate_threat_indicators(indicator_data):
+    correlated_indicators = {}
+
+    for indicator_type, indicators in indicator_data.items():
+        correlated_indicators[indicator_type] = find_correlations(indicators)
+
+    return correlated_indicators
+
+def find_correlations(indicators):
+    # Implement logic to find correlations between indicators
+    # For demonstration, returning a list of correlated indicators
+    return [indicator + "_correlated" for indicator in indicators]
+
+# Usage
+sample_indicator_data = {"Malicious_IPs": ["192.168.1.1", "10.0.0.1"],
+                         "Phishing_Domains": ["example.com", "phishing-site.com"]}
+
+correlated_indicators = correlate_threat_indicators(sample_indicator_data)
+print("Correlated Threat Indicators:")
+print(correlated_indicators)
+```
+<h2> Summary: </h2>
+This script correlates different types of threat indicators (e.g., malicious IPs, phishing domains) to identify potential relationships.
+
+<h1> 205. Threat Intelligence Feed Integration Script </h1>
+
+<h2> Description: </h2>
+Develop a script to integrate external threat intelligence feeds and update your local threat intelligence database.
+
+<h2> Python Script: </h2>
+
+```
+# Threat Intelligence Feed Integration Script
+
+def integrate_threat_intelligence_feed(threat_feed_data, local_database):
+    updated_database = update_local_database(threat_feed_data, local_database)
+    return updated_database
+
+def update_local_database(threat_feed_data, local_database):
+    # Implement logic to update the local threat intelligence database with new feed data
+    # For demonstration, adding feed data to the local database
+    for indicator_type, indicators in threat_feed_data.items():
+        if indicator_type not in local_database:
+            local_database[indicator_type] = []
+        local_database[indicator_type].extend(indicators)
+
+    return local_database
+
+# Usage
+sample_threat_feed_data = {"Malicious_IPs": ["192.168.2.1", "10.1.1.1"],
+                            "Phishing_Domains": ["malicious-domain.com", "phishing-example.com"]}
+
+sample_local_database = {"Malicious_IPs": ["192.168.1.1", "10.0.0.1"],
+                         "Phishing_Domains": ["example.com", "phishing-site.com"]}
+
+updated_database = integrate_threat_intelligence_feed(sample_threat_feed_data, sample_local_database)
+print("Updated Local Threat Intelligence Database:")
+print(updated_database)
+```
+<h2> Summary: </h2>
+This script integrates external threat intelligence feeds and updates a local threat intelligence database.
  
 <!--
  ```diff
