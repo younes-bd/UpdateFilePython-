@@ -583,7 +583,7 @@ create_backup(source_directory, backup_location)
 <h2> Summary: </h2>
 This script automates the backup of specified files or directories, creating a timestamped backup copy.
 
-<h2> 22. Log Rotation Script </h2>
+<h1> 22. Log Rotation Script </h1>
 
 <h2> Description: </h2>
 Automate log file rotation to prevent log files from consuming excessive disk space.
